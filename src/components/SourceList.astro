@@ -1,0 +1,69 @@
+---
+import type { Source } from '../lib/types';
+
+interface Props {
+  sources: Source[];
+}
+
+const { sources } = Astro.props;
+
+const CATEGORY_LABELS: Record<string, string> = {
+  overgenomen: 'Overgenomen uit',
+  afgeleid: 'Afgeleid van',
+  eigen: 'Eigen definitie',
+};
+
+const grouped = new Map<string, Source[]>();
+const urls: Source[] = [];
+
+for (const source of sources) {
+  if (source.url) {
+    urls.push(source);
+  } else if (source.category) {
+    const list = grouped.get(source.category) ?? [];
+    list.push(source);
+    grouped.set(source.category, list);
+  } else if (source.text) {
+    const list = grouped.get('overig') ?? [];
+    list.push(source);
+    grouped.set('overig', list);
+  }
+}
+---
+
+{sources.length > 0 && (
+  <section class="field-block" aria-labelledby="sources-heading">
+    <h2 id="sources-heading" class="field-block__label">Bron / grondslag</h2>
+    {[...grouped.entries()].map(([category, items]) => (
+      <div class="source-group">
+        <p class="source-group__title">{CATEGORY_LABELS[category] ?? 'Overig'}</p>
+        <ul>
+          {items.map((item) => (
+            <li>{item.text}</li>
+          ))}
+        </ul>
+      </div>
+    ))}
+    {urls.length > 0 && (
+      <div class="source-group">
+        <p class="source-group__title">Links</p>
+        <ul>
+          {urls.map((item) => (
+            <li>
+              <a href={item.url!} rel="noopener noreferrer" target="_blank">
+                {item.url}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </section>
+)}
+
+<style>
+  ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+</style>

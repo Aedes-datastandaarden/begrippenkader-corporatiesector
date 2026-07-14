@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+import VersionSelector from '../components/VersionSelector.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'Begrippenkader Corporatiesector', description } = Astro.props;
+const fullTitle = title === 'Begrippenkader Corporatiesector' ? title : `${title} — Begrippenkader Corporatiesector`;
+---
+
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description ?? 'Publieke weergave van het Begrippenkader Corporatiesector (SKOS / NL-SBB).'} />
+    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <title>{fullTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href={import.meta.env.BASE_URL}>Begrippenkader Corporatiesector</a>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>SKOS / NL-SBB — machineleesbare publicatie</span>
+        <VersionSelector />
+      </div>
+    </footer>
+  </body>
+</html>

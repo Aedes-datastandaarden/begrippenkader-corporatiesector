@@ -1,0 +1,28 @@
+---
+interface Props {
+  activeLetter?: string;
+  version?: string;
+}
+
+const { activeLetter, version } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const versionSuffix = version ? `?v=${version}` : '';
+---
+
+<nav class="alphabet-nav" aria-label="Alfabet-navigatie">
+  {letters.map((letter) => (
+    <a
+      href={`${base}alfabet/${letter.toLowerCase()}${versionSuffix}`}
+      aria-current={activeLetter?.toUpperCase() === letter ? 'page' : undefined}
+    >
+      {letter}
+    </a>
+  ))}
+  <a
+    href={`${base}alfabet/hash${versionSuffix}`}
+    aria-current={activeLetter === '#' ? 'page' : undefined}
+  >
+    #
+  </a>
+</nav>

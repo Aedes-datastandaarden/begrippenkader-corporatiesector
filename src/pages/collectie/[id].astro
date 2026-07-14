@@ -1,0 +1,50 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import versions from '../../../public/build/versions.json';
+import allCollections from '../../../public/build/0.2/collections.json';
+import type { Collection } from '../../lib/types';
+
+export function getStaticPaths() {
+  const collections = allCollections as Collection[];
+  return collections.map((collection) => ({
+    params: { id: collection.slug },
+  }));
+}
+
+const { id } = Astro.params;
+const versionParam = Astro.url.searchParams.get('v');
+const activeVersion = versionParam && versions.versions.some((v) => v.id === versionParam)
+  ? versionParam
+  : versions.latest;
+
+let collections = allCollections as Collection[];
+if (activeVersion !== '0.2') {
+  const mod = await import(`../../../public/build/${activeVersion}/collections.json`);
+  collections = mod.default as Collection[];
+}
+
+const collection = collections.find((c) => c.slug === id);
+if (!collection) {
+  return Astro.redirect(`${import.meta.env.BASE_URL}?v=${activeVersion}`);
+}
+
+const base = import.meta.env.BASE_URL;
+const versionSuffix = `?v=${activeVersion}`;
+---
+
+<Layout title={collection.prefLabel}>
+  <nav aria-label="Broodkruimel">
+    <a href={`${base}?v=${activeVersion}`}>Home</a> → {collection.prefLabel}
+  </nav>
+
+  <h1>{collection.prefLabel}</h1>
+  <p>{collection.memberCount} begrippen in deze collectie</p>
+
+  <ul class="concept-list">
+    {collection.members.map((member) => (
+      <li>
+        <a href={`${base}begrip/${member.slug}${versionSuffix}`}>{member.prefLabel}</a>
+      </li>
+    ))}
+  </ul>
+</Layout>

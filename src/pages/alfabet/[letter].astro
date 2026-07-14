@@ -1,0 +1,50 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import AlphabetNav from '../../components/AlphabetNav.astro';
+import versions from '../../../public/build/versions.json';
+import alphabetIndex from '../../../public/build/0.2/alphabet-index.json';
+
+export function getStaticPaths() {
+  const letters = 'abcdefghijklmnopqrstuvwxyz'.split('').concat(['hash']);
+  return letters.map((letter) => ({
+    params: { letter },
+  }));
+}
+
+const { letter } = Astro.params;
+const versionParam = Astro.url.searchParams.get('v');
+const activeVersion = versionParam && versions.versions.some((v) => v.id === versionParam)
+  ? versionParam
+  : versions.latest;
+
+const letterKey = letter === 'hash' ? '#' : letter!.toUpperCase();
+
+let index = alphabetIndex as Record<string, { slug: string; prefLabel: string }[]>;
+if (activeVersion !== '0.2') {
+  const mod = await import(`../../../public/build/${activeVersion}/alphabet-index.json`);
+  index = mod.default as typeof index;
+}
+
+const concepts = index[letterKey] ?? [];
+const base = import.meta.env.BASE_URL;
+const versionSuffix = `?v=${activeVersion}`;
+const pageTitle = letter === 'hash' ? 'Overige begrippen' : `Begrippen met ${letterKey}`;
+---
+
+<Layout title={pageTitle}>
+  <h1>{pageTitle}</h1>
+
+  <AlphabetNav activeLetter={letterKey} version={activeVersion} />
+
+  {concepts.length === 0 ? (
+    <p>Geen begrippen gevonden voor deze letter.</p>
+  ) : (
+    <ul class="concept-list">
+      {concepts.map((concept) => (
+        <li>
+          <a href={`${base}begrip/${concept.slug}${versionSuffix}`}>{concept.prefLabel}</a>
+        </li>
+      ))}
+    </ul>
+  )}
+</Layout>

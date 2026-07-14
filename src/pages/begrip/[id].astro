@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ConceptDetail from '../../components/ConceptDetail';
+import RelationGraph from '../../components/RelationGraph';
+import versions from '../../../public/build/versions.json';
+import allConcepts from '../../../public/build/0.2/concepts.json';
+import type { Concept } from '../../lib/types';
+
+export function getStaticPaths() {
+  return (allConcepts as Concept[]).map((concept) => ({
+    params: { id: concept.slug },
+  }));
+}
+
+const { id } = Astro.params;
+const concept = (allConcepts as Concept[]).find((c) => c.slug === id)!;
+---
+
+<Layout title={concept.prefLabel} description={concept.definition}>
+  <ConceptDetail client:load slug={id!} defaultConcept={concept} versionsManifest={versions} />
+  <RelationGraph client:load slug={id!} defaultConcept={concept} versionsManifest={versions} />
+</Layout>

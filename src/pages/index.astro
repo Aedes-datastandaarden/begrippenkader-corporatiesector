@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HomeContent from '../components/HomeContent';
+import AlphabetNav from '../components/AlphabetNav.astro';
+import versions from '../../public/build/versions.json';
+import scheme from '../../public/build/0.2/scheme.json';
+import collections from '../../public/build/0.2/collections.json';
+import topConcepts from '../../public/build/0.2/top-concepts.json';
+
+const versionParam = Astro.url.searchParams.get('v');
+const activeVersion = versionParam && versions.versions.some((v) => v.id === versionParam)
+  ? versionParam
+  : versions.latest;
+---
+
+<Layout title={scheme.title} description={scheme.description}>
+  <HomeContent
+    client:load
+    defaultScheme={scheme}
+    defaultCollections={collections}
+    defaultTopConcepts={topConcepts}
+    versionsManifest={versions}
+  />
+
+  <section aria-labelledby="alphabet-heading">
+    <h2 id="alphabet-heading">Bladeren op alfabet</h2>
+    <AlphabetNav version={activeVersion} />
+  </section>
+</Layout>
