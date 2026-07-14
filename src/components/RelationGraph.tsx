@@ -1,19 +1,31 @@
 import { useEffect, useRef, useState } from 'react';
 import cytoscape, { type Core, type ElementDefinition } from 'cytoscape';
-import type { Concept, GraphEdge } from '../lib/types';
+import type { Concept, GraphEdge, VersionsManifest } from '../lib/types';
 import { buildAssetPath, getVersionFromUrl, pageUrl, resolveVersion, withVersionParam } from '../lib/version';
 
 interface Props {
   slug: string;
   defaultConcept: Concept;
-  versionsManifest: { latest: string; versions: { id: string }[] };
+  versionsManifest: VersionsManifest;
 }
 
-const EDGE_COLORS: Record<string, string> = {
-  broader: '#2563eb',
-  narrower: '#16a34a',
-  related: '#6b7280',
+const COLORS = {
+  brand: '#00a7e5',
+  brandDark: '#00427c',
+  text: '#333333',
+  border: '#b8d4e8',
+  broader: '#00427c',
+  narrower: '#0e83cd',
+  related: '#666666',
+  external: '#999999',
 };
+
+function labelSize(label: string): { width: number; height: number; fontSize: number; maxWidth: number } {
+  const len = label.length;
+  if (len <= 12) return { width: 90, height: 44, fontSize: 11, maxWidth: 80 };
+  if (len <= 20) return { width: 110, height: 52, fontSize: 10, maxWidth: 100 };
+  return { width: 130, height: 60, fontSize: 9, maxWidth: 120 };
+}
 
 export default function RelationGraph({ slug, defaultConcept, versionsManifest }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -60,14 +72,20 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
 
       const elements: ElementDefinition[] = [];
 
-      for (const slug of connected) {
-        const isCenter = slug === concept.slug;
+      for (const nodeSlug of connected) {
+        const isCenter = nodeSlug === concept.slug;
+        const label = isCenter ? concept.prefLabel : (labelBySlug.get(nodeSlug) ?? nodeSlug);
+        const size = labelSize(label);
         elements.push({
           data: {
-            id: slug,
-            label: slug === concept.slug ? concept.prefLabel : (labelBySlug.get(slug) ?? slug),
-            center: isCenter,
-            internal: true,
+            id: nodeSlug,
+            label,
+            center: isCenter ? 'true' : 'false',
+            internal: 'true',
+            nodeWidth: isCenter ? size.width + 20 : size.width,
+            nodeHeight: isCenter ? size.height + 12 : size.height,
+            fontSize: isCenter ? size.fontSize + 1 : size.fontSize,
+            textMaxWidth: size.maxWidth,
           },
         });
       }
@@ -86,13 +104,18 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
       for (const ref of [...concept.exactMatchResolved, ...concept.closeMatchResolved]) {
         if (!ref.internal) {
           const extId = `ext-${ref.uri}`;
+          const size = labelSize(ref.prefLabel);
           elements.push({
             data: {
               id: extId,
               label: ref.prefLabel,
-              center: false,
-              internal: false,
+              center: 'false',
+              internal: 'false',
               uri: ref.uri,
+              nodeWidth: size.width,
+              nodeHeight: size.height,
+              fontSize: size.fontSize,
+              textMaxWidth: size.maxWidth,
             },
           });
           elements.push({
@@ -122,43 +145,46 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
               label: 'data(label)',
               'text-valign': 'center',
               'text-halign': 'center',
-              'font-size': '10px',
+              'font-size': 'data(fontSize)',
+              'font-family': 'helvetica, arial, sans-serif',
               'text-wrap': 'wrap',
-              'text-max-width': '80px',
-              width: 48,
-              height: 48,
-              'background-color': '#e8f0f7',
+              'text-max-width': 'data(textMaxWidth)',
+              width: 'data(nodeWidth)',
+              height: 'data(nodeHeight)',
+              shape: 'round-rectangle',
+              'background-color': '#ffffff',
               'border-width': 2,
-              'border-color': '#003d6b',
-              color: '#1a1a1a',
+              'border-color': COLORS.brand,
+              'border-style': 'solid',
+              color: COLORS.text,
+              'text-outline-color': '#ffffff',
+              'text-outline-width': 2,
             },
           },
           {
-            selector: 'node[center = true]',
+            selector: 'node[center = "true"]',
             style: {
-              'background-color': '#003d6b',
+              'background-color': COLORS.brandDark,
+              'border-color': COLORS.brandDark,
               color: '#ffffff',
-              width: 64,
-              height: 64,
-              'font-size': '11px',
+              'text-outline-color': COLORS.brandDark,
               'font-weight': 'bold',
             },
           },
           {
-            selector: 'node[internal = false]',
+            selector: 'node[internal = "false"]',
             style: {
-              'background-color': '#f3f4f6',
-              'border-color': '#9ca3af',
+              'background-color': '#f5f9fc',
+              'border-color': COLORS.external,
               'border-style': 'dashed',
-              shape: 'round-rectangle',
             },
           },
           {
             selector: 'edge',
             style: {
               width: 2,
-              'line-color': '#6b7280',
-              'target-arrow-color': '#6b7280',
+              'line-color': COLORS.related,
+              'target-arrow-color': COLORS.related,
               'target-arrow-shape': 'triangle',
               'curve-style': 'bezier',
             },
@@ -166,15 +192,15 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
           {
             selector: 'edge[type = "broader"]',
             style: {
-              'line-color': EDGE_COLORS.broader,
-              'target-arrow-color': EDGE_COLORS.broader,
+              'line-color': COLORS.broader,
+              'target-arrow-color': COLORS.broader,
             },
           },
           {
             selector: 'edge[type = "narrower"]',
             style: {
-              'line-color': EDGE_COLORS.narrower,
-              'target-arrow-color': EDGE_COLORS.narrower,
+              'line-color': COLORS.narrower,
+              'target-arrow-color': COLORS.narrower,
             },
           },
           {
@@ -189,18 +215,26 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
             style: {
               'line-style': 'dotted',
               'target-arrow-shape': 'none',
-              'line-color': '#9ca3af',
+              'line-color': COLORS.external,
             },
           },
         ],
         layout: {
-          name: 'concentric',
+          name: 'cose',
           fit: true,
-          padding: 24,
-          concentric: (node) => (node.data('center') ? 2 : 1),
-          levelWidth: () => 2,
+          padding: 40,
+          animate: false,
+          nodeRepulsion: 8000,
+          idealEdgeLength: 120,
+          edgeElasticity: 100,
+          nestingFactor: 1.2,
+          gravity: 0.8,
+          numIter: 1000,
+          initialTemp: 200,
+          coolingFactor: 0.95,
+          minTemp: 1.0,
         },
-        minZoom: 0.4,
+        minZoom: 0.3,
         maxZoom: 2.5,
         wheelSensitivity: 0.3,
       });
@@ -208,7 +242,7 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
       cy.on('tap', 'node', (event) => {
         const node = event.target;
         const id = node.data('id') as string;
-        const isInternal = node.data('internal') as boolean;
+        const isInternal = node.data('internal') === 'true';
         const uri = node.data('uri') as string | undefined;
         if (isInternal && id !== concept.slug) {
           window.location.href = withVersionParam(pageUrl('begrip', id), version);
@@ -234,14 +268,19 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
   }, [concept, versionsManifest, slug]);
 
   return (
-    <details className="relation-graph" open={typeof window !== 'undefined' && window.innerWidth >= 768}>
-      <summary>Relatiegrafiek</summary>
+    <section className="relation-graph" aria-labelledby="relation-graph-heading">
+      <h2 id="relation-graph-heading">Relatiegrafiek</h2>
+      <div className="relation-graph__legend" aria-hidden="true">
+        <span><i className="legend legend--broader" /> Breder</span>
+        <span><i className="legend legend--narrower" /> Smaller</span>
+        <span><i className="legend legend--related" /> Verwant</span>
+      </div>
       <div
         ref={containerRef}
         className="relation-graph__canvas"
         role="img"
         aria-label={`Relatiegrafiek rond ${concept.prefLabel}`}
       />
-    </details>
+    </section>
   );
 }

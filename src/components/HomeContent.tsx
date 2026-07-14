@@ -1,56 +1,56 @@
 import { useEffect, useState } from 'react';
-import type { Collection, Scheme, VersionsManifest } from '../lib/types';
+import type { Collection, Concept, Scheme, VersionsManifest } from '../lib/types';
 import { buildAssetPath, getVersionFromUrl, pageUrl, resolveVersion, withVersionParam } from '../lib/version';
 import SearchBar from './SearchBar';
+import ConceptBrowser from './ConceptBrowser';
 
 interface Props {
   defaultScheme: Scheme;
   defaultCollections: Collection[];
-  defaultTopConcepts: { slug: string; prefLabel: string }[];
+  defaultConcepts: Concept[];
   versionsManifest: VersionsManifest;
 }
 
 export default function HomeContent({
   defaultScheme,
   defaultCollections,
-  defaultTopConcepts,
+  defaultConcepts,
   versionsManifest,
 }: Props) {
   const [version, setVersion] = useState(versionsManifest.latest);
   const [scheme, setScheme] = useState(defaultScheme);
   const [collections, setCollections] = useState(defaultCollections);
-  const [topConcepts, setTopConcepts] = useState(defaultTopConcepts);
+  const [concepts, setConcepts] = useState(defaultConcepts);
+
   useEffect(() => {
     const active = resolveVersion(versionsManifest, getVersionFromUrl());
     setVersion(active);
     if (active === versionsManifest.latest) {
       setScheme(defaultScheme);
       setCollections(defaultCollections);
-      setTopConcepts(defaultTopConcepts);
+      setConcepts(defaultConcepts);
       return;
     }
     Promise.all([
       fetch(buildAssetPath(`build/${active}/scheme.json`)).then((r) => r.json()),
       fetch(buildAssetPath(`build/${active}/collections.json`)).then((r) => r.json()),
-      fetch(buildAssetPath(`build/${active}/top-concepts.json`)).then((r) => r.json()),
+      fetch(buildAssetPath(`build/${active}/concepts.json`)).then((r) => r.json()),
     ])
-      .then(([s, c, t]) => {
+      .then(([s, c, allConcepts]) => {
         setScheme(s);
         setCollections(c);
-        setTopConcepts(t);
+        setConcepts(allConcepts);
       })
       .catch(() => {
         setScheme(defaultScheme);
         setCollections(defaultCollections);
-        setTopConcepts(defaultTopConcepts);
+        setConcepts(defaultConcepts);
       });
-  }, [versionsManifest, defaultScheme, defaultCollections, defaultTopConcepts]);
+  }, [versionsManifest, defaultScheme, defaultCollections, defaultConcepts]);
 
   return (
     <>
-      <h1>{scheme.title}</h1>
-      {scheme.description && <p>{scheme.description}</p>}
-      {scheme.note && <div className="status-banner" role="status">{scheme.note}</div>}
+      {scheme.description && <p className="lead">{scheme.description}</p>}
 
       <SearchBar version={version} />
 
@@ -70,18 +70,7 @@ export default function HomeContent({
         </div>
       </section>
 
-      <section aria-labelledby="top-heading">
-        <details className="top-concepts">
-          <summary id="top-heading">Topbegrippen ({topConcepts.length})</summary>
-          <ul className="concept-list">
-            {topConcepts.map((concept) => (
-              <li key={concept.slug}>
-                <a href={withVersionParam(pageUrl('begrip', concept.slug), version)}>{concept.prefLabel}</a>
-              </li>
-            ))}
-          </ul>
-        </details>
-      </section>
+      <ConceptBrowser defaultConcepts={concepts} versionsManifest={versionsManifest} />
     </>
   );
 }
