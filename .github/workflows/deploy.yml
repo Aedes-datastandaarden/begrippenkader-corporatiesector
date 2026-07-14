@@ -53,7 +53,8 @@ jobs:
 
       - name: Build Astro site
         env:
-          ASTRO_BASE: /begrippenkader-corporatiesector/
+          ASTRO_BASE: /skos-viewer/
+          ASTRO_SITE: https://gerardhv.github.io
         run: npm run build
 
       - name: Upload artifact

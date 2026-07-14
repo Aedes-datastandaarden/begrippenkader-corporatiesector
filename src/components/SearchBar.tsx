@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import MiniSearch from 'minisearch';
 import type { SearchIndexEntry } from '../lib/types';
-import { buildAssetPath } from '../lib/version';
+import { buildAssetPath, pageUrl, withVersionParam } from '../lib/version';
 
 interface Props {
   version: string;
@@ -23,7 +23,6 @@ export default function SearchBar({ version }: Props) {
   const [index, setIndex] = useState<MiniSearch<SearchIndexEntry> | null>(null);
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const base = buildAssetPath('');
 
   useEffect(() => {
     let cancelled = false;
@@ -69,8 +68,6 @@ export default function SearchBar({ version }: Props) {
     return () => document.removeEventListener('mousedown', onClickOutside);
   }, []);
 
-  const versionSuffix = useMemo(() => `?v=${encodeURIComponent(version)}`, [version]);
-
   return (
     <div className="search-bar" ref={containerRef}>
       <label htmlFor="concept-search" className="sr-only">
@@ -92,7 +89,7 @@ export default function SearchBar({ version }: Props) {
         <ul id="search-results" className="search-results" role="listbox">
           {results.map((result) => (
             <li key={result.id} role="option">
-              <a href={`${base}begrip/${result.id}${versionSuffix}`}>
+              <a href={withVersionParam(pageUrl('begrip', result.id), version)}>
                 <span
                   className="search-results__label"
                   dangerouslySetInnerHTML={{

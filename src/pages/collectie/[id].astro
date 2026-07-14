@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import versions from '../../../public/build/versions.json';
 import allCollections from '../../../public/build/0.2/collections.json';
 import type { Collection } from '../../lib/types';
+import { pageUrl, withVersionParam } from '../../lib/version';
 
 export function getStaticPaths() {
   const collections = allCollections as Collection[];
@@ -25,16 +26,17 @@ if (activeVersion !== '0.2') {
 
 const collection = collections.find((c) => c.slug === id);
 if (!collection) {
-  return Astro.redirect(`${import.meta.env.BASE_URL}?v=${activeVersion}`);
+  return Astro.redirect(withVersionParam(pageUrl(), activeVersion));
 }
 
-const base = import.meta.env.BASE_URL;
-const versionSuffix = `?v=${activeVersion}`;
+function begripHref(slug: string) {
+  return withVersionParam(pageUrl('begrip', slug), activeVersion);
+}
 ---
 
 <Layout title={collection.prefLabel}>
   <nav aria-label="Broodkruimel">
-    <a href={`${base}?v=${activeVersion}`}>Home</a> → {collection.prefLabel}
+    <a href={withVersionParam(pageUrl(), activeVersion)}>Home</a> → {collection.prefLabel}
   </nav>
 
   <h1>{collection.prefLabel}</h1>
@@ -43,7 +45,7 @@ const versionSuffix = `?v=${activeVersion}`;
   <ul class="concept-list">
     {collection.members.map((member) => (
       <li>
-        <a href={`${base}begrip/${member.slug}${versionSuffix}`}>{member.prefLabel}</a>
+        <a href={begripHref(member.slug)}>{member.prefLabel}</a>
       </li>
     ))}
   </ul>

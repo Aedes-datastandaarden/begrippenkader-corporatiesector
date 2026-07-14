@@ -71,7 +71,7 @@ src/                        # Astro-site
 ## GitHub Pages
 
 - Workflow: `.github/workflows/deploy.yml`
-- Base path: `/begrippenkader-corporatiesector/` (project pages)
+- Base path: `/skos-viewer/` (moet overeenkomen met de GitHub-reponaam)
 - Configureer GitHub Pages op **GitHub Actions** als bron
 
 ## Relatie tot SKOS Manager

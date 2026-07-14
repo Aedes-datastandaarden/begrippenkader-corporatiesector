@@ -12,6 +12,13 @@ export function buildAssetPath(path: string): string {
   return `${base}${normalized}`;
 }
 
+/** Build a page URL with trailing slash (required for GitHub Pages). */
+export function pageUrl(...parts: string[]): string {
+  const base = getBaseUrl();
+  if (parts.length === 0) return base;
+  return `${base}${parts.join('/')}/`;
+}
+
 export function getVersionFromUrl(): string | null {
   if (typeof window === 'undefined') return null;
   const params = new URLSearchParams(window.location.search);

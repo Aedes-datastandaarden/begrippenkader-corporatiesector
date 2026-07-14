@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { Collection, Scheme, VersionsManifest } from '../lib/types';
-import { buildAssetPath, getVersionFromUrl, resolveVersion } from '../lib/version';
+import { buildAssetPath, getVersionFromUrl, pageUrl, resolveVersion, withVersionParam } from '../lib/version';
 import SearchBar from './SearchBar';
 
 interface Props {
@@ -20,8 +20,6 @@ export default function HomeContent({
   const [scheme, setScheme] = useState(defaultScheme);
   const [collections, setCollections] = useState(defaultCollections);
   const [topConcepts, setTopConcepts] = useState(defaultTopConcepts);
-  const base = buildAssetPath('');
-
   useEffect(() => {
     const active = resolveVersion(versionsManifest, getVersionFromUrl());
     setVersion(active);
@@ -48,8 +46,6 @@ export default function HomeContent({
       });
   }, [versionsManifest, defaultScheme, defaultCollections, defaultTopConcepts]);
 
-  const versionSuffix = `?v=${encodeURIComponent(version)}`;
-
   return (
     <>
       <h1>{scheme.title}</h1>
@@ -65,7 +61,7 @@ export default function HomeContent({
             <a
               key={collection.slug}
               className="card"
-              href={`${base}collectie/${collection.slug}${versionSuffix}`}
+              href={withVersionParam(pageUrl('collectie', collection.slug), version)}
             >
               <p className="card__title">{collection.prefLabel}</p>
               <p className="card__meta">{collection.memberCount} begrippen</p>
@@ -80,7 +76,7 @@ export default function HomeContent({
           <ul className="concept-list">
             {topConcepts.map((concept) => (
               <li key={concept.slug}>
-                <a href={`${base}begrip/${concept.slug}${versionSuffix}`}>{concept.prefLabel}</a>
+                <a href={withVersionParam(pageUrl('begrip', concept.slug), version)}>{concept.prefLabel}</a>
               </li>
             ))}
           </ul>

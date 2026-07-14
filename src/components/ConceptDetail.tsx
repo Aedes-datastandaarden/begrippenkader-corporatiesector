@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { Concept } from '../lib/types';
-import { buildAssetPath, getVersionFromUrl, resolveVersion } from '../lib/version';
+import { buildAssetPath, getVersionFromUrl, pageUrl, resolveVersion, withVersionParam } from '../lib/version';
 
 interface Props {
   slug: string;
@@ -27,7 +27,6 @@ const CATEGORY_LABELS: Record<string, string> = {
 export default function ConceptDetail({ slug, defaultConcept, versionsManifest }: Props) {
   const [concept, setConcept] = useState(defaultConcept);
   const [version, setVersion] = useState(versionsManifest.latest);
-  const base = buildAssetPath('');
 
   useEffect(() => {
     const active = resolveVersion(versionsManifest, getVersionFromUrl());
@@ -44,8 +43,6 @@ export default function ConceptDetail({ slug, defaultConcept, versionsManifest }
       })
       .catch(() => setConcept(defaultConcept));
   }, [slug, defaultConcept, versionsManifest]);
-
-  const versionSuffix = `?v=${encodeURIComponent(version)}`;
 
   const grouped = new Map<string, typeof concept.sources>();
   const urlSources = concept.sources.filter((s) => s.url);
@@ -100,20 +97,17 @@ export default function ConceptDetail({ slug, defaultConcept, versionsManifest }
       <RelationSection
         title="Breder begrip"
         refs={concept.broaderResolved.filter((r) => r.internal)}
-        base={base}
-        versionSuffix={versionSuffix}
+        version={version}
       />
       <RelationSection
         title="Smaller begrip"
         refs={concept.narrowerResolved.filter((r) => r.internal)}
-        base={base}
-        versionSuffix={versionSuffix}
+        version={version}
       />
       <RelationSection
         title="Verwant begrip"
         refs={concept.relatedResolved.filter((r) => r.internal)}
-        base={base}
-        versionSuffix={versionSuffix}
+        version={version}
       />
       <RelationSection
         title="Overeenkomstig begrip (extern)"
@@ -145,14 +139,12 @@ export default function ConceptDetail({ slug, defaultConcept, versionsManifest }
 function RelationSection({
   title,
   refs,
-  base,
-  versionSuffix,
+  version,
   external,
 }: {
   title: string;
   refs: { slug: string | null; prefLabel: string; uri: string }[];
-  base?: string;
-  versionSuffix?: string;
+  version?: string;
   external?: boolean;
 }) {
   if (refs.length === 0) return null;
@@ -165,7 +157,7 @@ function RelationSection({
             {external ? (
               <a href={ref.uri} rel="noopener noreferrer" target="_blank">{ref.prefLabel}</a>
             ) : (
-              <a href={`${base}begrip/${ref.slug}${versionSuffix}`}>{ref.prefLabel}</a>
+              <a href={withVersionParam(pageUrl('begrip', ref.slug!), version!)}>{ref.prefLabel}</a>
             )}
           </li>
         ))}

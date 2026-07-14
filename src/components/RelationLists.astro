@@ -1,5 +1,6 @@
 ---
 import type { RelationRef } from '../lib/types';
+import { pageUrl, withVersionParam } from '../lib/version';
 
 interface Props {
   broader: RelationRef[];
@@ -11,8 +12,11 @@ interface Props {
 }
 
 const { broader, narrower, related, exactMatch, closeMatch, version } = Astro.props;
-const base = import.meta.env.BASE_URL;
-const versionSuffix = version ? `?v=${version}` : '';
+
+function begripHref(slug: string) {
+  const path = pageUrl('begrip', slug);
+  return version ? withVersionParam(path, version) : path;
+}
 
 function renderInternal(refs: RelationRef[]) {
   return refs.filter((r) => r.internal);
@@ -33,7 +37,7 @@ function renderExternal(refs: RelationRef[]) {
         <ul class="concept-list">
           {renderInternal(broader).map((ref) => (
             <li>
-              <a href={`${base}begrip/${ref.slug}${versionSuffix}`}>{ref.prefLabel}</a>
+              <a href={begripHref(ref.slug!)}>{ref.prefLabel}</a>
             </li>
           ))}
         </ul>
@@ -46,7 +50,7 @@ function renderExternal(refs: RelationRef[]) {
         <ul class="concept-list">
           {renderInternal(narrower).map((ref) => (
             <li>
-              <a href={`${base}begrip/${ref.slug}${versionSuffix}`}>{ref.prefLabel}</a>
+              <a href={begripHref(ref.slug!)}>{ref.prefLabel}</a>
             </li>
           ))}
         </ul>
@@ -59,7 +63,7 @@ function renderExternal(refs: RelationRef[]) {
         <ul class="concept-list">
           {renderInternal(related).map((ref) => (
             <li>
-              <a href={`${base}begrip/${ref.slug}${versionSuffix}`}>{ref.prefLabel}</a>
+              <a href={begripHref(ref.slug!)}>{ref.prefLabel}</a>
             </li>
           ))}
         </ul>

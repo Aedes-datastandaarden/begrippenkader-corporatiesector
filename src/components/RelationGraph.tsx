@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import cytoscape, { type Core, type ElementDefinition } from 'cytoscape';
 import type { Concept, GraphEdge } from '../lib/types';
-import { buildAssetPath, getVersionFromUrl, resolveVersion } from '../lib/version';
+import { buildAssetPath, getVersionFromUrl, pageUrl, resolveVersion, withVersionParam } from '../lib/version';
 
 interface Props {
   slug: string;
@@ -19,7 +19,6 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
   const containerRef = useRef<HTMLDivElement>(null);
   const cyRef = useRef<Core | null>(null);
   const [concept, setConcept] = useState(defaultConcept);
-  const base = buildAssetPath('');
 
   useEffect(() => {
     const active = resolveVersion(versionsManifest, getVersionFromUrl());
@@ -212,7 +211,7 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
         const isInternal = node.data('internal') as boolean;
         const uri = node.data('uri') as string | undefined;
         if (isInternal && id !== concept.slug) {
-          window.location.href = `${base}begrip/${id}?v=${encodeURIComponent(version)}`;
+          window.location.href = withVersionParam(pageUrl('begrip', id), version);
         } else if (!isInternal && uri) {
           window.open(uri, '_blank', 'noopener,noreferrer');
         }
@@ -232,7 +231,7 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
         cyRef.current = null;
       }
     };
-  }, [concept, versionsManifest, base, slug]);
+  }, [concept, versionsManifest, slug]);
 
   return (
     <details className="relation-graph" open={typeof window !== 'undefined' && window.innerWidth >= 768}>

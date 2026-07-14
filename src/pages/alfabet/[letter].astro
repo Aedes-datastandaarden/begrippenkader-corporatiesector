@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import AlphabetNav from '../../components/AlphabetNav.astro';
 import versions from '../../../public/build/versions.json';
 import alphabetIndex from '../../../public/build/0.2/alphabet-index.json';
+import { pageUrl, withVersionParam } from '../../lib/version';
 
 export function getStaticPaths() {
   const letters = 'abcdefghijklmnopqrstuvwxyz'.split('').concat(['hash']);
@@ -26,9 +27,11 @@ if (activeVersion !== '0.2') {
 }
 
 const concepts = index[letterKey] ?? [];
-const base = import.meta.env.BASE_URL;
-const versionSuffix = `?v=${activeVersion}`;
 const pageTitle = letter === 'hash' ? 'Overige begrippen' : `Begrippen met ${letterKey}`;
+
+function begripHref(slug: string) {
+  return withVersionParam(pageUrl('begrip', slug), activeVersion);
+}
 ---
 
 <Layout title={pageTitle}>
@@ -42,7 +45,7 @@ const pageTitle = letter === 'hash' ? 'Overige begrippen' : `Begrippen met ${let
     <ul class="concept-list">
       {concepts.map((concept) => (
         <li>
-          <a href={`${base}begrip/${concept.slug}${versionSuffix}`}>{concept.prefLabel}</a>
+          <a href={begripHref(concept.slug)}>{concept.prefLabel}</a>
         </li>
       ))}
     </ul>
