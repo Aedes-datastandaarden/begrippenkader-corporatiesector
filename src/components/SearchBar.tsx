@@ -1,14 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
-import MiniSearch from 'minisearch';
+import MiniSearch, { type SearchResult } from 'minisearch';
 import type { SearchIndexEntry } from '../lib/types';
-import { buildAssetPath, pageUrl, withVersionParam } from '../lib/version';
+import { buildAssetPath } from '../lib/version';
 
 interface Props {
   version: string;
-}
-
-interface SearchResult extends SearchIndexEntry {
-  score: number;
+  onSelect?: (slug: string) => void;
 }
 
 function highlight(text: string, query: string): string {
@@ -17,7 +14,7 @@ function highlight(text: string, query: string): string {
   return text.replace(new RegExp(`(${escaped})`, 'gi'), '<mark>$1</mark>');
 }
 
-export default function SearchBar({ version }: Props) {
+export default function SearchBar({ version, onSelect }: Props) {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [index, setIndex] = useState<MiniSearch<SearchIndexEntry> | null>(null);
@@ -54,7 +51,7 @@ export default function SearchBar({ version }: Props) {
       return;
     }
     const found = index.search(query, { combineWith: 'AND' }).slice(0, 12);
-    setResults(found as SearchResult[]);
+    setResults(found);
     setOpen(true);
   }, [query, index]);
 
@@ -89,27 +86,59 @@ export default function SearchBar({ version }: Props) {
         <ul id="search-results" className="search-results" role="listbox">
           {results.map((result) => (
             <li key={result.id} role="option">
-              <a href={withVersionParam(pageUrl('begrip', result.id), version)}>
-                <span
-                  className="search-results__label"
-                  dangerouslySetInnerHTML={{
-                    __html: highlight(result.prefLabel, query),
+              {onSelect ? (
+                <button
+                  type="button"
+                  className="search-results__button"
+                  onClick={() => {
+                    onSelect(result.id);
+                    setOpen(false);
+                    setQuery('');
                   }}
-                />
-                {result.definition && (
+                >
                   <span
-                    className="search-results__snippet"
+                    className="search-results__label"
                     dangerouslySetInnerHTML={{
-                      __html: highlight(
-                        result.definition.length > 120
-                          ? `${result.definition.slice(0, 120)}…`
-                          : result.definition,
-                        query,
-                      ),
+                      __html: highlight(result.prefLabel, query),
                     }}
                   />
-                )}
-              </a>
+                  {result.definition && (
+                    <span
+                      className="search-results__snippet"
+                      dangerouslySetInnerHTML={{
+                        __html: highlight(
+                          result.definition.length > 120
+                            ? `${result.definition.slice(0, 120)}…`
+                            : result.definition,
+                          query,
+                        ),
+                      }}
+                    />
+                  )}
+                </button>
+              ) : (
+                <a href={`begrip/${result.id}/`}>
+                  <span
+                    className="search-results__label"
+                    dangerouslySetInnerHTML={{
+                      __html: highlight(result.prefLabel, query),
+                    }}
+                  />
+                  {result.definition && (
+                    <span
+                      className="search-results__snippet"
+                      dangerouslySetInnerHTML={{
+                        __html: highlight(
+                          result.definition.length > 120
+                            ? `${result.definition.slice(0, 120)}…`
+                            : result.definition,
+                          query,
+                        ),
+                      }}
+                    />
+                  )}
+                </a>
+              )}
             </li>
           ))}
         </ul>
@@ -125,6 +154,7 @@ export default function SearchBar({ version }: Props) {
           font-size: 1rem;
           border: 1px solid var(--color-border);
           border-radius: var(--radius);
+          -webkit-appearance: none;
         }
         .search-bar input:focus {
           outline: 2px solid var(--color-accent);
@@ -146,14 +176,22 @@ export default function SearchBar({ version }: Props) {
           max-height: 24rem;
           overflow-y: auto;
         }
-        .search-results a {
+        .search-results a,
+        .search-results__button {
           display: block;
+          width: 100%;
           padding: 0.625rem 1rem;
           text-decoration: none;
           color: inherit;
+          border: none;
           border-bottom: 1px solid var(--color-border);
+          background: transparent;
+          font: inherit;
+          text-align: left;
+          cursor: pointer;
         }
-        .search-results a:hover {
+        .search-results a:hover,
+        .search-results__button:hover {
           background: var(--color-accent-light);
         }
         .search-results__label {

@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { Collection, Concept, Scheme, VersionsManifest } from '../lib/types';
 import { buildAssetPath, getVersionFromUrl, pageUrl, resolveVersion, withVersionParam } from '../lib/version';
+import { getBegripFromUrl, setBegripInUrl } from '../lib/url-state';
 import SearchBar from './SearchBar';
-import ConceptBrowser from './ConceptBrowser';
+import ConceptExplorer from './ConceptExplorer';
 
 interface Props {
   defaultScheme: Scheme;
@@ -21,6 +22,7 @@ export default function HomeContent({
   const [scheme, setScheme] = useState(defaultScheme);
   const [collections, setCollections] = useState(defaultCollections);
   const [concepts, setConcepts] = useState(defaultConcepts);
+  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
 
   useEffect(() => {
     const active = resolveVersion(versionsManifest, getVersionFromUrl());
@@ -48,13 +50,43 @@ export default function HomeContent({
       });
   }, [versionsManifest, defaultScheme, defaultCollections, defaultConcepts]);
 
+  const sortedConcepts = useMemo(
+    () => [...concepts].sort((a, b) => a.prefLabel.localeCompare(b.prefLabel, 'nl')),
+    [concepts],
+  );
+
+  useEffect(() => {
+    const fromUrl = getBegripFromUrl();
+    if (fromUrl && sortedConcepts.some((c) => c.slug === fromUrl)) {
+      setSelectedSlug(fromUrl);
+      return;
+    }
+    if (sortedConcepts.length > 0) {
+      setSelectedSlug((current) =>
+        current && sortedConcepts.some((c) => c.slug === current) ? current : sortedConcepts[0].slug,
+      );
+    }
+  }, [sortedConcepts]);
+
+  function selectConcept(slug: string) {
+    setSelectedSlug(slug);
+    setBegripInUrl(slug);
+  }
+
   return (
-    <>
+    <div className="home-content">
       {scheme.description && <p className="lead">{scheme.description}</p>}
 
-      <SearchBar version={version} />
+      <SearchBar version={version} onSelect={selectConcept} />
 
-      <section aria-labelledby="collections-heading">
+      <ConceptExplorer
+        concepts={concepts}
+        versionsManifest={versionsManifest}
+        selectedSlug={selectedSlug}
+        onSelect={selectConcept}
+      />
+
+      <section className="home-collections" aria-labelledby="collections-heading">
         <h2 id="collections-heading">Thematische collecties</h2>
         <div className="card-grid">
           {collections.map((collection) => (
@@ -69,8 +101,6 @@ export default function HomeContent({
           ))}
         </div>
       </section>
-
-      <ConceptBrowser defaultConcepts={concepts} versionsManifest={versionsManifest} />
-    </>
+    </div>
   );
 }

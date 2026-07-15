@@ -7,6 +7,8 @@ interface Props {
   slug: string;
   defaultConcept: Concept;
   versionsManifest: VersionsManifest;
+  embedded?: boolean;
+  onSelectConcept?: (slug: string) => void;
 }
 
 const COLORS = {
@@ -20,14 +22,51 @@ const COLORS = {
   external: '#999999',
 };
 
-function labelSize(label: string): { width: number; height: number; fontSize: number; maxWidth: number } {
+function labelSize(label: string, scale = 1): { width: number; height: number; fontSize: number; maxWidth: number } {
   const len = label.length;
-  if (len <= 12) return { width: 90, height: 44, fontSize: 11, maxWidth: 80 };
-  if (len <= 20) return { width: 110, height: 52, fontSize: 10, maxWidth: 100 };
-  return { width: 130, height: 60, fontSize: 9, maxWidth: 120 };
+  let base;
+  if (len <= 12) base = { width: 90, height: 44, fontSize: 11, maxWidth: 80 };
+  else if (len <= 20) base = { width: 110, height: 52, fontSize: 10, maxWidth: 100 };
+  else base = { width: 130, height: 60, fontSize: 9, maxWidth: 120 };
+  return {
+    width: Math.round(base.width * scale),
+    height: Math.round(base.height * scale),
+    fontSize: Math.round(base.fontSize * scale),
+    maxWidth: Math.round(base.maxWidth * scale),
+  };
 }
 
-export default function RelationGraph({ slug, defaultConcept, versionsManifest }: Props) {
+function fitGraph(cy: Core, padding: number) {
+  cy.resize();
+  cy.fit(cy.elements(), padding);
+}
+
+function layoutOptions(nodeCount: number, embedded?: boolean) {
+  const compact = nodeCount <= 6;
+  return {
+    name: 'cose' as const,
+    fit: false,
+    animate: false,
+    padding: embedded ? 16 : 32,
+    nodeRepulsion: compact ? 3500 : 6000,
+    idealEdgeLength: compact ? 70 : 100,
+    edgeElasticity: 100,
+    nestingFactor: 1.1,
+    gravity: compact ? 1.2 : 0.8,
+    numIter: compact ? 600 : 1000,
+    initialTemp: 200,
+    coolingFactor: 0.95,
+    minTemp: 1.0,
+  };
+}
+
+export default function RelationGraph({
+  slug,
+  defaultConcept,
+  versionsManifest,
+  embedded,
+  onSelectConcept,
+}: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const cyRef = useRef<Core | null>(null);
   const [concept, setConcept] = useState(defaultConcept);
@@ -70,12 +109,22 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
         return false;
       });
 
+      const externalCount = [...concept.exactMatchResolved, ...concept.closeMatchResolved].filter(
+        (r) => !r.internal,
+      ).length;
+      const totalNodes = connected.size + externalCount;
+
+      function nodeScaleFor(count: number) {
+        return count <= 5 ? 1.15 : count <= 10 ? 1 : 0.9;
+      }
+
+      const nodeScale = nodeScaleFor(totalNodes);
       const elements: ElementDefinition[] = [];
 
       for (const nodeSlug of connected) {
         const isCenter = nodeSlug === concept.slug;
         const label = isCenter ? concept.prefLabel : (labelBySlug.get(nodeSlug) ?? nodeSlug);
-        const size = labelSize(label);
+        const size = labelSize(label, nodeScale);
         elements.push({
           data: {
             id: nodeSlug,
@@ -104,7 +153,7 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
       for (const ref of [...concept.exactMatchResolved, ...concept.closeMatchResolved]) {
         if (!ref.internal) {
           const extId = `ext-${ref.uri}`;
-          const size = labelSize(ref.prefLabel);
+          const size = labelSize(ref.prefLabel, nodeScale);
           elements.push({
             data: {
               id: extId,
@@ -135,8 +184,11 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
         cyRef.current.destroy();
       }
 
+      const container = containerRef.current;
+      const fitPadding = embedded ? 12 : 32;
+
       const cy = cytoscape({
-        container: containerRef.current,
+        container,
         elements,
         style: [
           {
@@ -219,25 +271,19 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
             },
           },
         ],
-        layout: {
-          name: 'cose',
-          fit: true,
-          padding: 40,
-          animate: false,
-          nodeRepulsion: 8000,
-          idealEdgeLength: 120,
-          edgeElasticity: 100,
-          nestingFactor: 1.2,
-          gravity: 0.8,
-          numIter: 1000,
-          initialTemp: 200,
-          coolingFactor: 0.95,
-          minTemp: 1.0,
-        },
-        minZoom: 0.3,
-        maxZoom: 2.5,
+        minZoom: 0.2,
+        maxZoom: 3,
         wheelSensitivity: 0.3,
       });
+
+      const layout = cy.layout(layoutOptions(totalNodes, embedded));
+      layout.run();
+      layout.one('layoutstop', () => fitGraph(cy, fitPadding));
+
+      const resizeObserver = new ResizeObserver(() => {
+        fitGraph(cy, fitPadding);
+      });
+      resizeObserver.observe(container);
 
       cy.on('tap', 'node', (event) => {
         const node = event.target;
@@ -245,30 +291,46 @@ export default function RelationGraph({ slug, defaultConcept, versionsManifest }
         const isInternal = node.data('internal') === 'true';
         const uri = node.data('uri') as string | undefined;
         if (isInternal && id !== concept.slug) {
-          window.location.href = withVersionParam(pageUrl('begrip', id), version);
+          if (embedded && onSelectConcept) {
+            onSelectConcept(id);
+          } else {
+            window.location.href = withVersionParam(pageUrl('begrip', id), version);
+          }
         } else if (!isInternal && uri) {
           window.open(uri, '_blank', 'noopener,noreferrer');
         }
       });
 
       cyRef.current = cy;
+
+      return () => resizeObserver.disconnect();
     }
 
-    init().catch(() => {
-      /* graph is optional enhancement */
-    });
+    let disconnectResize: (() => void) | undefined;
+
+    init()
+      .then((cleanup) => {
+        disconnectResize = cleanup;
+      })
+      .catch(() => {
+        /* graph is optional enhancement */
+      });
 
     return () => {
       cancelled = true;
+      disconnectResize?.();
       if (cyRef.current) {
         cyRef.current.destroy();
         cyRef.current = null;
       }
     };
-  }, [concept, versionsManifest, slug]);
+  }, [concept, versionsManifest, slug, embedded, onSelectConcept]);
 
   return (
-    <section className="relation-graph" aria-labelledby="relation-graph-heading">
+    <section
+      className={`relation-graph${embedded ? ' relation-graph--embedded' : ''}`}
+      aria-labelledby="relation-graph-heading"
+    >
       <h2 id="relation-graph-heading">Relatiegrafiek</h2>
       <div className="relation-graph__legend" aria-hidden="true">
         <span><i className="legend legend--broader" /> Breder</span>
