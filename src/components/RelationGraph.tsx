@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import cytoscape, { type Core, type ElementDefinition } from 'cytoscape';
 import type { Concept, GraphEdge, VersionsManifest } from '../lib/types';
-import { buildAssetPath, getVersionFromUrl, pageUrl, resolveVersion, withVersionParam } from '../lib/version';
+import { buildAssetPath, conceptUrl, getVersionFromUrl, pageUrl, resolveVersion, withVersionParam } from '../lib/version';
 
 interface Props {
   slug: string;
@@ -294,7 +294,7 @@ export default function RelationGraph({
           if (embedded && onSelectConcept) {
             onSelectConcept(id);
           } else {
-            window.location.href = withVersionParam(pageUrl('begrip', id), version);
+            window.location.href = withVersionParam(conceptUrl(id), version);
           }
         } else if (!isInternal && uri) {
           window.open(uri, '_blank', 'noopener,noreferrer');

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import MiniSearch, { type SearchResult } from 'minisearch';
 import type { SearchIndexEntry } from '../lib/types';
-import { buildAssetPath } from '../lib/version';
+import { buildAssetPath, conceptUrl, withVersionParam } from '../lib/version';
 
 interface Props {
   version: string;
@@ -117,7 +117,7 @@ export default function SearchBar({ version, onSelect }: Props) {
                   )}
                 </button>
               ) : (
-                <a href={`begrip/${result.id}/`}>
+                <a href={withVersionParam(conceptUrl(result.id), version)}>
                   <span
                     className="search-results__label"
                     dangerouslySetInnerHTML={{

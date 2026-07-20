@@ -1,5 +1,5 @@
 import type { Concept } from '../lib/types';
-import { pageUrl, withVersionParam } from '../lib/version';
+import { conceptUrl, withVersionParam } from '../lib/version';
 
 interface Props {
   concept: Concept;
@@ -43,7 +43,7 @@ export default function ConceptDetailView({ concept, embedded, version, onSelect
     }
     if (ref.internal && ref.slug) {
       return (
-        <a href={withVersionParam(pageUrl('begrip', ref.slug), version ?? '')}>
+        <a href={withVersionParam(conceptUrl(ref.slug!), version ?? '')}>
           {ref.prefLabel}
         </a>
       );

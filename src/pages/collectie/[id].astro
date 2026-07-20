@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import versions from '../../../public/build/versions.json';
 import allCollections from '../../../public/build/0.2/collections.json';
 import type { Collection } from '../../lib/types';
-import { pageUrl, withVersionParam } from '../../lib/version';
+import { conceptUrl, pageUrl, withVersionParam } from '../../lib/version';
 
 export function getStaticPaths() {
   const collections = allCollections as Collection[];
@@ -30,7 +30,7 @@ if (!collection) {
 }
 
 function begripHref(slug: string) {
-  return withVersionParam(pageUrl('begrip', slug), activeVersion);
+  return withVersionParam(conceptUrl(slug), activeVersion);
 }
 ---
 

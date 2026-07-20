@@ -1,6 +1,6 @@
 ---
 import type { RelationRef } from '../lib/types';
-import { pageUrl, withVersionParam } from '../lib/version';
+import { conceptUrl, pageUrl, withVersionParam } from '../lib/version';
 
 interface Props {
   broader: RelationRef[];
@@ -14,7 +14,7 @@ interface Props {
 const { broader, narrower, related, exactMatch, closeMatch, version } = Astro.props;
 
 function begripHref(slug: string) {
-  const path = pageUrl('begrip', slug);
+  const path = conceptUrl(slug);
   return version ? withVersionParam(path, version) : path;
 }
 

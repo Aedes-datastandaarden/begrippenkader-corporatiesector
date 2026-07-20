@@ -7,16 +7,21 @@ export function getBaseUrl(): string {
 }
 
 export function buildAssetPath(path: string): string {
-  const base = getBaseUrl();
+  const base = getBaseUrl().replace(/\/?$/, '/');
   const normalized = path.startsWith('/') ? path.slice(1) : path;
   return `${base}${normalized}`;
 }
 
-/** Build a page URL with trailing slash (required for GitHub Pages). */
+/** Build a page URL without trailing slash (matches `trailingSlash: 'never'`). */
 export function pageUrl(...parts: string[]): string {
-  const base = getBaseUrl();
+  const base = getBaseUrl().replace(/\/$/, '') || '/';
   if (parts.length === 0) return base;
-  return `${base}${parts.join('/')}/`;
+  return `${base}/${parts.join('/')}`;
+}
+
+/** URL for a concept detail page, e.g. `/begrippenkader-corporatiesector/aftoppingsgrens`. */
+export function conceptUrl(slug: string): string {
+  return pageUrl(slug);
 }
 
 export function getVersionFromUrl(): string | null {

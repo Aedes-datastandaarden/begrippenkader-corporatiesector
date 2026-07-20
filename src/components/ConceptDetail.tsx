@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { Concept, VersionsManifest } from '../lib/types';
-import { buildAssetPath, getBaseUrl, getVersionFromUrl, resolveVersion, withVersionParam } from '../lib/version';
+import { buildAssetPath, getVersionFromUrl, pageUrl, resolveVersion, withVersionParam } from '../lib/version';
 import ConceptDetailView from './ConceptDetailView';
 
 interface Props {
@@ -32,7 +32,7 @@ export default function ConceptDetail({ slug, defaultConcept, versionsManifest }
   return (
     <>
       <p className="concept-detail__back">
-        <a href={withVersionParam(getBaseUrl(), version)}>← Terug naar overzicht</a>
+        <a href={withVersionParam(pageUrl(), version)}>← Terug naar overzicht</a>
       </p>
       <ConceptDetailView concept={concept} version={version} />
       <p className="uri-meta">

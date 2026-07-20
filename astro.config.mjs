@@ -7,7 +7,7 @@ const base = process.env.ASTRO_BASE || '/begrippenkader-corporatiesector/';
 export default defineConfig({
   site: process.env.ASTRO_SITE || 'https://aedes-datastandaarden.github.io',
   base,
-  trailingSlash: 'always',
+  trailingSlash: 'never',
   integrations: [react()],
   output: 'static',
 });
