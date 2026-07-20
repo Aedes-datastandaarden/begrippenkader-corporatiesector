@@ -126,6 +126,12 @@ export default function ConceptDetailView({ concept, embedded, version, onSelect
           </aside>
         )}
       </div>
+
+      <p className="uri-meta">
+        <small>
+          Canonieke URI: <a href={concept.uri}>{concept.uri}</a>
+        </small>
+      </p>
     </article>
   );
 }

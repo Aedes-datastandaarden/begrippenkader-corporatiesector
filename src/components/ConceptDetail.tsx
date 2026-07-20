@@ -35,11 +35,6 @@ export default function ConceptDetail({ slug, defaultConcept, versionsManifest }
         <a href={withVersionParam(pageUrl(), version)}>← Terug naar overzicht</a>
       </p>
       <ConceptDetailView concept={concept} version={version} />
-      <p className="uri-meta">
-        <small>
-          Canonieke URI: <a href={concept.uri}>{concept.uri}</a>
-        </small>
-      </p>
     </>
   );
 }

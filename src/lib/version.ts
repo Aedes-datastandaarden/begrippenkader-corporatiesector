@@ -19,9 +19,9 @@ export function pageUrl(...parts: string[]): string {
   return `${base}/${parts.join('/')}`;
 }
 
-/** URL for a concept detail page, e.g. `/begrippenkader-corporatiesector/aftoppingsgrens`. */
+/** URL for a concept detail page, e.g. `/begrippenkader-corporatiesector/id/begrip/aftoppingsgrens`. */
 export function conceptUrl(slug: string): string {
-  return pageUrl(slug);
+  return pageUrl('id', 'begrip', slug);
 }
 
 export function getVersionFromUrl(): string | null {
