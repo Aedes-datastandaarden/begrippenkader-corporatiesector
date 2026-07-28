@@ -100,9 +100,9 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Door de overheid aangewezen diensten met een publiek belang waarvoor woningcorporaties compensatie mogen ontvangen, waaronder het bouwen, verhuren en beheren van sociale huurwoningen, het beheren van bepaald maatschappelijk vastgoed en het bijdragen aan leefbaarheid."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "DAEB"@nl ;
-    skos:related bgc:niet-daeb,
-        bgc:passend-toewijzen,
-        bgc:sociale-huurwoning .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/niet-daeb>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/passend-toewijzen>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/sociale-huurwoning> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/aftoppingsgrens> a skos:Concept ;
     dct:source "Afgeleid van artikel 20 en 21 Wet op de huurtoeslag" ;
@@ -111,9 +111,9 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:example "In 2026 is de lage aftoppingsgrens (1 of 2 personen) € 713,02 en de hoge aftoppingsgrens (3 of meer personen) € 764,14. Een eenpersoonshuishouden met een rekenhuur van € 750 krijgt over het deel tussen de kwaliteitskortingsgrens en € 713,02 nog 65% vergoed, en over het deel tussen € 713,02 en € 750 nog 40%."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "aftoppingsgrens"@nl ;
-    skos:related bgc:huurtoeslag,
-        bgc:passend-toewijzen,
-        bgc:rekenhuur .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurtoeslag>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/passend-toewijzen>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/rekenhuur> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/beleidswaarde> a skos:Concept ;
     dct:source <https://www.ilent.nl/documenten/autoriteit-woningcorporaties/publicaties-cijfers-en-wetgeving/publicaties/handboek-beleidswaarde>,
@@ -123,8 +123,8 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:example "Een corporatie bepaalt voor een huurwoning eerst de marktwaarde in verhuurde staat op € 180.000. Omdat de woning tegen een lagere huur wordt verhuurd dan maximaal mogelijk is, het onderhoudsniveau hoger ligt dan bij een commerciële verhuurder gebruikelijk is, en de beheerkosten hoger zijn, worden hierop afslagen toegepast voor beschikbaarheid, betaalbaarheid, onderhoud en beheer. Na verwerking van deze afslagen resteert een beleidswaarde van bijvoorbeeld € 95.000."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "beleidswaarde"@nl ;
-    skos:related bgc:marktwaarde,
-        bgc:vastgoed .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/marktwaarde>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/vastgoed> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/besluit-toegelaten-instellingen-volkshuisvesting> a skos:Concept ;
     dct:source <https://wetten.overheid.nl/BWBR0036702>,
@@ -134,21 +134,21 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Algemene maatregel van bestuur die de Woningwet nader uitwerkt, onder meer op het gebied van toewijzing, de scheiding tussen DAEB en niet-DAEB en de verantwoording."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "Besluit toegelaten instellingen volkshuisvesting"@nl ;
-    skos:related bgc:regeling-toegelaten-instellingen-volkshuisvesting,
-        bgc:woningwet .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/regeling-toegelaten-instellingen-volkshuisvesting>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woningwet> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bewoner> a skos:Concept ;
     dct:source <https://wetten.overheid.nl/BWBR0005181/2026-07-01>,
         "Overgenomen uit artikel 1 Woningwet" ;
     rdfs:comment "Alle mensen die met instemming van de huurder in de woning wonen zijn bewoner; de huurder is daar één van. Het begrip is onder meer van belang bij het bepalen van het huishoudinkomen."@nl ;
-    skos:broader bgc:huurder ;
+    skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurder> ;
     skos:definition "Huurder en degene die met instemming van de huurder zijn hoofdverblijf in de woongelegenheid heeft."@nl ;
     skos:example "Een huurder woont samen met zijn partner en een inwonende meerderjarige zoon. Beiden zijn, met instemming van de huurder, bewoner van de woning."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "bewoner"@nl ;
-    skos:related bgc:huishouden,
-        bgc:huishoudinkomen,
-        bgc:huurder ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huishouden>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huishoudinkomen>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurder> ;
     skos:scopeNote "Bepalend is het feitelijk hebben van hoofdverblijf, niet een inschrijving op het adres in de Basisregistratie Personen (BRP); een BRP-inschrijving kan wel als aanwijzing dienen. De vereiste instemming is die van de huurder, niet van de woningcorporatie als verhuurder. Eventuele verplichtingen om medebewoning aan de verhuurder te melden volgen uit de huurovereenkomst."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bruto-huur> a skos:Concept ;
@@ -159,21 +159,21 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:example "Een huurder betaalt € 750 kale huur en € 60 servicekosten (waarvan € 35 stookkosten). De brutohuur bedraagt dan € 810 per maand."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "bruto huur"@nl ;
-    skos:related bgc:huurprijs,
-        bgc:rekenhuur,
-        bgc:servicekosten ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurprijs>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/rekenhuur>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/servicekosten> ;
     skos:scopeNote "Voor de toets aan huurprijsgrenzen (zoals de liberalisatiegrens) en huurverhogingspercentages wordt gerekend met de kale huur, niet met de brutohuur."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/cluster> a skos:Concept ;
     dct:source "Eigen definitie" ;
     rdfs:comment "Een cluster is een praktisch hulpmiddel om eenheden te groeperen rond een bepaald doel. Eenzelfde eenheid kan in meerdere clusters tegelijk voorkomen, omdat elk cluster een andere invalshoek vertegenwoordigt."@nl ;
-    skos:broader bgc:vastgoed ;
+    skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/vastgoed> ;
     skos:definition "Een groepering van eenheden die om administratieve of andere bedrijfsmatige redenen wordt onderscheiden, waardoor een gelijke vorm van onderhoud, sturing of beleid op die eenheden mogelijk is."@nl ;
     skos:example "Een woning kan tegelijk deel uitmaken van een onderhoudscluster, een VvE-cluster en een huurverhogingscluster."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "cluster"@nl ;
-    skos:related bgc:complex,
-        bgc:woongelegenheid ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/complex>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woongelegenheid> ;
     skos:scopeNote "Cluster en complex verschillen op twee punten. Ten eerste in herkomst: complex is een wettelijk begrip (BTIV) met gevolgen voor bijvoorbeeld verkoopregels en de DAEB-toets; cluster is een sectorstandaardbegrip  zonder wettelijke lading. Ten tweede in structuur: een eenheid hoort in de regel bij precies één complex, maar kan tegelijk in meerdere clusters voorkomen (elk met een eigen doel). De corporatie bepaalt zelf de samenstelling van een cluster."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/complex> a skos:Concept ;
@@ -181,14 +181,14 @@ bgcc:wet-en-regelgeving a skos:Collection ;
         "Overgenomen uit BTIV" ;
     rdfs:comment "Een complex is de manier waarop de wetgever een groep bij elkaar horende woningen als één geheel behandelt, bijvoorbeeld bij verkoop of bij de DAEB-indeling."@nl ;
     skos:altLabel "wooncomplex"@nl ;
-    skos:broader bgc:vastgoed ;
+    skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/vastgoed> ;
     skos:closeMatch <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#bouwcomplex> ;
     skos:definition "Verzameling van in elkaars nabijheid gelegen woongelegenheden die financieel, administratief, qua bouwwijze of anderszins een eenheid vormen."@nl ;
     skos:example "Een rijtje van tien vergelijkbare huurwoningen dat samen is gebouwd en administratief als één geheel wordt beheerd."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "complex"@nl ;
-    skos:related bgc:verhuureenheid,
-        bgc:woongelegenheid ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verhuureenheid>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woongelegenheid> ;
     skos:scopeNote "Anders dan bij begrippen met een externe gezaghebbende bron (zoals adres of pand, vastgelegd in de BAG), bestaat er geen onafhankelijk register waarin de samenstelling van een complex is vastgelegd. De corporatie bepaalt en beheert deze indeling zelf. Zichtbaar voor de toezichthouder wordt de indeling pas via de complexcode die per eenheid wordt opgenomen in de WOZ-bezitstabel van de dVi."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/doelgroep> a skos:Concept ;
@@ -199,10 +199,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
 - De doelgroep voor zorggeschikte woningen"""@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "doelgroep"@nl ;
-    skos:related bgc:huurtoeslag,
-        bgc:inkomensgrens,
-        bgc:passend-toewijzen,
-        bgc:sociale-huurwoning ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurtoeslag>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/inkomensgrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/passend-toewijzen>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/sociale-huurwoning> ;
     skos:scopeNote "Zonder nadere aanduiding wordt in de corporatiesector met de doelgroep meestal bedoeld: huishoudens met een inkomen tot de inkomensgrens voor sociale huurwoningen."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/dpi> a skos:Concept ;
@@ -214,9 +214,9 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:hiddenLabel "de Prognose informatie"@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "dPi"@nl ;
-    skos:related bgc:de-verantwoordingsinformatie,
-        bgc:dvi,
-        bgc:regeling-toegelaten-instellingen-volkshuisvesting .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/de-verantwoordingsinformatie>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/dvi>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/regeling-toegelaten-instellingen-volkshuisvesting> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/dvi> a skos:Concept ;
     dct:source "Afgeleid van de Regeling toegelaten instellingen" ;
@@ -225,10 +225,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Jaarlijkse verantwoordingsinformatie die een woningcorporatie over het afgelopen verslagjaar aanlevert aan de toezichthouders."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "dVi"@nl ;
-    skos:related bgc:de-prospectieve-informatie,
-        bgc:dpi,
-        bgc:regeling-toegelaten-instellingen-volkshuisvesting,
-        bgc:verhuureenheid .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/de-prospectieve-informatie>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/dpi>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/regeling-toegelaten-instellingen-volkshuisvesting>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verhuureenheid> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/geliberaliseerde-huurwoning> a skos:Concept ;
     dct:source "Afgeleid van artikel 7:247 Burgerlijk Wetboek; toepassingsregels volgens de circulaire Huurprijsbeleid (MG)" ;
@@ -237,10 +237,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Zelfstandige woning met een huurovereenkomst waarvan de aanvangshuurprijs boven de op de ingangsdatum geldende liberalisatiegrens lag."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "geliberaliseerde huurwoning"@nl ;
-    skos:related bgc:gereguleerde-woonruimte,
-        bgc:liberalisatiegrens,
-        bgc:niet-daeb,
-        bgc:zelfstandige-woning .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/gereguleerde-woonruimte>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/liberalisatiegrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/niet-daeb>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/zelfstandige-woning> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/gereguleerde-woonruimte> a skos:Concept ;
     dct:source <https://wetten.overheid.nl/BWBR0005290/2026-07-01>,
@@ -250,10 +250,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Woonruimte waarvan de huurprijs onder de wettelijke huurprijsbescherming van het woningwaarderingsstelsel valt."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "gereguleerde woonruimte"@nl ;
-    skos:related bgc:geliberaliseerde-huurwoning,
-        bgc:liberalisatiegrens,
-        bgc:sociale-huurwoning,
-        bgc:woningwaarderingsstelsel .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/geliberaliseerde-huurwoning>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/liberalisatiegrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/sociale-huurwoning>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woningwaarderingsstelsel> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huishouden> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector, aansluitend bij formuleringen in huisvestingsverordeningen; de Wet op de huurtoeslag en het BTIV kennen eigen afbakeningen" ;
@@ -261,10 +261,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Alleenstaande, dan wel twee of meer personen die een duurzame gemeenschappelijke huishouding voeren of willen gaan voeren."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "huishouden"@nl ;
-    skos:related bgc:doelgroep,
-        bgc:huishoudinkomen,
-        bgc:passend-toewijzen,
-        bgc:woningzoekende ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/doelgroep>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huishoudinkomen>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/passend-toewijzen>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woningzoekende> ;
     skos:scopeNote "De precieze afbakening verschilt per regeling. Voor de huurtoeslag telt bijvoorbeeld de samenstelling volgens de Wet op de huurtoeslag; huisvestingsverordeningen en het BTIV kennen eigen toepassingen. Controleer bij gebruik in een specifieke context welke afbakening geldt."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huishoudinkomen> a skos:Concept ;
@@ -273,10 +273,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Gezamenlijk verzamelinkomen van de bewoners van een woongelegenheid, met uitzondering van het inkomen van inwonende kinderen voor zover de wet dat bepaalt."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "huishoudinkomen"@nl ;
-    skos:related bgc:bewoner,
-        bgc:huishouden,
-        bgc:inkomensafhankelijke-huurverhoging,
-        bgc:inkomensgrens .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/bewoner>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huishouden>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/inkomensafhankelijke-huurverhoging>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/inkomensgrens> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huisvestingswet-2014> a skos:Concept ;
     dct:source <https://wetten.overheid.nl/BWBR0035303>,
@@ -286,9 +286,9 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Wet die gemeenten instrumenten geeft voor de verdeling van woonruimte en het beheer van de woonruimtevoorraad."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "Huisvestingswet 2014"@nl ;
-    skos:related bgc:toewijzing,
-        bgc:woningzoekende,
-        bgc:woonruimte .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/toewijzing>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woningzoekende>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woonruimte> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurder> a skos:Concept ;
     dct:source "Afgeleid van artikel 7:201 Burgerlijk Wetboek; artikel 1 Woningwet meegewogen voor de positie van de onderhuurder" ;
@@ -296,10 +296,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Partij die op grond van een huurovereenkomst tegen betaling het gebruik van een woonruimte of andere onroerende zaak heeft."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "huurder"@nl ;
-    skos:related bgc:bewoner,
-        bgc:huishouden,
-        bgc:huurovereenkomst,
-        bgc:verhuurder ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/bewoner>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huishouden>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurovereenkomst>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verhuurder> ;
     skos:scopeNote "Sectorale wetgeving definieert huurder niet zelfstandig; de betekenis volgt uit het huurrecht. De Woningwet rekent voor bepaalde toepassingen ook de onderhuurder die met toestemming van de corporatie huurt tot de huurders (artikel 1 Woningwet)."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurovereenkomst> a skos:Concept ;
@@ -309,11 +309,11 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Overeenkomst waarbij de verhuurder zich verbindt aan de huurder een zaak of een gedeelte daarvan in gebruik te verstrekken en de huurder zich verbindt tot een tegenprestatie."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "huurovereenkomst"@nl ;
-    skos:related bgc:huurder,
-        bgc:huurprijs,
-        bgc:toewijzing,
-        bgc:verhuurder,
-        bgc:woonruimte .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurder>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurprijs>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/toewijzing>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verhuurder>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woonruimte> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurprijs> a skos:Concept ;
     dct:source "Overgenomen uit artikel 7:237, tweede lid, Burgerlijk Wetboek en artikel 1 Woningwet (samengevoegde formulering); ondersteunende bron: Datawonen-begrippenlijst (kale huurprijs)" ;
@@ -324,11 +324,11 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Prijs die bij huur en verhuur is verschuldigd voor het enkele gebruik van de woonruimte, uitgedrukt in een bedrag per maand."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "huurprijs"@nl ;
-    skos:related bgc:bruto-huur,
-        bgc:huurverhoging,
-        bgc:maximale-huurprijs,
-        bgc:servicekosten,
-        bgc:streefhuur .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/bruto-huur>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurverhoging>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/maximale-huurprijs>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/servicekosten>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/streefhuur> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurtoeslag> a skos:Concept ;
     dct:source <https://wetten.overheid.nl/jci1.3:c:BWBR0008659&g=2025-07-01&z=2025-12-30>,
@@ -340,29 +340,29 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:hiddenLabel "huursubsidie"@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "huurtoeslag"@nl ;
-    skos:related bgc:aftoppingsgrens,
-        bgc:doelgroep,
-        bgc:liberalisatiegrens,
-        bgc:passend-toewijzen,
-        bgc:rekenhuur .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/aftoppingsgrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/doelgroep>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/liberalisatiegrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/passend-toewijzen>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/rekenhuur> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurverhoging> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector; wettelijk kader in Burgerlijk Wetboek, boek 7, titel 4, afdeling 5, en artikel 10 Uitvoeringswet huurprijzen woonruimte; jaarlijkse parameters in de circulaire Huurprijsbeleid (MG)" ;
     rdfs:comment "De jaarlijkse huurverhoging is wettelijk gemaximeerd; de maximale percentages verschillen per segment (laag, midden, vrije sector) en worden jaarlijks bekendgemaakt in de circulaire Huurprijsbeleid. Daarnaast kan de huurprijs stijgen na woningverbetering."@nl ;
     skos:definition "Verhoging van de huurprijs van een woonruimte binnen de wettelijke of contractuele grenzen."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    skos:narrower bgc:inkomensafhankelijke-huurverhoging ;
+    skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/inkomensafhankelijke-huurverhoging> ;
     skos:prefLabel "huurverhoging"@nl ;
-    skos:related bgc:huurprijs .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurprijs> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/inkomensafhankelijke-huurverhoging> a skos:Concept ;
     dct:source "Afgeleid van artikel 7:252a Burgerlijk Wetboek; methodiek en bedragen volgens de circulaire Huurprijsbeleid (MG) en de Datawonen-begrippenlijst" ;
     rdfs:comment "Met deze verhoging betalen huishoudens met een hoger (midden)inkomen in een gereguleerde huurwoning een huur die beter past bij hun inkomen. Sinds 2022 is de extra verhoging een bedrag per maand, afhankelijk van de inkomenscategorie; de verhuurder gebruikt hiervoor een inkomensindicatie van de Belastingdienst."@nl ;
-    skos:broader bgc:huurverhoging ;
+    skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurverhoging> ;
     skos:definition "Extra huurverhoging die een verhuurder mag voorstellen voor huishoudens met een hoger inkomen dan de daarvoor geldende inkomensgrenzen."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "inkomensafhankelijke huurverhoging"@nl ;
-    skos:related bgc:huishoudinkomen .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huishoudinkomen> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/inkomensgrens> a skos:Concept ;
     dct:source "Afgeleid van artikel 1 en artikel 48 Woningwet en artikel 16 Besluit toegelaten instellingen volkshuisvesting" ;
@@ -371,10 +371,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Bedrag van het huishoudinkomen tot waar een huishouden behoort tot de doelgroep voor toewijzing van sociale huurwoningen."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "inkomensgrens"@nl ;
-    skos:related bgc:doelgroep,
-        bgc:huishoudinkomen,
-        bgc:sociale-huurwoning,
-        bgc:toewijzing .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/doelgroep>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huishoudinkomen>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/sociale-huurwoning>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/toewijzing> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/kale-huur> a skos:Concept ;
     dct:source "Overgenomen uit artikel 7:237, derde lid, BW Boek 7" ;
@@ -385,10 +385,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:example "Een huurder betaalt € 750 kale huur en € 60 servicekosten per maand. Voor de toets aan de liberalisatiegrens en de jaarlijkse huurverhoging telt alleen de € 750 als kale huur."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "kale huur"@nl ;
-    skos:related bgc:bruto-huur,
-        bgc:liberalisatiegrens,
-        bgc:rekenhuur,
-        bgc:servicekosten ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/bruto-huur>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/liberalisatiegrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/rekenhuur>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/servicekosten> ;
     skos:scopeNote "De term \"netto huur\" wordt hier als synoniem van kale huur gedefinieerd. In een andere context kan \"netto huur\" een andere betekenis hebben, namelijk de huur na aftrek van huurtoeslag. Gebruik in dat statistische verband bij voorkeur de term huur na huurtoeslag om verwarring te voorkomen."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/kwaliteitskortingsgrens> a skos:Concept ;
@@ -398,8 +398,8 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Het bedrag tot waar de huurtoeslag het deel van de huur boven de basishuur maximaal volledig vergoedt."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "kwaliteitskortingsgrens"@nl ;
-    skos:related bgc:aftoppingsgrens,
-        bgc:huurtoeslag .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/aftoppingsgrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurtoeslag> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/leefbaarheid> a skos:Concept ;
     dct:source <https://wetten.overheid.nl/BWBR0036702/2026-01-01>,
@@ -413,8 +413,8 @@ bgcc:wet-en-regelgeving a skos:Collection ;
 - het bijdragen aan activiteiten gericht op de ontmoeting van huurders."""@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "leefbaarheid"@nl ;
-    skos:related bgc:diensten-van-algemeen-economisch-belang,
-        bgc:prestatieafspraak ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/diensten-van-algemeen-economisch-belang>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/prestatieafspraak> ;
     skos:scopeNote "In de Woningwet en het BTIV (Artikel 51) is de bijdrage van corporaties aan leefbaarheid een afgebakende taak binnen de diensten van algemeen economisch belang."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/leegstand> a skos:Concept ;
@@ -423,8 +423,8 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Periode waarin een verhuureenheid geen huurder heeft."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "leegstand"@nl ;
-    skos:related bgc:mutatie,
-        bgc:verhuureenheid .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/mutatie>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verhuureenheid> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/liberalisatiegrens> a skos:Concept ;
     dct:source "Afgeleid van artikel 7:247 Burgerlijk Wetboek en de Wet betaalbare huur; jaarlijkse parameters in de circulaire Huurprijsbeleid (MG) en de Datawonen-begrippenlijst" ;
@@ -433,10 +433,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Huurprijsgrens die bepaalt of een huurovereenkomst voor een zelfstandige woning bij aanvang tot het gereguleerde dan wel het geliberaliseerde segment behoort."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "liberalisatiegrens"@nl ;
-    skos:related bgc:geliberaliseerde-huurwoning,
-        bgc:gereguleerde-woonruimte,
-        bgc:maximale-huurprijs,
-        bgc:wet-betaalbare-huur ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/geliberaliseerde-huurwoning>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/gereguleerde-woonruimte>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/maximale-huurprijs>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/wet-betaalbare-huur> ;
     skos:scopeNote "Tot 1 juli 2024 was de liberalisatiegrens gelijk aan de maximale huurgrens voor de huurtoeslag; sindsdien zijn deze grenzen uiteengelopen. De huurtoeslaggrens (ook DAEB-huurgrens genoemd) begrenst het lage segment, de liberalisatiegrens het middensegment."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/marktwaarde> a skos:Concept ;
@@ -446,8 +446,8 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Geschat bedrag waartegen vastgoed op de waardepeildatum zou worden overgedragen tussen een bereidwillige koper en een bereidwillige verkoper, in een marktconforme transactie en rekening houdend met de verhuurde staat."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "marktwaarde"@nl ;
-    skos:related bgc:beleidswaarde,
-        bgc:vastgoed .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/beleidswaarde>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/vastgoed> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/maximale-huurgrens> a skos:Concept ;
     dct:source <https://wetten.overheid.nl/BWBR0008659/2026-01-01/0>,
@@ -459,8 +459,8 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:example "De maximale huurgrens is in 2026 € 932,93. Bij een huur van € 1.000 wordt de huurtoeslag berekend over € 932,93; de resterende € 67,07 betaalt de huurder zelf."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "maximale huurgrens"@nl ;
-    skos:related bgc:aftoppingsgrens,
-        bgc:huurtoeslag ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/aftoppingsgrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurtoeslag> ;
     skos:scopeNote "In voorlichting en sectorcommunicatie wordt dit bedrag ook wel \"sociale huurgrens\" genoemd, het bedrag valt sinds de Wet betaalbare huur samen met de grens tussen het laag- en middensegment. \"Huurtoeslaggrens\" is een oudere, informele aanduiding voor hetzelfde bedrag. De wet zelf hanteert uitsluitend \"maximale huurgrens\" (artikel 13 Wht)."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/maximale-huurprijs> a skos:Concept ;
@@ -471,10 +471,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Hoogste huurprijs die voor een woonruimte gevraagd mag worden op grond van het puntentotaal van het woningwaarderingsstelsel."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "maximale huurprijs"@nl ;
-    skos:related bgc:huurprijs,
-        bgc:streefhuur,
-        bgc:wet-betaalbare-huur,
-        bgc:woningwaarderingsstelsel .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurprijs>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/streefhuur>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/wet-betaalbare-huur>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woningwaarderingsstelsel> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/mutatie> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
@@ -482,11 +482,11 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Proces waarbij een verhuureenheid van huurder wisselt."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "mutatie"@nl ;
-    skos:related bgc:huurovereenkomst,
-        bgc:leegstand,
-        bgc:streefhuur,
-        bgc:toewijzing,
-        bgc:verhuureenheid ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurovereenkomst>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/leegstand>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/streefhuur>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/toewijzing>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verhuureenheid> ;
     skos:scopeNote "Deze definitie betreft de mutatie in het verhuurproces van het woningcorporatiedomein. Het woord mutatie wordt daarbuiten ook gebruikt voor andere wijzigingen, zoals financiële mutaties in de boekhouding of mutaties in registraties; die vallen buiten dit begrip."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/niet-daeb> a skos:Concept ;
@@ -495,17 +495,17 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Activiteiten en vastgoed van een woningcorporatie die buiten de diensten van algemeen economisch belang vallen, zoals geliberaliseerde huurwoningen en commercieel vastgoed."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "niet-DAEB"@nl ;
-    skos:related bgc:diensten-van-algemeen-economisch-belang,
-        bgc:geliberaliseerde-huurwoning .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/diensten-van-algemeen-economisch-belang>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/geliberaliseerde-huurwoning> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/nieuwbouw> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
     rdfs:comment "Nieuwbouw kan plaatsvinden op een onbebouwde locatie (uitbreiding) of op een locatie waar bestaand vastgoed is gesloopt (vervangende nieuwbouw)."@nl ;
     skos:definition "Realisatie van een nieuw gebouw of nieuwe woongelegenheden."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    skos:narrower bgc:vervangende-nieuwbouw ;
+    skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/vervangende-nieuwbouw> ;
     skos:prefLabel "nieuwbouw"@nl ;
-    skos:related bgc:sloop .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/sloop> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/onderhoud> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector; het onderscheid met verbetering is ontleend aan het huurrecht en verslaggevingsregels" ;
@@ -513,20 +513,20 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Werkzaamheden die de technische staat van vastgoed in stand houden of herstellen, met behoud van de bestaande kwaliteit."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "onderhoud"@nl ;
-    skos:related bgc:complex,
-        bgc:renovatie,
-        bgc:verduurzaming .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/complex>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/renovatie>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verduurzaming> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/onzelfstandige-woonruimte> a skos:Concept ;
     dct:source "Afgeleid van artikel 7:234 Burgerlijk Wetboek (contrastbegrip)" ;
     rdfs:comment "Kamers met gedeelde voorzieningen zijn de meest voorkomende vorm, bijvoorbeeld in studenten- of zorghuisvesting."@nl ;
     skos:altLabel "kamer"@nl,
         "onzelfstandige eenheid"@nl ;
-    skos:broader bgc:woonruimte ;
+    skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woonruimte> ;
     skos:definition "Woonruimte waarbij de bewoner voor wezenlijke voorzieningen, zoals keuken of sanitair, gebruikmaakt van voorzieningen buiten de eigen woonruimte."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "onzelfstandige woonruimte"@nl ;
-    skos:related bgc:zelfstandige-woning .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/zelfstandige-woning> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/pand> a skos:Concept ;
     dct:source "Overgenomen uit de Catalogus Basisregistratie Adressen en Gebouwen" ;
@@ -535,9 +535,9 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:exactMatch <http://bag.basisregistraties.overheid.nl/id/begrip/Pand> ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "pand"@nl ;
-    skos:related bgc:vastgoed,
-        bgc:verblijfsobject,
-        bgc:woning .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/vastgoed>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verblijfsobject>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woning> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/passend-toewijzen> a skos:Concept ;
     dct:source "Afgeleid van artikel 46, tweede lid, Woningwet en artikel 56 Besluit toegelaten instellingen volkshuisvesting" ;
@@ -546,11 +546,11 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Wettelijke verplichting van woningcorporaties om aan ten minste 95% van de huishoudens met recht op huurtoeslag een woning toe te wijzen met een huurprijs tot en met de voor dat huishouden toepasselijke aftoppingsgrens."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "passend toewijzen"@nl ;
-    skos:related bgc:aftoppingsgrens,
-        bgc:doelgroep,
-        bgc:huurtoeslag,
-        bgc:passendheidstoets,
-        bgc:toewijzing .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/aftoppingsgrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/doelgroep>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurtoeslag>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/passendheidstoets>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/toewijzing> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/passendheidstoets> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector, ter uitvoering van artikel 56 Besluit toegelaten instellingen volkshuisvesting" ;
@@ -558,9 +558,9 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Controle voorafgaand aan de toewijzing of de huurprijs van de woning past bij het inkomen en de samenstelling van het huishouden."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "passendheidstoets"@nl ;
-    skos:related bgc:aftoppingsgrens,
-        bgc:huishoudinkomen,
-        bgc:passend-toewijzen .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/aftoppingsgrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huishoudinkomen>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/passend-toewijzen> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/prestatieafspraak> a skos:Concept ;
     dct:source "Afgeleid van artikel 44 Woningwet; landelijke context: Nationale prestatieafspraken 2025-2035" ;
@@ -568,9 +568,9 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Afspraak tussen gemeente, woningcorporatie en huurdersorganisatie over de bijdrage van de corporatie aan de uitvoering van het gemeentelijke volkshuisvestingsbeleid."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "prestatieafspraak"@nl ;
-    skos:related bgc:leefbaarheid,
-        bgc:volkshuisvestelijke-prestatie,
-        bgc:woningcorporatie .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/leefbaarheid>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/volkshuisvestelijke-prestatie>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woningcorporatie> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/regeling-toegelaten-instellingen-volkshuisvesting> a skos:Concept ;
     dct:source <https://wetten.overheid.nl/BWBR0036712>,
@@ -580,10 +580,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Ministeriële regeling die het Besluit toegelaten instellingen volkshuisvesting nader uitwerkt, onder meer met voorschriften voor de verantwoordings- en prognose-informatie."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "Regeling toegelaten instellingen volkshuisvesting"@nl ;
-    skos:related bgc:besluit-toegelaten-instellingen-volkshuisvesting,
-        bgc:de-prospectieve-informatie,
-        bgc:de-verantwoordingsinformatie,
-        bgc:marktwaarde .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/besluit-toegelaten-instellingen-volkshuisvesting>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/de-prospectieve-informatie>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/de-verantwoordingsinformatie>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/marktwaarde> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/rekenhuur> a skos:Concept ;
     dct:source "Afgeleid van artikel 5 Wet op de huurtoeslag; ondersteunende bron: VERA 4.3.2 (subsidiabele huur)" ;
@@ -592,10 +592,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Huurprijs vermeerderd met een wettelijk bepaald deel van de servicekosten, gebruikt voor de berekening van de huurtoeslag."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "rekenhuur"@nl ;
-    skos:related bgc:aftoppingsgrens,
-        bgc:huurprijs,
-        bgc:huurtoeslag,
-        bgc:servicekosten .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/aftoppingsgrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurprijs>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurtoeslag>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/servicekosten> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/renovatie> a skos:Concept ;
     dct:source "Afgeleid van artikel 7:220, tweede lid, Burgerlijk Wetboek" ;
@@ -603,9 +603,9 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Gedeeltelijke vernieuwing van een gebouw of woonruimte door verandering of toevoeging, gericht op verbetering."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "renovatie"@nl ;
-    skos:related bgc:onderhoud,
-        bgc:verduurzaming,
-        bgc:vervangende-nieuwbouw ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/onderhoud>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verduurzaming>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/vervangende-nieuwbouw> ;
     skos:scopeNote "In het Burgerlijk Wetboek omvat renovatie ook sloop met vervangende nieuwbouw; in het dagelijks spraakgebruik wordt renovatie meestal beperkt tot vernieuwing van de bestaande woning."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/servicekosten> a skos:Concept ;
@@ -614,9 +614,9 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Vergoeding voor de overige zaken en diensten die de verhuurder levert in verband met de bewoning van de woonruimte."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "servicekosten"@nl ;
-    skos:related bgc:bruto-huur,
-        bgc:huurprijs,
-        bgc:rekenhuur .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/bruto-huur>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurprijs>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/rekenhuur> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sloop> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
@@ -624,20 +624,20 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Afbraak van een gebouw of een deel daarvan."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "sloop"@nl ;
-    skos:related bgc:nieuwbouw,
-        bgc:vervangende-nieuwbouw .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/nieuwbouw>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/vervangende-nieuwbouw> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurwoning> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector; gewogen bronnen: Woningwet (DAEB), Wet op de huurtoeslag en Datawonen-begrippenlijst (DAEB-huurgrens)" ;
     rdfs:comment "Sociale huurwoningen van corporaties behoren vrijwel altijd tot het DAEB-bezit en vormen het lage segment van de gereguleerde huursector. Voor toewijzing gelden inkomensgrenzen en de norm voor passend toewijzen."@nl ;
-    skos:broader bgc:woning ;
+    skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woning> ;
     skos:definition "Huurwoning met een aanvangshuurprijs tot en met de maximale huurgrens voor de huurtoeslag (DAEB-huurgrens), bestemd voor huishoudens met een laag inkomen."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "sociale huurwoning"@nl ;
-    skos:related bgc:diensten-van-algemeen-economisch-belang,
-        bgc:doelgroep,
-        bgc:gereguleerde-woonruimte,
-        bgc:huurtoeslag ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/diensten-van-algemeen-economisch-belang>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/doelgroep>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/gereguleerde-woonruimte>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurtoeslag> ;
     skos:scopeNote "Sociale huurwoning is geen wettelijk gedefinieerd begrip. In de praktijk wordt het vaak gelijkgesteld aan een gereguleerde huurwoning van een corporatie (DAEB); gemeentelijke verordeningen en het Besluit ruimtelijke ordening kennen eigen afbakeningen. Benoem in teksten welke afbakening is bedoeld."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/streefhuur> a skos:Concept ;
@@ -647,10 +647,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Huurprijs waarnaar de woningcorporatie voor een verhuureenheid streeft op grond van haar huurbeleid."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "streefhuur"@nl ;
-    skos:related bgc:huurprijs,
-        bgc:maximale-huurprijs,
-        bgc:mutatie,
-        bgc:verhuureenheid .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurprijs>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/maximale-huurprijs>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/mutatie>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verhuureenheid> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/toewijzing> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector; wettelijk kader in Woningwet, BTIV en Huisvestingswet 2014" ;
@@ -658,10 +658,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Besluit van een verhuurder om een woonruimte aan een specifieke woningzoekende te verhuren."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "toewijzing"@nl ;
-    skos:related bgc:huurovereenkomst,
-        bgc:inkomensgrens,
-        bgc:passend-toewijzen,
-        bgc:woningzoekende .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurovereenkomst>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/inkomensgrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/passend-toewijzen>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woningzoekende> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoed> a skos:Concept ;
     dct:source "Afgeleid van artikel 3:3 Burgerlijk Wetboek" ;
@@ -670,12 +670,12 @@ bgcc:wet-en-regelgeving a skos:Collection ;
         "onroerende zaak"@nl ;
     skos:definition "Grond en de gebouwen en werken die duurzaam met de grond zijn verenigd."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    skos:narrower bgc:complex,
-        bgc:woongelegenheid ;
+    skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/complex>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woongelegenheid> ;
     skos:prefLabel "vastgoed"@nl ;
-    skos:related bgc:beleidswaarde,
-        bgc:marktwaarde,
-        bgc:verhuureenheid .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/beleidswaarde>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/marktwaarde>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verhuureenheid> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verblijfsobject> a skos:Concept ;
     dct:source "Overgenomen uit de Catalogus Basisregistratie Adressen en Gebouwen" ;
@@ -684,9 +684,9 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:exactMatch <http://bag.basisregistraties.overheid.nl/id/begrip/Verblijfsobject> ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "verblijfsobject"@nl ;
-    skos:related bgc:pand,
-        bgc:woning,
-        bgc:zelfstandige-woning .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/pand>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woning>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/zelfstandige-woning> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verduurzaming> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector; de Aedes-benchmark (verbeteruitgaven, energetische maatregelen) is meegewogen" ;
@@ -694,9 +694,9 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Geheel van maatregelen die het energiegebruik en de milieubelasting van vastgoed verminderen."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "verduurzaming"@nl ;
-    skos:related bgc:nieuwbouw,
-        bgc:onderhoud,
-        bgc:renovatie ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/nieuwbouw>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/onderhoud>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/renovatie> ;
     skos:scopeNote "In brede zin kan verduurzaming ook op de bedrijfsvoering slaan (zoals elektrisch vervoer); in dit kader gaat het primair om vastgoedmaatregelen."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuurder> a skos:Concept ;
@@ -704,10 +704,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     rdfs:comment "In de corporatiesector is de verhuurder meestal een woningcorporatie, maar het begrip omvat ook particuliere en commerciële verhuurders."@nl ;
     skos:definition "Partij die op grond van een huurovereenkomst een woonruimte of andere onroerende zaak in gebruik geeft aan een huurder."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    skos:narrower bgc:woningcorporatie ;
+    skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woningcorporatie> ;
     skos:prefLabel "verhuurder"@nl ;
-    skos:related bgc:huurder,
-        bgc:huurovereenkomst .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurder>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurovereenkomst> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuureenheid> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector; de VERA-klasse Eenheid is meegewogen (zie de verwijzing via skos:closeMatch)" ;
@@ -719,23 +719,23 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Kleinste eenheid van vastgoed die afzonderlijk verhuurd wordt of verhuurd kan worden en waarvoor een afzonderlijke huurovereenkomst kan worden gesloten."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "verhuureenheid"@nl ;
-    skos:related bgc:complex,
-        bgc:huurovereenkomst,
-        bgc:leegstand,
-        bgc:mutatie,
-        bgc:woongelegenheid .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/complex>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurovereenkomst>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/leegstand>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/mutatie>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woongelegenheid> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vervangende-nieuwbouw> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector; artikel 7:220, tweede lid, Burgerlijk Wetboek meegewogen voor de juridische duiding" ;
     rdfs:comment "Vervangende nieuwbouw is een veelgebruikte ingreep bij verouderd bezit: de bestaande woningen worden gesloopt en vervangen door nieuwe. Juridisch valt sloop met vervangende nieuwbouw onder het begrip renovatie (artikel 7:220 BW), met bijbehorende rechten voor huurders."@nl ;
     skos:altLabel "sloop-nieuwbouw"@nl,
         "sloop/nieuwbouw"@nl ;
-    skos:broader bgc:nieuwbouw ;
+    skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/nieuwbouw> ;
     skos:definition "Nieuwbouw op een locatie waar bestaand vastgoed daarvoor wordt gesloopt."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "vervangende nieuwbouw"@nl ;
-    skos:related bgc:renovatie,
-        bgc:sloop .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/renovatie>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/sloop> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/wet-betaalbare-huur> a skos:Concept ;
     dct:source <https://wetten.overheid.nl/BWBR0049518>,
@@ -744,22 +744,22 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Wet die de huurprijsbescherming uitbreidt naar het middenhuursegment en de toepassing van het woningwaarderingsstelsel dwingend maakt."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "Wet betaalbare huur"@nl ;
-    skos:related bgc:gereguleerde-woonruimte,
-        bgc:liberalisatiegrens,
-        bgc:maximale-huurprijs,
-        bgc:woningwaarderingsstelsel .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/gereguleerde-woonruimte>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/liberalisatiegrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/maximale-huurprijs>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woningwaarderingsstelsel> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woning> a skos:Concept ;
     dct:source "Overgenomen uit artikel 1 Woningwet" ;
     rdfs:comment "Een woning kan een heel gebouw beslaan (eengezinswoning) of een deel daarvan (appartement)."@nl ;
-    skos:broader bgc:woongelegenheid ;
+    skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woongelegenheid> ;
     skos:closeMatch <http://bag.basisregistraties.overheid.nl/id/begrip/Verblijfsobject> ;
     skos:definition "Afzonderlijk gedeelte van een gebouw, welk gedeelte tot bewoning is bestemd, met het daarbij behorende deel van de grond."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    skos:narrower bgc:sociale-huurwoning,
-        bgc:zelfstandige-woning ;
+    skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/sociale-huurwoning>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/zelfstandige-woning> ;
     skos:prefLabel "woning"@nl ;
-    skos:related bgc:verblijfsobject ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verblijfsobject> ;
     skos:scopeNote "Andere kaders bakenen woning anders af: de BAG hanteert het verblijfsobject met woonfunctie, de Wet WOZ een eigen woningafbakening. Vermeld bij tellingen en analyses welke afbakening is gebruikt."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningcorporatie> a skos:Concept ;
@@ -767,13 +767,13 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     rdfs:comment "Een woningcorporatie bouwt, verhuurt en beheert vooral sociale huurwoningen voor mensen met een laag inkomen of een kwetsbare positie op de woningmarkt. In wet- en regelgeving heet een woningcorporatie een toegelaten instelling."@nl ;
     skos:altLabel "corporatie"@nl,
         "toegelaten instelling"@nl ;
-    skos:broader bgc:verhuurder ;
+    skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verhuurder> ;
     skos:definition "Vereniging of stichting die zich ten doel stelt uitsluitend op het gebied van de volkshuisvesting werkzaam te zijn en die daartoe op grond van de Woningwet is toegelaten."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "woningcorporatie"@nl ;
-    skos:related bgc:diensten-van-algemeen-economisch-belang,
-        bgc:sociale-huurwoning,
-        bgc:woningwet .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/diensten-van-algemeen-economisch-belang>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/sociale-huurwoning>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woningwet> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwaarderingsstelsel> a skos:Concept ;
     dct:source "Afgeleid van de Uitvoeringswet huurprijzen woonruimte en het Besluit huurprijzen woonruimte; ondersteunende bronnen: Datawonen-begrippenlijst en Aedes-benchmark" ;
@@ -784,10 +784,10 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Stelsel waarmee de kwaliteit van een woonruimte in punten wordt gewaardeerd en waarmee de maximale huurprijs van die woonruimte wordt bepaald."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "woningwaarderingsstelsel"@nl ;
-    skos:related bgc:gereguleerde-woonruimte,
-        bgc:liberalisatiegrens,
-        bgc:maximale-huurprijs,
-        bgc:wet-betaalbare-huur .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/gereguleerde-woonruimte>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/liberalisatiegrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/maximale-huurprijs>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/wet-betaalbare-huur> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwet> a skos:Concept ;
     dct:source <https://wetten.overheid.nl/BWBR0005181>,
@@ -796,9 +796,9 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Wet die het stelsel van de volkshuisvesting regelt, waaronder de toelating van, het werkdomein van en het toezicht op woningcorporaties."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "Woningwet"@nl ;
-    skos:related bgc:besluit-toegelaten-instellingen-volkshuisvesting,
-        bgc:prestatieafspraak,
-        bgc:woningcorporatie .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/besluit-toegelaten-instellingen-volkshuisvesting>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/prestatieafspraak>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woningcorporatie> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningzoekende> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector, aansluitend bij het gebruik in huisvestingsverordeningen op grond van de Huisvestingswet 2014" ;
@@ -806,44 +806,44 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:definition "Huishouden dat op zoek is naar woonruimte."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "woningzoekende"@nl ;
-    skos:related bgc:huishouden,
-        bgc:toewijzing,
-        bgc:woonruimte .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huishouden>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/toewijzing>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woonruimte> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woongelegenheid> a skos:Concept ;
     dct:source "Overgenomen uit artikel 1 Woningwet" ;
     rdfs:comment "Woongelegenheid is de verzamelterm uit de Woningwet voor alles wat een corporatie aan woonvormen verhuurt: woningen, woonwagens en standplaatsen."@nl ;
-    skos:broader bgc:vastgoed ;
+    skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/vastgoed> ;
     skos:definition "Woning met de daarbij behorende grond of het daarbij behorende deel van de grond, dan wel een woonwagen of een standplaats."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    skos:narrower bgc:woning ;
+    skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woning> ;
     skos:prefLabel "woongelegenheid"@nl ;
-    skos:related bgc:verhuureenheid .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/verhuureenheid> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woonruimte> a skos:Concept ;
     dct:source "Overgenomen uit artikel 1 Huisvestingswet 2014; vergelijk artikel 7:233 Burgerlijk Wetboek" ;
     rdfs:comment "Woonruimte is breder dan woning: ook een kamer of een woonwagen is woonruimte. Het is de gangbare term in het huurrecht en de woonruimteverdeling."@nl ;
     skos:definition "Besloten ruimte die, al dan niet tezamen met een of meer andere ruimten, bestemd of geschikt is voor bewoning door een huishouden."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    skos:narrower bgc:onzelfstandige-woonruimte,
-        bgc:zelfstandige-woning ;
+    skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/onzelfstandige-woonruimte>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/zelfstandige-woning> ;
     skos:prefLabel "woonruimte"@nl ;
-    skos:related bgc:huurovereenkomst,
-        bgc:woning ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurovereenkomst>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woning> ;
     skos:scopeNote "Het huurrecht (artikel 7:233 BW) definieert woonruimte vanuit de verhuurde zaak; de Huisvestingswet 2014 vanuit de geschiktheid voor bewoning. De strekking is vergelijkbaar, de juridische toepassing verschilt."@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/zelfstandige-woning> a skos:Concept ;
     dct:source "Overgenomen uit artikel 7:234 Burgerlijk Wetboek (vrijwel letterlijk)" ;
     rdfs:comment "Wezenlijke voorzieningen zijn bijvoorbeeld keuken en sanitair. Zelfstandigheid is onder meer bepalend voor de huurtoeslag en het woningwaarderingsstelsel."@nl ;
     skos:altLabel "zelfstandige woonruimte"@nl ;
-    skos:broader bgc:woning,
-        bgc:woonruimte ;
+    skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woning>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woonruimte> ;
     skos:definition "Woning met een eigen toegang, die de bewoner kan bewonen zonder daarbij afhankelijk te zijn van wezenlijke voorzieningen buiten de woning."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "zelfstandige woning"@nl ;
-    skos:related bgc:huurtoeslag,
-        bgc:onzelfstandige-woonruimte,
-        bgc:woningwaarderingsstelsel .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurtoeslag>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/onzelfstandige-woonruimte>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/woningwaarderingsstelsel> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/scheme/begrippenkader-corporatiesector/basishuur> a skos:Concept ;
     dct:source <https://wetten.overheid.nl/BWBR0008659/2026-01-01/0>,
@@ -853,8 +853,8 @@ bgcc:wet-en-regelgeving a skos:Collection ;
     skos:example "De basishuur is in 2026 € 202,52 per maand voor een eenpersoonshuishouden en € 200,71 voor een meerpersoonshuishouden. Bij een huur van € 480 wordt de huurtoeslag voor een alleenstaande berekend over het deel tussen € 202,52 en € 480."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "basishuur"@nl ;
-    skos:related bgc:aftoppingsgrens,
-        bgc:huurtoeslag .
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/aftoppingsgrens>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/begrip/huurtoeslag> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> a skos:ConceptScheme ;
     dct:created "2026-07-06"^^xsd:date ;
