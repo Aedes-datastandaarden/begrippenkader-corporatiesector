@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+import shutil
 import sys
 from pathlib import Path
 from typing import Any
@@ -400,6 +401,13 @@ def main() -> int:
       return 1
     print(f"Bouwen versie {version_id}...")
     build_version(version_id, ttl_path)
+
+  latest_version = manifest["latest"]
+  latest_dir = OUTPUT_DIR / latest_version
+  latest_alias_dir = OUTPUT_DIR / "latest"
+  if latest_alias_dir.exists():
+    shutil.rmtree(latest_alias_dir)
+  shutil.copytree(latest_dir, latest_alias_dir)
 
   write_json(OUTPUT_DIR / "versions.json", manifest)
   print("Build voltooid.")

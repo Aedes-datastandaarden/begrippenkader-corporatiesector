@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import AlphabetNav from '../../components/AlphabetNav.astro';
 import versions from '../../../public/build/versions.json';
-import alphabetIndex from '../../../public/build/0.2/alphabet-index.json';
+import alphabetIndex from '../../../public/build/latest/alphabet-index.json';
 import { conceptUrl, pageUrl, withVersionParam } from '../../lib/version';
 
 export function getStaticPaths() {
@@ -21,7 +21,7 @@ const activeVersion = versionParam && versions.versions.some((v) => v.id === ver
 const letterKey = letter === 'hash' ? '#' : letter!.toUpperCase();
 
 let index = alphabetIndex as Record<string, { slug: string; prefLabel: string }[]>;
-if (activeVersion !== '0.2') {
+if (activeVersion !== versions.latest) {
   const mod = await import(`../../../public/build/${activeVersion}/alphabet-index.json`);
   index = mod.default as typeof index;
 }

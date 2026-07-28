@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import versions from '../../../public/build/versions.json';
-import allCollections from '../../../public/build/0.2/collections.json';
+import allCollections from '../../../public/build/latest/collections.json';
 import type { Collection } from '../../lib/types';
 import { conceptUrl, pageUrl, withVersionParam } from '../../lib/version';
 
@@ -19,7 +19,7 @@ const activeVersion = versionParam && versions.versions.some((v) => v.id === ver
   : versions.latest;
 
 let collections = allCollections as Collection[];
-if (activeVersion !== '0.2') {
+if (activeVersion !== versions.latest) {
   const mod = await import(`../../../public/build/${activeVersion}/collections.json`);
   collections = mod.default as Collection[];
 }
