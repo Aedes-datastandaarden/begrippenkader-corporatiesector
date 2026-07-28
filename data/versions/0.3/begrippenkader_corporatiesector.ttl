@@ -20,7 +20,7 @@
     skos:prefLabel "Actoren en doelgroepen"@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/collectie/daeb-en-toewijzing> a skos:Collection ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/diensten-van-algemeen-economisch-belang>,
+    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/daeb>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huishoudinkomen>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/inkomensgrens>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/niet-daeb>,
@@ -49,12 +49,11 @@
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/collectie/sturing-en-verantwoording> a skos:Collection ;
     skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/beleidswaarde>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/de-prospectieve-informatie>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/de-verantwoordingsinformatie>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/dpi>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/dvi>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/leefbaarheid>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/marktwaarde>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/prestatieafspraak>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/volkshuisvestelijke-prestatie> ;
+        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/prestatieafspraak> ;
     skos:prefLabel "Sturing en verantwoording"@nl .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/collectie/vastgoed> a skos:Collection ;
@@ -89,18 +88,6 @@
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwaarderingsstelsel>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwet> ;
     skos:prefLabel "Wet- en regelgeving"@nl .
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/concept/DAEB> a skos:Concept ;
-    dct:source <https://wetten.overheid.nl/BWBR0005181/2026-07-01>,
-        "Afgeleid van artikel 1 en artikel 47 Woningwet" ;
-    rdfs:comment "DAEB is de kern van het werk van corporaties: betaalbaar wonen voor mensen met een laag inkomen. Voor deze taken gelden voordelen (zoals geborgde financiering) én verplichtingen (zoals toewijzingsregels). Corporaties moeten DAEB-activiteiten gescheiden verantwoorden van hun overige activiteiten."@nl ;
-    skos:altLabel "diensten van algemeen economisch belang"@nl ;
-    skos:definition "Door de overheid aangewezen diensten met een publiek belang waarvoor woningcorporaties compensatie mogen ontvangen, waaronder het bouwen, verhuren en beheren van sociale huurwoningen, het beheren van bepaald maatschappelijk vastgoed en het bijdragen aan leefbaarheid."@nl ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    skos:prefLabel "DAEB"@nl ;
-    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/niet-daeb>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/passend-toewijzen>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurwoning> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/cluster> a skos:Concept ;
     dct:source "Eigen definitie" ;
@@ -164,31 +151,6 @@
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/aftoppingsgrens>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurtoeslag> .
 
-<https://begrippenkader-corporatiesector.aedes.nl/id/concept/dpi> a skos:Concept ;
-    dct:source <https://wetten.overheid.nl/BWBR0036709/2026-07-03/0>,
-        "Afgeleid van de Regeling toegelaten instellingen volkshuisvesting" ;
-    rdfs:comment "De dPi bevat de meerjarenbegroting en de voorgenomen activiteiten, zoals investeringen in nieuwbouw en verduurzaming."@nl ;
-    skos:altLabel "de Prospectieve informatie"@nl ;
-    skos:definition "Jaarlijkse prognose-informatie waarin een woningcorporatie de voornemens voor de komende vijf jaren aanlevert aan de toezichthouders."@nl ;
-    skos:hiddenLabel "de Prognose informatie"@nl ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    skos:prefLabel "dPi"@nl ;
-    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/de-verantwoordingsinformatie>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/dvi>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/regeling-toegelaten-instellingen-volkshuisvesting> .
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/concept/dvi> a skos:Concept ;
-    dct:source "Afgeleid van de Regeling toegelaten instellingen" ;
-    rdfs:comment "De dVi bevat gegevens over onder meer het bezit, de financiën en de volkshuisvestelijke prestaties, volgens vaste definities en formats."@nl ;
-    skos:altLabel "de Verantwoordingsinformatie"@nl ;
-    skos:definition "Jaarlijkse verantwoordingsinformatie die een woningcorporatie over het afgelopen verslagjaar aanlevert aan de toezichthouders."@nl ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    skos:prefLabel "dVi"@nl ;
-    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/de-prospectieve-informatie>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/dpi>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/regeling-toegelaten-instellingen-volkshuisvesting>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuureenheid> .
-
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huisvestingswet-2014> a skos:Concept ;
     dct:source <https://wetten.overheid.nl/BWBR0035303>,
         "Afgeleid van de wettekst van de Huisvestingswet 2014" ;
@@ -213,7 +175,7 @@
 - het bijdragen aan activiteiten gericht op de ontmoeting van huurders."""@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "leefbaarheid"@nl ;
-    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/diensten-van-algemeen-economisch-belang>,
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/daeb>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/prestatieafspraak> ;
     skos:scopeNote "In de Woningwet en het BTIV (Artikel 51) is de bijdrage van corporaties aan leefbaarheid een afgebakende taak binnen de diensten van algemeen economisch belang."@nl .
 
@@ -274,6 +236,29 @@
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurder> ;
     skos:scopeNote "Bepalend is het feitelijk hebben van hoofdverblijf, niet een inschrijving op het adres in de Basisregistratie Personen (BRP); een BRP-inschrijving kan wel als aanwijzing dienen. De vereiste instemming is die van de huurder, niet van de woningcorporatie als verhuurder. Eventuele verplichtingen om medebewoning aan de verhuurder te melden volgen uit de huurovereenkomst."@nl .
 
+<https://begrippenkader-corporatiesector.aedes.nl/id/concept/dpi> a skos:Concept ;
+    dct:source <https://wetten.overheid.nl/BWBR0036709/2026-07-03/0>,
+        "Afgeleid van de Regeling toegelaten instellingen volkshuisvesting" ;
+    rdfs:comment "De dPi bevat de meerjarenbegroting en de voorgenomen activiteiten, zoals investeringen in nieuwbouw en verduurzaming."@nl ;
+    skos:altLabel "de Prospectieve informatie"@nl ;
+    skos:definition "Jaarlijkse prognose-informatie waarin een woningcorporatie de voornemens voor de komende vijf jaren aanlevert aan de toezichthouders."@nl ;
+    skos:hiddenLabel "de Prognose informatie"@nl ;
+    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
+    skos:prefLabel "dPi"@nl ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/dvi>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/regeling-toegelaten-instellingen-volkshuisvesting> .
+
+<https://begrippenkader-corporatiesector.aedes.nl/id/concept/dvi> a skos:Concept ;
+    dct:source "Afgeleid van de Regeling toegelaten instellingen" ;
+    rdfs:comment "De dVi bevat gegevens over onder meer het bezit, de financiën en de volkshuisvestelijke prestaties, volgens vaste definities en formats."@nl ;
+    skos:altLabel "de Verantwoordingsinformatie"@nl ;
+    skos:definition "Jaarlijkse verantwoordingsinformatie die een woningcorporatie over het afgelopen verslagjaar aanlevert aan de toezichthouders."@nl ;
+    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
+    skos:prefLabel "dVi"@nl ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/dpi>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/regeling-toegelaten-instellingen-volkshuisvesting>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuureenheid> .
+
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurverhoging> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector; wettelijk kader in Burgerlijk Wetboek, boek 7, titel 4, afdeling 5, en artikel 10 Uitvoeringswet huurprijzen woonruimte; jaarlijkse parameters in de circulaire Huurprijsbeleid (MG)" ;
     rdfs:comment "De jaarlijkse huurverhoging is wettelijk gemaximeerd; de maximale percentages verschillen per segment (laag, midden, vrije sector) en worden jaarlijks bekendgemaakt in de circulaire Huurprijsbeleid. Daarnaast kan de huurprijs stijgen na woningverbetering."@nl ;
@@ -307,7 +292,7 @@
     skos:definition "Activiteiten en vastgoed van een woningcorporatie die buiten de diensten van algemeen economisch belang vallen, zoals geliberaliseerde huurwoningen en commercieel vastgoed."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "niet-DAEB"@nl ;
-    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/diensten-van-algemeen-economisch-belang>,
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/daeb>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/geliberaliseerde-huurwoning> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/onderhoud> a skos:Concept ;
@@ -338,7 +323,6 @@
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "prestatieafspraak"@nl ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/leefbaarheid>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/volkshuisvestelijke-prestatie>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningcorporatie> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sloop> a skos:Concept ;
@@ -461,8 +445,8 @@
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "Regeling toegelaten instellingen volkshuisvesting"@nl ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/besluit-toegelaten-instellingen-volkshuisvesting>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/de-prospectieve-informatie>,
-        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/de-verantwoordingsinformatie>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/dpi>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/dvi>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/marktwaarde> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/renovatie> a skos:Concept ;
@@ -531,7 +515,7 @@
     skos:definition "Vereniging of stichting die zich ten doel stelt uitsluitend op het gebied van de volkshuisvesting werkzaam te zijn en die daartoe op grond van de Woningwet is toegelaten."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "woningcorporatie"@nl ;
-    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/diensten-van-algemeen-economisch-belang>,
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/daeb>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurwoning>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwet> .
 
@@ -559,6 +543,18 @@
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuureenheid>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woongelegenheid> ;
     skos:scopeNote "Anders dan bij begrippen met een externe gezaghebbende bron (zoals adres of pand, vastgelegd in de BAG), bestaat er geen onafhankelijk register waarin de samenstelling van een complex is vastgelegd. De corporatie bepaalt en beheert deze indeling zelf. Zichtbaar voor de toezichthouder wordt de indeling pas via de complexcode die per eenheid wordt opgenomen in de WOZ-bezitstabel van de dVi."@nl .
+
+<https://begrippenkader-corporatiesector.aedes.nl/id/concept/daeb> a skos:Concept ;
+    dct:source <https://wetten.overheid.nl/BWBR0005181/2026-07-01>,
+        "Afgeleid van artikel 1 en artikel 47 Woningwet" ;
+    rdfs:comment "DAEB is de kern van het werk van corporaties: betaalbaar wonen voor mensen met een laag inkomen. Voor deze taken gelden voordelen (zoals geborgde financiering) én verplichtingen (zoals toewijzingsregels). Corporaties moeten DAEB-activiteiten gescheiden verantwoorden van hun overige activiteiten."@nl ;
+    skos:altLabel "diensten van algemeen economisch belang"@nl ;
+    skos:definition "Door de overheid aangewezen diensten met een publiek belang waarvoor woningcorporaties compensatie mogen ontvangen, waaronder het bouwen, verhuren en beheren van sociale huurwoningen, het beheren van bepaald maatschappelijk vastgoed en het bijdragen aan leefbaarheid."@nl ;
+    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
+    skos:prefLabel "DAEB"@nl ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/niet-daeb>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/passend-toewijzen>,
+        <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurwoning> .
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huishouden> a skos:Concept ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector, aansluitend bij formuleringen in huisvestingsverordeningen; de Wet op de huurtoeslag en het BTIV kennen eigen afbakeningen" ;
@@ -739,7 +735,7 @@
     skos:definition "Huurwoning met een aanvangshuurprijs tot en met de maximale huurgrens voor de huurtoeslag (DAEB-huurgrens), bestemd voor huishoudens met een laag inkomen."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:prefLabel "sociale huurwoning"@nl ;
-    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/diensten-van-algemeen-economisch-belang>,
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/daeb>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/doelgroep>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/gereguleerde-woonruimte>,
         <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurtoeslag> ;
