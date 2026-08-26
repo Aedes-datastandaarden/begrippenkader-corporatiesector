@@ -119,8 +119,6 @@
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/kwaliteitskortingsgrens> a skos:Concept ;
     dct:source <https://wetten.overheid.nl/BWBR0008659/2026-01-01/0>,
         "Afgeleid van de Wet op de huurtoeslag" ;
-    dct:source <https://www.aedes.nl>,
-        "Test extra source" ;
     rdfs:comment "Het deel boven de basishuur en onder de kwaliteitskortingsgrens wordt tot maximaal 100% door de huurtoeslag vergoed, afhankelijk van het inkomen. Boven de kwaliteitskortingsgrens neemt het vergoedingspercentage af. De grens wordt jaarlijks per 1 januari aangepast aan de verwachte huurprijsontwikkeling."@nl ;
     skos:definition "Het bedrag tot waar de huurtoeslag het deel van de huur boven de basishuur maximaal volledig vergoedt."@nl ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
