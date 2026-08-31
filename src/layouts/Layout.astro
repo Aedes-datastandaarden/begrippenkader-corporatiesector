@@ -24,7 +24,7 @@ const fullTitle = title === 'Begrippenkader Corporatiesector' ? title : `${title
   <body>
     <header class="site-header">
       <div class="site-header__inner">
-        <a href="https://aedes.nl/" class="site-header__logo" target="_blank" rel="noopener noreferrer">
+        <a href={pageUrl()} class="site-header__logo">
           <img src={buildAssetPath('aedes-logo.svg')} alt="Aedes" width="82" height="36" />
         </a>
         <a href={pageUrl()} class="site-header__title">Begrippenkader Corporatiesector</a>

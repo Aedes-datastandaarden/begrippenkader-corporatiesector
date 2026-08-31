@@ -18,7 +18,7 @@
 
 bgcs:begrippenkader-corporatiesector a skos:ConceptScheme ;
     dct:title "Begrippenkader Corporatiesector"@nl ;
-    dct:description "Begrippenkader van de Nederlandse corporatiesector: kernset van algemene begrippen en de basis voor het thema Vastgoed (fase 1). Conform SKOS en NL-SBB, conceptueel niveau (MIM-niveau 1)."@nl ;
+    dct:description "Begrippenkader van de Nederlandse corporatiesector."@nl ;
     dct:created "2026-06-01"^^xsd:date ;
     dct:modified "2026-06-01"^^xsd:date ;
     dct:language "nl" ;

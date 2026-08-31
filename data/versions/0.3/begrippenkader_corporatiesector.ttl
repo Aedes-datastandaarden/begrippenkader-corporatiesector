@@ -852,7 +852,7 @@
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> a skos:ConceptScheme ;
     dct:created "2026-07-06"^^xsd:date ;
-    dct:description "Begrippenkader van de Nederlandse corporatiesector. Conform SKOS en NL-SBB, conceptueel niveau (MIM-niveau 1)."@nl ;
+    dct:description "Begrippenkader van de Nederlandse corporatiesector."@nl ;
     dct:language "nl" ;
     dct:modified "2026-07-28"^^xsd:date ;
     dct:title "Begrippenkader Corporatiesector"@nl .
