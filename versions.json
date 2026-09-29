@@ -1,6 +1,13 @@
 {
-  "latest": "0.3",
+  "latest": "0.8",
   "versions": [
+    {
+      "id": "0.8",
+      "label": "Basisversie 0.8",
+      "date": "2026-09-29",
+      "file": "data/versions/0.8/begrippenkader_corporatiesector.ttl",
+      "status": "concept"
+    },
     {
       "id": "0.3",
       "label": "Basisversie 0.3",
