@@ -455,13 +455,13 @@ Er zijn twee aftoppingsgrenzen. Een lage grens voor huishoudens van 1 of 2 perso
     skos:prefLabel "assetmanagement"@nl ;
     skos:definition "Het proces dat de doelen van de corporatie vertaalt naar concrete plannen en beslissingen per complex. Het is de schakel tussen de langetermijnstrategie en de dagelijkse uitvoering, waarbij elke keuze wordt getoetst aan zowel financiële haalbaarheid als de maatschappelijke opgave."@nl ;
     rdfs:comment "De assetmanager zorgt ervoor dat het vastgoed duurzaam wordt beheerd gedurende de hele levenscyclus. Daarbij wordt steeds een afweging gemaakt tussen prestaties, kosten en risico's. Informatie stroomt twee kanten op: van boven naar beneden (de doelen van de corporatie) én van beneden naar boven (wat er speelt in de complexen). Dat is een doorlopend, cyclisch proces."@nl ;
-    skos:example """Een corporatie heeft als doel om in 2030 alle woningen minimaal energielabel B te laten hebben (top-down doel). De assetmanager bekijkt per complex wat de huidige staat is en welke ingreep het slimst is (bottom-up informatie):
+    skos:example "Een corporatie heeft als doel om in 2030 alle woningen minimaal energielabel B te laten hebben (top-down doel). De assetmanager bekijkt per complex wat de huidige staat is en welke ingreep het slimst is (bottom-up informatie)
 
-Complex A (bouwjaar 1975, label D): hier is isolatie en een warmtepomp haalbaar binnen budget → besluit: verduurzamen.
-Complex B (bouwjaar 1960, label F, veel klachten): verduurzaming is te duur ten opzichte van de resterende levensduur → besluit: sloop en nieuwbouw plannen.
-Complex C (bouwjaar 2005, label B): voldoet al → besluit: regulier onderhoud voortzetten.
+    Complex A (bouwjaar 1975, label D): hier is isolatie en een warmtepomp haalbaar binnen budget → besluit: verduurzamen.
+    Complex B (bouwjaar 1960, label F, veel klachten): verduurzaming is te duur ten opzichte van de resterende levensduur → besluit: sloop en nieuwbouw plannen.
+    Complex C (bouwjaar 2005, label B): voldoet al → besluit: regulier onderhoud voortzetten.
 
-Zo vertaalt de assetmanager het strategische doel naar een concreet plan per complex, waarbij kosten, risico's en maatschappelijke waarde steeds tegen elkaar worden afgewogen."""@nl ;
+Zo vertaalt de assetmanager het strategische doel naar een concreet plan per complex, waarbij kosten, risico's en maatschappelijke waarde steeds tegen elkaar worden afgewogen."@nl ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedportefeuille> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/portefeuillestrategie> ;
@@ -699,9 +699,9 @@ Het verschil met een portiekwoning: een portiek is een kort, verticaal trappenhu
     skos:scopeNote """De term verwijst naar de bouwvorm van de woning, niet naar het aantal huishoudens dat er woont of naar de wijze van verhuur. Een eengezinswoning waarin kamers onzelfstandig worden verhuurd, blijft naar bouwvorm een eengezinswoning.
 
     Eengezinswoning valt niet samen met grondgebonden woning. Een benedenwoning heeft een eigen toegang op het maaiveld en wordt in portefeuillebeleid doorgaans tot de grondgebonden woningen gerekend, maar is een meergezinswoning."""@nl ;
-    skos:example """Er zijn verschillende soorten eengezinswoningen, zoals een tussenwoning, eindwoning, hoekwoining geschakelde woning, twee-onder-een-kapwoning en vrijstaande woning. 
+    skos:example "Er zijn verschillende soorten eengezinswoningen, zoals een tussenwoning, eindwoning, hoekwoining geschakelde woning, twee-onder-een-kapwoning en vrijstaande woning. 
     
-    Een rij van acht woningen met elk een eigen voordeur aan de straat bestaat uit acht eengezinswoningen: twee hoekwoningen en zes tussenwoningen."""@nl ;
+    Een rij van acht woningen met elk een eigen voordeur aan de straat bestaat uit acht eengezinswoningen: twee hoekwoningen en zes tussenwoningen."@nl ;
     dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#dfn-eengezinswoning> ,
                "Afgeleid van IMWO" ;
     skos:closeMatch <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#dfn-eengezinswoning> ;
@@ -829,8 +829,8 @@ Een zelfstandige woning geldt dit alleen als de huurprijs aan het begin van het 
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/twee-onder-een-kapwoning> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vrijstaande-woning> ,
-                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/tussenwoning>,
-                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/hoekwoning>;
+                 <<https://begrippenkader-corporatiesector.aedes.nl/id/concept/tussenwoning>>,
+                 <<https://begrippenkader-corporatiesector.aedes.nl/id/concept/hoekwoning>;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/grondgebonden-woning> a skos:Concept ;
@@ -911,7 +911,7 @@ Wanneer de hoekwoning op een hoek in een rij woningen staat en dus aan twee zijd
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurder> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurprijs> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuurder> ,
-                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuureenheid> ;
+                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuureenheid> ,
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:topConceptOf <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
 
@@ -1101,9 +1101,9 @@ De kale huur is de grondslag voor huurprijsregelgeving, zoals de toets aan de li
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/leegstand> a skos:Concept ;
     skos:prefLabel "leegstand"@nl ;
     skos:definition "Periode waarin een verhuureenheid geen huurder heeft."@nl ;
-    rdfs:comment """Leegstand kan kort en gepland zijn (tijdens een mutatie of renovatie) of langdurig en ongewenst. Corporaties sturen op het beperken van leegstand en de bijbehorende huurderving. 
+    rdfs:comment "Leegstand kan kort en gepland zijn (tijdens een mutatie of renovatie) of langdurig en ongewenst. Corporaties sturen op het beperken van leegstand en de bijbehorende huurderving. 
     
-    Bij het tellen van het aantal leegstandsdagen is de dag dat de woning leeg komt te staan dag 1, en wordt geteld tot de dag dat de nieuwe huurder de sleutel krijgt."""@nl ;
+    Bij het tellen van het aantal leegstandsdagen is de dag dat de woning leeg komt te staan dag 1, en wordt geteld tot de dag dat de nieuwe huurder de sleutel krijgt."@nl ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/mutatie>;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
@@ -1373,7 +1373,7 @@ Portiekwoningen zijn herkenbaar aan het rijtje deurbellen bij de voordeur van he
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/corridorwoning>,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/galerijwoning>,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/maisonnette>, 
-                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woning-boven-bedrijfsruimte> ;
+                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woning-boven-bedrijfsruimte> ;;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/prestatieafspraak> a skos:Concept ;
@@ -1408,8 +1408,8 @@ Op landelijk niveau bestaan daarnaast de Nationale prestatieafspraken tussen het
     skos:prefLabel "rekenhuur"@nl ;
     skos:altLabel "subsidiabele huur"@nl ;
     skos:definition "Bedrag dat wordt gebruikt voor de berekening van de huurtoeslag. "@nl ;
-    rdfs:comment "Voor een woning is dit gelijk aan de kale huur. In het geval van de huur van een woonwagen zonder eigen aandrijving hoort ook de huur van de standplaats hierbij."@nl ;
-    skos:scopeNote "Tot en met 2025 hoorde hier ook een deel van de servicekosten bij, dat is tegenwoordig niet meer het geval."@nl ;
+    rdfs:comment "Voor een woning is dit gelijk aan de kale huur. In het geval van de huur van een woonwagen zonder eigen aandrijving hoort ook de huur van de standplaats hierbij.
+    skos:scopeNote "Tot en met 2025 hoorde hier ook een deel van de servicekosten bij, dat is tegenwoordig niet meer het geval. "@nl ;
     dct:source <https://wetten.overheid.nl/BWBR0008659/2026-01-01> ,
                "Afgeleid van artikel 5 Wet op de huurtoeslag" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bruto-huur> ,
@@ -1506,9 +1506,9 @@ Deze grens wordt elk jaar opnieuw vastgesteld, gebaseerd op prijsstijgingen. Het
 De streefhuur volgt het eigen huurbeleid, doelportefeuille, doelgroepenbeleid en de geldende wet-en regelgeving zoals het passend toewijzen en de maximale huur volgens het woningwaarderingsstelsel."""@nl ;
     dct:source <https://www.ilent.nl/site/binaries/site-content/collections/documents/autoriteit-woningcorporaties/publicaties-cijfers-en-wetgeving/publicaties/handboek-beleidswaarde/handboek-beleidswaarde.pdf> ,
                "Afgeleid van Handboek Beleidswaarde" ;
-    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurprijs> ,
-                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/maximale-huurprijs> ,
-                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/mutatie> ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurprijs>,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/maximale-huurprijs> 
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/mutatie> ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/taxatie> a skos:Concept ;
@@ -1604,7 +1604,7 @@ Een blok van twee levert twee twee-onder-een-kapwoningen op en geen hoekwoningen
     skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedobject> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedportefeuille> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuureenheid> ,
-                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woning> ;
+                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woning> ,;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:topConceptOf <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
 
@@ -1849,7 +1849,7 @@ Over de hele portefeuille samen worden vaak strategische keuzes gemaakt, bijvoor
     skos:definition "Vereniging of stichting die zich ten doel stelt uitsluitend op het gebied van de volkshuisvesting werkzaam te zijn en die daartoe op grond van de Woningwet is toegelaten."@nl ;
     rdfs:comment "Een woningcorporatie bouwt, verhuurt en beheert vooral sociale huurwoningen voor mensen met een laag inkomen of een kwetsbare positie op de woningmarkt. In wet- en regelgeving heet een woningcorporatie een toegelaten instelling."@nl ;
     dct:source <https://wetten.overheid.nl/BWBR0005181/2026-07-01>,
-                "Afgeleid van het begrip 'toegelaten instelling' uit artikel 19 Woningwet" ;
+                "Afgeleid van het begrip "toegelaten instelling" uit artikel 19 Woningwet" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuurder> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/daeb> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwet> ;
