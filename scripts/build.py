@@ -276,7 +276,7 @@ def build_version(version_id: str, ttl_path: Path) -> None:
     collections.append({
       "uri": uri,
       "slug": slug,
-      "prefLabel": pref_label,
+      "prefLabel": pref_label, 
       "memberCount": len(members),
       "members": sorted(members, key=lambda m: m["prefLabel"].lower()),
     })
