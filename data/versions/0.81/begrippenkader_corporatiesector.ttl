@@ -183,7 +183,7 @@
     skos:prefLabel "Bouwdelen en installaties"@nl ;
     skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/elektrische-installatie> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/installatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/liftinstallatie> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/lift> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/mechanische-ventilatie> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sanitaire-installatie> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/ventilatiesysteem> ,
@@ -296,7 +296,7 @@
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/inhoud-bouwwerk> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/installatie> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/perceel> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/liftinstallatie> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/lift> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/ligplaats> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/maisonnette> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/marktwaarde> ,
@@ -506,10 +506,9 @@ De beleidswaarde en de marktwaarde worden altijd samen bepaald: de beleidswaarde
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/benedenwoning> a skos:Concept ;
     skos:prefLabel "benedenwoning"@nl ;
-    skos:definition "Meergezinswoning met toegang op de begane grond in een pand waarin zich nog een andere woning bevindt."@nl ;
-    rdfs:comment "Een benedenwoning ligt op de begane grond van een pand waarin zich nog een andere woning bevindt, meestal een bovenwoning op de verdieping(en) erboven. De toegang van een benedenwoning komt vaak rechtstreeks op straat uit, met meestal een eigen voordeur. Een benedenwoning kan uit één of meerdere bouwlagen bestaan."@nl ;
-    dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html>,
-    "Afgeleid van IMWO" ;
+    skos:definition "Een etagewoning of flatwoning op de begane grond met een voordeur die op straat uitkomt. De benedenwoning bestaat uit één of meerdere bouwlagen."@nl ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
+    "Overgenomen van waarderingskamer" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/meergezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/grondgebonden-woning> ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
@@ -545,12 +544,10 @@ De beleidswaarde en de marktwaarde worden altijd samen bepaald: de beleidswaarde
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bovenwoning> a skos:Concept ;
     skos:prefLabel "bovenwoning"@nl ;
     skos:hiddenLabel "Boven woning"@nl ;
-    skos:definition "Meergezinswoning op een verdieping. De woning is bereikbaar via een binnentrap, en heeft mogelijk een gemeenschappelijke toegang."@nl ;
-    rdfs:comment """Je bereikt de bovenwoning via een voordeur en binnentrap vanaf de straat, niet vanuit een portiek. Soms deel je die trap en voordeur met de bewoners van de benedenwoning, soms heb je een eigen voordeur. 
-
-Een bovenwoning kan uit een of meerdere bouwlagen bestaan."""@nl ;
-    dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html>, 
-                "Afgeleid van IMWO" ;
+    skos:definition "Etagewoning of flatwoning op een etage die bereikbaar is via een binnentrap met een mogelijk gemeenschappelijke voordeur die op straat uitkomt of een eigen voordeur heeft die niet in een portiek uitkomt. De bovenwoning bestaat uit één of meerdere bouwlagen."@nl ;
+    skos:scopeNote "Een flat-bovenwoning (ook wel: repeterende bovenwoning) is geen galerijflat."@nl ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
+                "Overgenomen van waarderingskamer";
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/meergezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/galerijwoning> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/portiekwoning> ,
@@ -622,11 +619,9 @@ Een bovenwoning kan uit een of meerdere bouwlagen bestaan."""@nl ;
     skos:prefLabel "corridorwoning"@nl ;
     skos:altLabel "corridorflatwoning"@nl ;
     skos:hiddenLabel "corridorflat"@nl ;
-    skos:definition "Gestapelde woning in een flatgebouw waarbij de voordeur uitkomt op een lange gang binnen het gebouw."@nl ;
-    skos:scopeNote """Het verschil met een galerijwoning: bij een galerij loop je in de open lucht naar je voordeur, bij een corridorwoning loop je binnendoor, door een gang. 
-
-Het verschil met een portiekwoning: een portiek is een kort, verticaal trappenhuis met een paar voordeuren. Een corridor is een lange, horizontale gang met veel meer voordeuren op één verdieping"""@nl ;
-    dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
+    skos:definition "Een flatwoning waarbij de voordeur uitkomt op een centraal binnen de bouwmassa per etage gelegen loopgang dan wel op een centrale hal op de etage. "@nl ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
+        "Overgenomen van waarderingskamer";
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/meergezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/galerijwoning> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/portiekwoning>,
@@ -713,10 +708,10 @@ Het verschil met een portiekwoning: een portiek is een kort, verticaal trappenhu
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eindwoning> a skos:Concept ;
     skos:prefLabel "eindwoning"@nl ;
-    skos:definition "Eengezinswoning aan het einde van een rij van drie of meer eengezinswoningen, die aan één zijde grenst aan een andere eengezinswoning. De eindwoning ligt op het begin of einde van de reeks woningen en heeft geen (extra) bij de woning behorende grond aan de zijkant van de woning."@nl ;
-    rdfs:comment "Een eindwoning sluit een rij af. Aan één zijde staat een andere woning tegenaan, alle andere zijden zijn buitengevel. Aan de andere zijde grenst de eindwoning direct aan de openbare ruimte."@nl ;
+    skos:definition "Een eengezinswoning die grenst aan een aanliggende woning. De eindwoning ligt op het begin of einde van de reeks woningen en heeft geen (extra) bij de woning behorende grond aan de zijkant van de woning."@nl ;
     skos:scopeNote "Wanneer een eindwoning wel extra grond aan de zijkant van de woning heeft, dan spreken we van een hoekwoning."@nl ;
-    dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
+        "Overgenomen van waarderingskamer" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/hoekwoning> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/tussenwoning> ;
@@ -743,10 +738,9 @@ Het verschil met een portiekwoning: een portiek is een kort, verticaal trappenhu
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/galerijwoning> a skos:Concept ;
     skos:prefLabel "galerijwoning"@nl ;
-    skos:definition "Meergezinswoning die bereikbaar is via een galerij. Een galerij is een open gang aan de buitenzijde van het gebouw."@nl ;
-    rdfs:comment "Typisch voor flats uit de jaren zestig en zeventig: je loopt via een open gang aan de buitenkant van het gebouw naar je voordeur."@nl ;
-    dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html> ,
-               "Afgeleid van IMWO" ;
+    skos:definition "Een flatwoning waarbij de voordeur uitkomt  op een aan de buitenkant gelegen loopgang. Een galerijflat heeft meerdere bouwlagen met woningen boven elkaar."@nl ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
+        "Overgenomen van waarderingskamer" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/meergezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bovenwoning> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/corridorwoning>,
@@ -816,10 +810,11 @@ Een zelfstandige woning geldt dit alleen als de huurprijs aan het begin van het 
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/geschakelde-woning> a skos:Concept ;
     skos:prefLabel "geschakelde woning"@nl ;
-    skos:definition "eengezinswoning die met een andere woning is verbonden via een aangebouwd bouwdeel dat zelf geen woonruimte is."@nl ;
+    skos:definition "Een eengezinswoning waarbij de muren of muren van aanbouwen gedeeltelijk aan (aanbouwen van) andere woningen grenzen."@nl ;
     rdfs:comment "De woningen zelf staan los van elkaar, maar zijn aan elkaar gebouwd via een garage, berging of carport ertussen. Daardoor ontstaat één doorlopende bouwmassa, terwijl beide woningen aan alle zijden eigen buitengevel hebben."@nl ;
     skos:scopeNote "Het verbindende bouwdeel is geen woonruimte. Vormen de woningen zelf een aaneengesloten geheel, dan gaat het om een twee-onder-een-kapwoning, hoekwoning of tussenwoning."@nl ;
-    dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
+        "Overgenomen van waarderingskamer" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/twee-onder-een-kapwoning> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vrijstaande-woning> ,
@@ -846,12 +841,9 @@ Een woning die niet grondgebonden is, heeft in dit begrippenkader geen eigen ter
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/hoekwoning> a skos:Concept ;
     skos:prefLabel "hoekwoning"@nl ;
-    skos:definition "Eengezinswoning aan het einde van een rij van drie of meer eengezinswoningen, die aan één zijde grenst aan een andere eengezinswoning. De hoekwoning ligt op het begin of einde van de reeks woningen en heeft (extra) bij de woning behorende grond aan de zijkant van de woning."@nl ;
-    rdfs:comment "Een hoekwoning sluit een rij af. Aan één zijde staat een andere woning tegenaan, alle andere zijden zijn buitengevel. Tussen de hoekwoning en de openbare ruimte beschikt de woning over bijbehorende grond."@nl ;
-    skos:scopeNote """Wanneer een hoekwoning geen extra grond aan de zijkant van de woning heeft, dan spreken we van een eindwoning.
-
-Wanneer de hoekwoning op een hoek in een rij woningen staat en dus aan twee zijden grenst aan een andere eengezinswoning, dan betreft het een tussenwoning."""@nl ;
-    dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ; 
+    skos:definition "Een eengezinswoning die grenst aan een aanliggende woning. De hoekwoning ligt op het begin of einde van de reeks woningen en heeft (extra) bij de woning behorende grond aan de zijkant van de woning."@nl ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
+        "Overgenomen van waarderingskamer" ;
     skos:closeMatch <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#hoekwoning> ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eindwoning> ,
@@ -1025,7 +1017,7 @@ Inkomensgrens voor de inkomensafhankelijke huurverhoging: bepaalt vanaf welk ink
     rdfs:comment "Installatie is de verzamelnaam; verwarmingsinstallatie, ventilatiesysteem en lift zijn voorbeelden van specifieke installaties."@nl ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
     skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/concept/elektrische-installatie> ,
-                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/liftinstallatie> ,
+                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/lift> ,
                   <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sanitaire-installatie> ,
                   <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verwarmingsinstallatie> ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
@@ -1121,22 +1113,23 @@ Elk jaar wordt de grens opnieuw vastgesteld. Bepalend is de huurprijs op de eers
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:topConceptOf <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
 
-<https://begrippenkader-corporatiesector.aedes.nl/id/concept/liftinstallatie> a skos:Concept ;
-    skos:prefLabel "liftinstallatie"@nl ;
-    skos:altLabel "lift"@nl ;
-    skos:definition "Installatie voor het verticaal vervoeren van personen of goederen tussen verdiepingen van een gebouw."@nl ;
+<https://begrippenkader-corporatiesector.aedes.nl/id/concept/lift> a skos:Concept ;
+    skos:prefLabel "lift"@nl ;
+    skos:altLabel "liftinstallatie"@nl ;
+    skos:definition "Een verticaal transportmiddel voor personen of goederen. Liften maken hogere gebouwen toegankelijk zonder trappen te gebruiken."@nl ;
     rdfs:comment "In veel gestapelde woongebouwen essentieel voor de toegankelijkheid, vooral voor bewoners die slecht ter been zijn. Een lift is verplicht in gebouwen vanaf vier verdiepingen, of waarvan de vloer van een verdieping hoger dan 12.5 meter hoog ligt."@nl ;
-    dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
+        "Overgenomen van waarderingskamer" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/installatie> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verdieping> ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/ligplaats> a skos:Concept ;
     skos:prefLabel "ligplaats"@nl ;
-    skos:definition "Plaats in het water, aangewezen door de gemeente, waar een drijvend object permanent mag afmeren om te wonen, te werken of te recreëren. Soms hoort er ook een stuk grond op de oever bij."@nl ;
+    skos:definition "Een ligplaats is een formeel door de gemeente als zodanig aangewezen plaats in het water, al dan niet aangevuld met een op de oever aanwezig terrein of een gedeelte daarvan, dat bestemd is voor het permanent afmeren van een voor woon, bedrijfsmatige of recreatieve doeleinden geschikt vaartuig."@nl ;
     rdfs:comment "Vergelijkbaar met een standplaats, maar dan voor woonboten. Echter zijn ligplaatsen geen gereguleerde woonruimtes"@nl ;
-    dct:source <https://wetten.overheid.nl/BWBR0023466/2025-02-12> ,
-               "Afgeleid van artikel 1 Wet basisregistraties adressen en gebouwen" ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
+        "Overgenomen van waarderingskamer";
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedobject>,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woonruimte> ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
@@ -1145,10 +1138,9 @@ Elk jaar wordt de grens opnieuw vastgesteld. Bepalend is de huurprijs op de eers
     skos:prefLabel "maisonnette"@nl ;
     skos:altLabel "maisonnette woning"@nl ;
     skos:hiddenLabel "maisonnettewoning"@nl ;
-    skos:definition "Meergezinswoning die bestaat uit meerdere verdiepingen, in een groter gebouw."@nl ;
-    rdfs:comment "Een maisonnette is een meergezinswoning. De verdiepingen in de maisonnette zijn verbonden via een interne trap, en er is een eigen toegang."@nl ;
-    dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html> ,
-               "Afgeleid van IMWO" ;
+    skos:definition "Een specifiek type flatwoning waarbij de woning zelf twee of meer bouwlagen heeft. De voordeur komt uit op een gemeenschappelijke loopgang, op een gemeenschappelijk afsluitbaar trappenhuis, een centrale hal of gesloten portiek."@nl ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
+        "Overgenomen van waarderingskamer" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/meergezinswoning> ;
     skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bovenwoning> ,
                   <https://begrippenkader-corporatiesector.aedes.nl/id/concept/corridorwoning> ,
@@ -1356,10 +1348,8 @@ Er zijn verschillende soorten onderhoud: mutatieonderhoud, reparatie- en klachte
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/portiekwoning> a skos:Concept ;
     skos:prefLabel "portiekwoning"@nl ;
-    skos:definition "Meergezinswoning die je bereikt via een gezamenlijk trappenhuis, centrale hal of gesloten portiek (overdekte ruimte bij de ingang van een gebouw)."@nl ;
-    rdfs:comment """Het trappenhuis deel je met een klein aantal andere woningen, meestal twee tot vier per verdieping. Er zijn geen lange gangen, vanuit het trappenhuis loop je meteen naar je eigen voordeur. 
-
-Portiekwoningen zijn herkenbaar aan het rijtje deurbellen bij de voordeur van het gemeenschappelijke trappenhuis. Deze gebouwen zijn meestal drie tot vier verdiepingen hoog en hebben vaak geen lift."""@nl ;
+    skos:definition "Een etagewoning waarbij de voordeur uitkomt in een open portiek."@nl ;
+    rdfs:comment """Een portiek is een toegangsportaal gelegen achter de voorgevel van een meergezinsgebouw en grenzend aan de openbare weg, van waaruit de afzonderlijke woningen direct worden ontsloten via een gemeenschappelijk te gebruiken trap en bordessen."""@nl ;
     dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html> ,
                "Afgeleid van IMWO" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/meergezinswoning> ;
@@ -1557,14 +1547,10 @@ Bij corporaties verloopt toewijzing meestal via een woonruimteverdeelsysteem en 
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/tussenwoning> a skos:Concept ;
     skos:prefLabel "tussenwoning"@nl ;
-    skos:definition "Eengezinswoning die aan weerszijden grenst aan een andere eengezinswoning."@nl ;
-    rdfs:comment "Een tussenwoning ligt in het midden van een rij. Aan de linker- en rechterzijde staat een andere woning tegen de woning aan, en de voor- en achterzijde zijn buitengevel."@nl ;
-    skos:scopeNote """Het criterium is aangrenzendheid aan andere eengezinswoningen. Grenst een woning aan één zijde aan een bedrijfsruimte of aan een gestapeld deel van het blok, dan is zij volgens dit criterium geen tussenwoning, ook al staat zij ogenschijnlijk middenin een rij. In registraties van corporaties wordt zo'n woning in de praktijk vaak wel als tussenwoning aangemerkt.
-
-Aangrenzendheid gaat alleen over zijwaartse begrenzing binnen hetzelfde bouwblok. Woningen boven of onder elkaar leveren geen eengezinswoning op en spelen hier dus geen rol."""@nl ;
+    skos:definition "Een eengezinswoning waarbij de tussenmuren aan andere panden grenzen en waarbij de woningen ten opzichte van elkaar in een gelijk vlak of lijn liggen. Ook de woning die de hoek vormt van een gesloten bouwblok (twee reeksen woningen zijn verbonden met elkaar) is een tussenwoning."@nl ;
     skos:example "Een blok van vijf aaneengebouwde woningen bestaat uit drie tussenwoningen en twee hoekwoningen."@nl ;
-    dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#tussenwoning> ,
-               "Afgeleid van IMWO" ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
+        "Overgenomen van waarderingskamer" ;
     skos:closeMatch <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#tussenwoning> ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eindwoning> ,
@@ -1574,13 +1560,10 @@ Aangrenzendheid gaat alleen over zijwaartse begrenzing binnen hetzelfde bouwblok
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/twee-onder-een-kapwoning> a skos:Concept ;
     skos:prefLabel "twee-onder-een-kapwoning"@nl ;
-    skos:definition "Eengezinswoning die met één andere eengezinswoning een blok van twee woningen vormt."@nl ;
-    rdfs:comment "Twee woningen staan tegen elkaar aan en vormen samen één bouwmassa, vaak onder één doorlopend dak. Elke woning heeft drie zijden buitengevel."@nl ;
-    skos:scopeNote """De term suggereert één gemeenschappelijke kap, maar wordt in de praktijk gebruikt voor elk blok van twee aaneengebouwde woningen, ook zonder doorlopend dak.
-
-Een blok van twee levert twee twee-onder-een-kapwoningen op en geen hoekwoningen; het onderscheid met de hoekwoning zit in de lengte van de rij."""@nl ;
-    dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#tweeondereenkapwoning> ,
-               "Afgeleid van IMWO" ;
+    skos:definition "Een eengezinswoning waarvan het hoofdgebouw is verbonden met het hoofdgebouw van één andere gelijksoortige en gelijkvormige woning (niet zijnde een tussenwoning)"@nl ;
+    skos:scopeNote """Ook wanneer de woningen elk een afzonderlijke dakconstructie hebben, vallen deze onder de definitie van de 2-onder-1-kapwoning. """@nl ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
+        "Overgenomen van waarderingskamer" ;
     skos:closeMatch <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html#dfn-tweeondereenkapwoning> ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eindwoning>,
@@ -1675,7 +1658,7 @@ Over de hele portefeuille samen worden vaak strategische keuzes gemaakt, bijvoor
     dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html>, 
                 "Overgenomen van IMWO" ;
     skos:exactMatch <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html#dfn-verdieping>;
-    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/liftinstallatie> ;
+    skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/lift> ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
     skos:topConceptOf <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
 
@@ -1743,21 +1726,19 @@ Over de hele portefeuille samen worden vaak strategische keuzes gemaakt, bijvoor
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verwarmingsinstallatie> a skos:Concept ;
     skos:prefLabel "verwarmingsinstallatie"@nl ;
-    skos:altLabel "centrale verwarming"@nl ,
-                  "cv-installatie"@nl ;
-    skos:definition "Installatie die een woning of gebouw verwarmt, bijvoorbeeld door middel van een cv-ketel, warmtepomp of aansluiting op stadsverwarming."@nl ;
-    rdfs:comment "De meest voorkomende vorm in Nederlandse woningen is nog altijd de cv-ketel, maar warmtepompen en aansluiting op stadsverwarming worden ook steeds vaker gebruikt."@nl ;
-    dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
+    skos:altLabel "centrale verwarming"@nl ;
+    skos:definition "Een installatie die zorgt voor het op temperatuur brengen en houden van een ruimte of gebouw.  Verwarmingssystemen worden centraal aangestuurd door een ketel of warmtepomp met thermostaat.  "@nl ;
+    dct:source "Overgenomen van IM vastgoed" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/installatie> ;
     skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/concept/warmtepomp> ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vrijstaande-woning> a skos:Concept ;
     skos:prefLabel "vrijstaande woning"@nl ;
-    skos:definition "Eengezinswoning die aan geen enkele zijde grenst aan een andere woning."@nl ;
-    rdfs:comment "Een vrijstaande woning staat los; alle zijden zijn buitengevel."@nl ;
+    skos:definition "Een eengezinswoning die los staat van (eventueel) aanwezige andere objecten."@nl ;
     skos:scopeNote "Een woning die alleen via een garage, berging of carport met de buurwoning is verbonden, wordt bouwkundig doorgaans geschakelde woning genoemd."@nl ;
-    dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
+        "Overgenomen van waarderingskamer" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eindwoning> ,
                   <https://begrippenkader-corporatiesector.aedes.nl/id/concept/geschakelde-woning> ,
