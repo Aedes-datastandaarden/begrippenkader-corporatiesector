@@ -12,8 +12,6 @@ interface Props {
   onSelect: (slug: string) => void;
 }
 
-type FilterMode = 'all' | 'top';
-
 const DESKTOP_PAGE_SIZE = 18;
 const MOBILE_PAGE_SIZE = 12;
 
@@ -24,7 +22,6 @@ export default function ConceptExplorer({
   onSelect,
 }: Props) {
   const isMobile = useMediaQuery('(max-width: 48rem)');
-  const [filter, setFilter] = useState<FilterMode>('all');
   const [page, setPage] = useState(1);
   const [detailOpen, setDetailOpen] = useState(() => {
     if (typeof window === 'undefined') return false;
@@ -36,15 +33,14 @@ export default function ConceptExplorer({
   const pageSize = isMobile ? MOBILE_PAGE_SIZE : DESKTOP_PAGE_SIZE;
 
   const filtered = useMemo(() => {
-    const list = filter === 'top' ? concepts.filter((c) => c.isTopConcept) : concepts;
-    return [...list].sort((a, b) => a.prefLabel.localeCompare(b.prefLabel, 'nl'));
-  }, [concepts, filter]);
+    return [...concepts].sort((a, b) => a.prefLabel.localeCompare(b.prefLabel, 'nl'));
+  }, [concepts]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
 
   useEffect(() => {
     setPage(1);
-  }, [filter, pageSize]);
+  }, [pageSize]);
 
   useEffect(() => {
     if (!selectedSlug) return;
@@ -100,23 +96,8 @@ export default function ConceptExplorer({
         <aside className="concept-explorer__list-panel" aria-labelledby="concepts-heading">
           <div className="concept-explorer__list-header">
             <h2 id="concepts-heading">Begrippen</h2>
-            <div className="concept-browser__filter" role="group" aria-label="Filter begrippen">
-              <button
-                type="button"
-                className={filter === 'all' ? 'is-active' : undefined}
-                aria-pressed={filter === 'all'}
-                onClick={() => setFilter('all')}
-              >
-                Alle ({concepts.length})
-              </button>
-              <button
-                type="button"
-                className={filter === 'top' ? 'is-active' : undefined}
-                aria-pressed={filter === 'top'}
-                onClick={() => setFilter('top')}
-              >
-                Top ({concepts.filter((c) => c.isTopConcept).length})
-              </button>
+            <div className="concept-browser__filter">
+              <span className="is-active">Alle ({concepts.length})</span>
             </div>
           </div>
 

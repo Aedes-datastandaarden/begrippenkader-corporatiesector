@@ -8,8 +8,8 @@
 # - Scheme-URI: https://begrippenkader-corporatiesector.aedes.nl/id/scheme
 # - Collectie-URI's: https://begrippenkader-corporatiesector.aedes.nl/id/collection/<slug>
 # - Thematische ordening loopt via skos:Collection / skos:member, niet via de URI of
-#   via skos:broader. Twee hoofdcollecties (Kernbegrippen, Vastgoed) bevatten elk
-#   subcollecties; elk begrip is lid van minimaal een subcollectie.
+#   via skos:broader. Twee collecties (Vastgoed, Basisset) verdelen samen alle
+#   begrippen; elk begrip is lid van precies een collectie.
 # - skos:broader/skos:narrower zijn volledig symmetrisch en drukken uitsluitend
 #   generieke specialisatie uit (is-een). skos:related is symmetrisch en overlapt
 #   nergens met de (transitieve) hierarchie.
@@ -38,8 +38,75 @@
 # Thematische collecties (skos:Collection)
 #################################################################
 
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/kernbegrippen> a skos:Collection ;
-    skos:prefLabel "Kernbegrippen corporatiesector"@nl ;
+<https://begrippenkader-corporatiesector.aedes.nl/id/collection/vastgoed> a skos:Collection ;
+    skos:prefLabel "Vastgoed"@nl ;
+    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bag-status> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/beleidswaarde> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/benedenwoning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bovenwoning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bruto-vloeroppervlakte> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/cluster> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/complex> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/corridorwoning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eindwoning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/elektrische-installatie> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/exploitatieperiode> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/galerijwoning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/gebruiksfunctie> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/gebruiksoppervlakte> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/geschakelde-woning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/grondgebonden-woning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/hoekwoning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/inhoud-bouwwerk> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/installatie> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/lift> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/ligplaats> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/maisonnette> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/marktwaarde> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/mechanische-ventilatie> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/meergezinswoning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/netto-vloeroppervlakte> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/nieuwbouw> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/onderhoud> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/onzelfstandige-woonruimte> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/pand> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/perceel> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/portiekwoning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/renovatie> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sanitaire-installatie> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sloop> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurwoning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/standplaats> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/taxatie> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/taxatierapport> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/terrein> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/tussenwoning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/twee-onder-een-kapwoning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoed> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedobject> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/ventilatiesysteem> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verblijfsobject> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verdieping> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verduurzaming> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuurbare-vloeroppervlakte> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vervangende-nieuwbouw> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verwarmingsinstallatie> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vrijstaande-woning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/warmtepomp> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/warmteterugwinsysteem> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woning> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woning-boven-bedrijfsruimte> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningverbetering> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woongelegenheid> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woonruimte> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woonwagen> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woz-waarde> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/zelfstandige-woning> ;
+    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
+
+<https://begrippenkader-corporatiesector.aedes.nl/id/collection/basisset> a skos:Collection ;
+    skos:prefLabel "Basisset"@nl ;
     skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/aanvangshuurprijs> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/aftoppingsgrens> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/assetmanagement> ,
@@ -73,16 +140,15 @@
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/niet-daeb> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/passend-toewijzen> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/passendheidstoets> ,
+                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/portefeuillestrategie> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/prestatieafspraak> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/regeling-toegelaten-instellingen-volkshuisvesting> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/rekenhuur> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/servicekosten> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurgrens> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurwoning> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/streefhuur> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/toewijzing> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedportefeuille> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/portefeuillestrategie> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuurder> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuureenheid> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/waarderingspunten> ,
@@ -93,251 +159,7 @@
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwaarderingsstelsel> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwet> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningzoekende> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Cross-thematische kernbegrippen die in alle thema's van het begrippenkader terugkomen (fase 1)."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/actoren-en-doelgroepen> a skos:Collection ;
-    skos:prefLabel "Actoren en doelgroepen"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bewoner> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/doelgroep> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huishouden> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huishoudinkomen> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurder> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuurder> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningcorporatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningzoekende> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Partijen en huishoudens die een rol spelen in het verhuurproces en het volkshuisvestingsbeleid."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/bouwdelen-en-installaties> a skos:Collection ;
-    skos:prefLabel "Bouwdelen en installaties"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/elektrische-installatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/installatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/lift> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/mechanische-ventilatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sanitaire-installatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/ventilatiesysteem> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verdieping> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verwarmingsinstallatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/warmtepomp> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/warmteterugwinsysteem> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Bouwkundige onderdelen van een bouwwerk en de technische installaties daarin."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/daeb-en-toewijzing> a skos:Collection ;
-    skos:prefLabel "DAEB en toewijzing"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/daeb> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/inkomensgrens> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/leefbaarheid> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/niet-daeb> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/passend-toewijzen> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/passendheidstoets> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/toewijzing> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Afbakening van het DAEB-domein en de regels voor toewijzing van woningen aan huishoudens."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/huurovereenkomst-en-huurprijs> a skos:Collection ;
-    skos:prefLabel "Huurovereenkomst en huurprijs"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/aanvangshuurprijs> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bruto-huur> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/geliberaliseerde-huurwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/gereguleerde-woonruimte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurovereenkomst> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurprijs> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurverhoging> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/inkomensafhankelijke-huurverhoging> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/kale-huur> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/maximale-huurprijs> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/servicekosten> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/streefhuur> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/waarderingspunten> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwaarderingscriterium> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwaarderingsstelsel> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "De huurovereenkomst, de huurprijs en de componenten en regulering daarvan."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/huurprijsgrenzen-en-huurtoeslag> a skos:Collection ;
-    skos:prefLabel "Huurprijsgrenzen en huurtoeslag"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/aftoppingsgrens> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/basishuur> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurtoeslag> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/kwaliteitskortingsgrens> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/liberalisatiegrens> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/maximale-huurgrens> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/rekenhuur> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurgrens> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Huurtoeslag en de huurprijsgrenzen die de hoogte van de toeslag en de segmentindeling bepalen."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/ingrepen-in-vastgoed> a skos:Collection ;
-    skos:prefLabel "Ingrepen in vastgoed"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/nieuwbouw> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/onderhoud> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/renovatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sloop> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verduurzaming> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vervangende-nieuwbouw> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Ingrepen waarmee de staat of de omvang van het vastgoedbezit verandert."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/oppervlakte-en-inhoud> a skos:Collection ;
-    skos:prefLabel "Oppervlakte en inhoud"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bruto-vloeroppervlakte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/gebruiksoppervlakte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/inhoud-bouwwerk> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/netto-vloeroppervlakte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuurbare-vloeroppervlakte> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Maatvoeringsbegrippen voor vloeroppervlakte en inhoud, grotendeels volgens NEN 2580."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/sturing-en-verantwoording> a skos:Collection ;
-    skos:prefLabel "Sturing en verantwoording"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/assetmanagement> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/dpi> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/dvi> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/prestatieafspraak> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedportefeuille> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/portefeuillestrategie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningvoorraad> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Portefeuillesturing en de informatie waarmee corporaties zich verantwoorden."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/thema-vastgoed> a skos:Collection ;
-    skos:prefLabel "Vastgoed"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bag-status> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/beleidswaarde> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/benedenwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bovenwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bruto-vloeroppervlakte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/cluster> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/complex> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/corridorwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eindwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/elektrische-installatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/exploitatieperiode> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/galerijwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/gebruiksfunctie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/gebruiksoppervlakte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/geschakelde-woning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/grondgebonden-woning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/hoekwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/inhoud-bouwwerk> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/installatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/perceel> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/lift> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/ligplaats> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/maisonnette> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/marktwaarde> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/mechanische-ventilatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/meergezinswoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/netto-vloeroppervlakte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/nieuwbouw> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/onderhoud> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/onzelfstandige-woonruimte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/pand> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/portiekwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/renovatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sanitaire-installatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sloop> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/taxatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/taxatierapport> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/terrein> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/tussenwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/twee-onder-een-kapwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoed> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedobject> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/ventilatiesysteem> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verblijfsobject> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verdieping> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verduurzaming> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuurbare-vloeroppervlakte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vervangende-nieuwbouw> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verwarmingsinstallatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vrijstaande-woning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/warmtepomp> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/warmteterugwinsysteem> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woning-boven-bedrijfsruimte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woongelegenheid> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woonruimte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woz-waarde> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/zelfstandige-woning> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Begrippen van het thema Vastgoed (fase 1)."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/vastgoedobjecten-en-registratie> a skos:Collection ;
-    skos:prefLabel "Vastgoedobjecten en registratie"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bag-status> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/cluster> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/complex> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/gebruiksfunctie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/perceel> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/ligplaats> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/pand> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/terrein> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoed> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedobject> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verblijfsobject> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Fysieke vastgoedobjecten en de kenmerken waarmee zij in basisregistraties zijn vastgelegd."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/vastgoedwaardering> a skos:Collection ;
-    skos:prefLabel "Vastgoedwaardering"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/beleidswaarde> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/exploitatieperiode> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/marktwaarde> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/taxatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/taxatierapport> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woz-waarde> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Waardebegrippen en de methodiek waarmee de waarde van vastgoed wordt bepaald."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/verhuurproces-en-beheer> a skos:Collection ;
-    skos:prefLabel "Verhuurproces en beheer"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/leegstand> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/mutatie> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuureenheid> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Begrippen rond de exploitatie-eenheid en de doorloop van verhuring, wisseling en leegstand."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/wet-en-regelgeving> a skos:Collection ;
-    skos:prefLabel "Wet- en regelgeving"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/besluit-toegelaten-instellingen-volkshuisvesting> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/regeling-toegelaten-instellingen-volkshuisvesting> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/wet-betaalbare-huur> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwet> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Wetten, besluiten en regelingen die het werkdomein van woningcorporaties bepalen."@nl.
-
-<https://begrippenkader-corporatiesector.aedes.nl/id/collection/woningen-en-woningtypen> a skos:Collection ;
-    skos:prefLabel "Woningen en woningtypen"@nl ;
-    skos:member <https://begrippenkader-corporatiesector.aedes.nl/id/concept/benedenwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bovenwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/corridorwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eindwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/galerijwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/geschakelde-woning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/grondgebonden-woning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/hoekwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/maisonnette> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/meergezinswoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/onzelfstandige-woonruimte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/portiekwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/tussenwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/twee-onder-een-kapwoning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vrijstaande-woning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woning> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woning-boven-bedrijfsruimte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woongelegenheid> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/woonruimte> ,
-                <https://begrippenkader-corporatiesector.aedes.nl/id/concept/zelfstandige-woning> ;
-    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> ;
-    dct:description "Woonruimte en woongelegenheid en de indeling van woningen naar type."@nl.
+    skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
 
 
 #################################################################
