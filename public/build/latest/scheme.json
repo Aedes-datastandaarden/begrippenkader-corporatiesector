@@ -2,7 +2,7 @@
   "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/scheme",
   "title": "Begrippenkader corporatiesector",
   "titleLang": "nl",
-  "description": "Begrippenkader voor de corporatiesector. Fase 1 omvat de cross-thematische kernbegrippen en het thema Vastgoed. De thematische ordening loopt via skos:Collection; de URI's van begrippen bevatten geen thema-aanduiding.",
+  "description": "Conceptversie van het begrippenkader voor de corporatiesector. In deze fase zijn de algemene basisbegrippen ontwikkeld, samen met de begrippen voor het thema Vastgoed. Het kader wordt stapsgewijs verder uitgebreid en getoetst.",
   "descriptionLang": "nl",
   "created": "",
   "modified": "2026-09-29",

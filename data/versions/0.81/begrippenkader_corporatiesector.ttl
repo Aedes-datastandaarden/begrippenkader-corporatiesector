@@ -29,7 +29,7 @@
 
 <https://begrippenkader-corporatiesector.aedes.nl/id/scheme> a skos:ConceptScheme ;
     skos:prefLabel "Begrippenkader corporatiesector"@nl ;
-    dct:description "Begrippenkader voor de corporatiesector. Fase 1 omvat de cross-thematische kernbegrippen en het thema Vastgoed. De thematische ordening loopt via skos:Collection; de URI's van begrippen bevatten geen thema-aanduiding."@nl ;
+    dct:description "Conceptversie van het begrippenkader voor de corporatiesector. In deze fase zijn de algemene basisbegrippen ontwikkeld, samen met de begrippen voor het thema Vastgoed. Het kader wordt stapsgewijs verder uitgebreid en getoetst."@nl ;
     dct:modified "2026-09-29" ;
     dct:publisher "Aedes vereniging van woningcorporaties"@nl ;
     dct:title "Begrippenkader corporatiesector"@nl .
@@ -428,9 +428,9 @@ De beleidswaarde en de marktwaarde worden altijd samen bepaald: de beleidswaarde
     skos:example """Er zijn verschillende soorten eengezinswoningen, zoals een tussenwoning, eindwoning, hoekwoining geschakelde woning, twee-onder-een-kapwoning en vrijstaande woning. 
     
     Een rij van acht woningen met elk een eigen voordeur aan de straat bestaat uit acht eengezinswoningen: twee hoekwoningen en zes tussenwoningen."""@nl ;
-    dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#dfn-eengezinswoning> ,
+    dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html#dfn-eengezinswoning> ,
                "Afgeleid van IMWO" ;
-    skos:closeMatch <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#dfn-eengezinswoning> ;
+    skos:closeMatch <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html#dfn-eengezinswoning> ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/zelfstandige-woning> ;
     skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eindwoning> ,
                   <https://begrippenkader-corporatiesector.aedes.nl/id/concept/geschakelde-woning> ,
@@ -576,7 +576,6 @@ Een woning die niet grondgebonden is, heeft in dit begrippenkader geen eigen ter
     skos:definition "Een eengezinswoning die grenst aan een aanliggende woning. De hoekwoning ligt op het begin of einde van de reeks woningen en heeft (extra) bij de woning behorende grond aan de zijkant van de woning."@nl ;
     dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
         "Overgenomen van waarderingskamer" ;
-    skos:closeMatch <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#hoekwoning> ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eindwoning> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/tussenwoning> ,
@@ -928,7 +927,7 @@ Elk jaar wordt de grens opnieuw vastgesteld. Bepalend is de huurprijs op de eers
     skos:definition "Woning in een pand met ten minste één ander verblijfsobject."@nl ;
     rdfs:comment "Bij een meergezinswoning deelt de woning het pand met ten minste één ander verblijfsobject. Dat is meestal een andere woning, zoals bij een flat of een appartementencomplex, maar het kan ook een winkel, praktijkruimte of kantoor zijn. Vaak worden voorzieningen gedeeld: een gemeenschappelijke entree, een trappenhuis, een galerij of een lift. Dat is geen voorwaarde: een benedenwoning of een woning boven een winkel heeft doorgaans een eigen voordeur aan de straat. De tegenhanger is de eengezinswoning, die het enige verblijfsobject in haar pand is."@nl ;
     skos:example "In een portiekflat van vier verdiepingen met acht woningen zijn alle acht woningen meergezinswoningen. Een woning boven een winkel met een eigen voordeur aan de straat is dat ook: het pand bevat dan twee verblijfsobjecten, de woning en de winkel."@nl ;
-    dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#meergezinswoning> ,
+    dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html#dfn-meergezinswoning> ,
                "Afgeleid van IMWO" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/zelfstandige-woning> ;
     skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/concept/benedenwoning> ,
@@ -1061,8 +1060,8 @@ Er zijn verschillende soorten onderhoud: mutatieonderhoud, reparatie- en klachte
     skos:prefLabel "portiekwoning"@nl ;
     skos:definition "Een etagewoning waarbij de voordeur uitkomt in een open portiek."@nl ;
     rdfs:comment """Een portiek is een toegangsportaal gelegen achter de voorgevel van een meergezinsgebouw en grenzend aan de openbare weg, van waaruit de afzonderlijke woningen direct worden ontsloten via een gemeenschappelijk te gebruiken trap en bordessen."""@nl ;
-    dct:source <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html> ,
-               "Afgeleid van IMWO" ;
+    dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf> ,
+               "Overgenomen van waarderingskamer" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/meergezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/bovenwoning> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/corridorwoning>,
@@ -1253,7 +1252,6 @@ Bij corporaties verloopt toewijzing meestal via een woonruimteverdeelsysteem en 
     skos:example "Een blok van vijf aaneengebouwde woningen bestaat uit drie tussenwoningen en twee hoekwoningen."@nl ;
     dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
         "Overgenomen van waarderingskamer" ;
-    skos:closeMatch <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#tussenwoning> ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eindwoning> ,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/geschakelde-woning>,
@@ -1266,7 +1264,6 @@ Bij corporaties verloopt toewijzing meestal via een woonruimteverdeelsysteem en 
     skos:scopeNote """Ook wanneer de woningen elk een afzonderlijke dakconstructie hebben, vallen deze onder de definitie van de 2-onder-1-kapwoning. """@nl ;
     dct:source <https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf>,
         "Overgenomen van waarderingskamer" ;
-    skos:closeMatch <https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html#dfn-tweeondereenkapwoning> ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/eindwoning>,
                 <https://begrippenkader-corporatiesector.aedes.nl/id/concept/geschakelde-woning> ,
