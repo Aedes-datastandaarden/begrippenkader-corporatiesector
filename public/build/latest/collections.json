@@ -1,14 +1,49 @@
 [
   {
-    "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/collectie/actoren-en-doelgroepen",
-    "slug": "actoren-en-doelgroepen",
-    "prefLabel": "Actoren en doelgroepen",
-    "memberCount": 7,
+    "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/collection/basisset",
+    "slug": "basisset",
+    "prefLabel": "Basisset",
+    "memberCount": 52,
     "members": [
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/aanvangshuurprijs",
+        "slug": "aanvangshuurprijs",
+        "prefLabel": "aanvangshuurprijs"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/aftoppingsgrens",
+        "slug": "aftoppingsgrens",
+        "prefLabel": "aftoppingsgrens"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/assetmanagement",
+        "slug": "assetmanagement",
+        "prefLabel": "assetmanagement"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/basishuur",
+        "slug": "basishuur",
+        "prefLabel": "basishuur"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/besluit-toegelaten-instellingen-volkshuisvesting",
+        "slug": "besluit-toegelaten-instellingen-volkshuisvesting",
+        "prefLabel": "Besluit toegelaten instellingen volkshuisvesting"
+      },
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/bewoner",
         "slug": "bewoner",
         "prefLabel": "bewoner"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/bruto-huur",
+        "slug": "bruto-huur",
+        "prefLabel": "bruto huur"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/daeb",
+        "slug": "daeb",
+        "prefLabel": "DAEB"
       },
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/doelgroep",
@@ -16,95 +51,14 @@
         "prefLabel": "doelgroep"
       },
       {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/huishouden",
-        "slug": "huishouden",
-        "prefLabel": "huishouden"
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/dpi",
+        "slug": "dpi",
+        "prefLabel": "dPi"
       },
       {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurder",
-        "slug": "huurder",
-        "prefLabel": "huurder"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuurder",
-        "slug": "verhuurder",
-        "prefLabel": "verhuurder"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningcorporatie",
-        "slug": "woningcorporatie",
-        "prefLabel": "woningcorporatie"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningzoekende",
-        "slug": "woningzoekende",
-        "prefLabel": "woningzoekende"
-      }
-    ]
-  },
-  {
-    "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/collectie/daeb-en-toewijzing",
-    "slug": "daeb-en-toewijzing",
-    "prefLabel": "DAEB en toewijzing",
-    "memberCount": 8,
-    "members": [
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/daeb",
-        "slug": "daeb",
-        "prefLabel": "DAEB"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/huishoudinkomen",
-        "slug": "huishoudinkomen",
-        "prefLabel": "huishoudinkomen"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/inkomensgrens",
-        "slug": "inkomensgrens",
-        "prefLabel": "inkomensgrens"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/niet-daeb",
-        "slug": "niet-daeb",
-        "prefLabel": "niet-DAEB"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/passend-toewijzen",
-        "slug": "passend-toewijzen",
-        "prefLabel": "passend toewijzen"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/passendheidstoets",
-        "slug": "passendheidstoets",
-        "prefLabel": "passendheidstoets"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurwoning",
-        "slug": "sociale-huurwoning",
-        "prefLabel": "sociale huurwoning"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/toewijzing",
-        "slug": "toewijzing",
-        "prefLabel": "toewijzing"
-      }
-    ]
-  },
-  {
-    "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/collectie/huurovereenkomst-en-huurprijs",
-    "slug": "huurovereenkomst-en-huurprijs",
-    "prefLabel": "Huurovereenkomst en huurprijs",
-    "memberCount": 14,
-    "members": [
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/aftoppingsgrens",
-        "slug": "aftoppingsgrens",
-        "prefLabel": "aftoppingsgrens"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/bruto-huur",
-        "slug": "bruto-huur",
-        "prefLabel": "bruto huur"
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/dvi",
+        "slug": "dvi",
+        "prefLabel": "dVi"
       },
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/geliberaliseerde-huurwoning",
@@ -115,6 +69,21 @@
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/gereguleerde-woonruimte",
         "slug": "gereguleerde-woonruimte",
         "prefLabel": "gereguleerde woonruimte"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/huishouden",
+        "slug": "huishouden",
+        "prefLabel": "huishouden"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/huishoudinkomen",
+        "slug": "huishoudinkomen",
+        "prefLabel": "huishoudinkomen"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurder",
+        "slug": "huurder",
+        "prefLabel": "huurder"
       },
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurovereenkomst",
@@ -142,14 +111,79 @@
         "prefLabel": "inkomensafhankelijke huurverhoging"
       },
       {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/inkomensgrens",
+        "slug": "inkomensgrens",
+        "prefLabel": "inkomensgrens"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/kale-huur",
+        "slug": "kale-huur",
+        "prefLabel": "kale huur"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/kwaliteitskortingsgrens",
+        "slug": "kwaliteitskortingsgrens",
+        "prefLabel": "kwaliteitskortingsgrens"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/leefbaarheid",
+        "slug": "leefbaarheid",
+        "prefLabel": "leefbaarheid"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/leegstand",
+        "slug": "leegstand",
+        "prefLabel": "leegstand"
+      },
+      {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/liberalisatiegrens",
         "slug": "liberalisatiegrens",
         "prefLabel": "liberalisatiegrens"
       },
       {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/maximale-huurgrens",
+        "slug": "maximale-huurgrens",
+        "prefLabel": "maximale huurgrens"
+      },
+      {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/maximale-huurprijs",
         "slug": "maximale-huurprijs",
         "prefLabel": "maximale huurprijs"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/mutatie",
+        "slug": "mutatie",
+        "prefLabel": "mutatie"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/niet-daeb",
+        "slug": "niet-daeb",
+        "prefLabel": "niet-DAEB"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/passend-toewijzen",
+        "slug": "passend-toewijzen",
+        "prefLabel": "passend toewijzen"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/passendheidstoets",
+        "slug": "passendheidstoets",
+        "prefLabel": "passendheidstoets"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/portefeuillestrategie",
+        "slug": "portefeuillestrategie",
+        "prefLabel": "portefeuillestrategie"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/prestatieafspraak",
+        "slug": "prestatieafspraak",
+        "prefLabel": "prestatieafspraak"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/regeling-toegelaten-instellingen-volkshuisvesting",
+        "slug": "regeling-toegelaten-instellingen-volkshuisvesting",
+        "prefLabel": "Regeling toegelaten instellingen volkshuisvesting"
       },
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/rekenhuur",
@@ -162,37 +196,197 @@
         "prefLabel": "servicekosten"
       },
       {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurgrens",
+        "slug": "sociale-huurgrens",
+        "prefLabel": "sociale huurgrens"
+      },
+      {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/streefhuur",
         "slug": "streefhuur",
         "prefLabel": "streefhuur"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/toewijzing",
+        "slug": "toewijzing",
+        "prefLabel": "toewijzing"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedportefeuille",
+        "slug": "vastgoedportefeuille",
+        "prefLabel": "vastgoedportefeuille"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuurder",
+        "slug": "verhuurder",
+        "prefLabel": "verhuurder"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuureenheid",
+        "slug": "verhuureenheid",
+        "prefLabel": "verhuureenheid"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/waarderingspunten",
+        "slug": "waarderingspunten",
+        "prefLabel": "waarderingspunten"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/wet-betaalbare-huur",
+        "slug": "wet-betaalbare-huur",
+        "prefLabel": "Wet betaalbare huur"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningcorporatie",
+        "slug": "woningcorporatie",
+        "prefLabel": "woningcorporatie"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningvoorraad",
+        "slug": "woningvoorraad",
+        "prefLabel": "woningvoorraad"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwaarderingscriterium",
+        "slug": "woningwaarderingscriterium",
+        "prefLabel": "woningwaarderingscriterium"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwaarderingsstelsel",
+        "slug": "woningwaarderingsstelsel",
+        "prefLabel": "woningwaarderingsstelsel"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwet",
+        "slug": "woningwet",
+        "prefLabel": "Woningwet"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningzoekende",
+        "slug": "woningzoekende",
+        "prefLabel": "woningzoekende"
       }
     ]
   },
   {
-    "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/collectie/sturing-en-verantwoording",
-    "slug": "sturing-en-verantwoording",
-    "prefLabel": "Sturing en verantwoording",
-    "memberCount": 6,
+    "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/collection/vastgoed",
+    "slug": "vastgoed",
+    "prefLabel": "Vastgoed",
+    "memberCount": 63,
     "members": [
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/bag-status",
+        "slug": "bag-status",
+        "prefLabel": "BAG-status"
+      },
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/beleidswaarde",
         "slug": "beleidswaarde",
         "prefLabel": "beleidswaarde"
       },
       {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/dpi",
-        "slug": "dpi",
-        "prefLabel": "dPi"
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/benedenwoning",
+        "slug": "benedenwoning",
+        "prefLabel": "benedenwoning"
       },
       {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/dvi",
-        "slug": "dvi",
-        "prefLabel": "dVi"
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/bovenwoning",
+        "slug": "bovenwoning",
+        "prefLabel": "bovenwoning"
       },
       {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/leefbaarheid",
-        "slug": "leefbaarheid",
-        "prefLabel": "leefbaarheid"
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/bruto-vloeroppervlakte",
+        "slug": "bruto-vloeroppervlakte",
+        "prefLabel": "bruto vloeroppervlakte"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/cluster",
+        "slug": "cluster",
+        "prefLabel": "cluster"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/complex",
+        "slug": "complex",
+        "prefLabel": "complex"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/corridorwoning",
+        "slug": "corridorwoning",
+        "prefLabel": "corridorwoning"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning",
+        "slug": "eengezinswoning",
+        "prefLabel": "eengezinswoning"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/eindwoning",
+        "slug": "eindwoning",
+        "prefLabel": "eindwoning"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/elektrische-installatie",
+        "slug": "elektrische-installatie",
+        "prefLabel": "elektrische installatie"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/exploitatieperiode",
+        "slug": "exploitatieperiode",
+        "prefLabel": "exploitatieperiode"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/galerijwoning",
+        "slug": "galerijwoning",
+        "prefLabel": "galerijwoning"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/gebruiksfunctie",
+        "slug": "gebruiksfunctie",
+        "prefLabel": "gebruiksfunctie"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/gebruiksoppervlakte",
+        "slug": "gebruiksoppervlakte",
+        "prefLabel": "gebruiksoppervlakte"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/geschakelde-woning",
+        "slug": "geschakelde-woning",
+        "prefLabel": "geschakelde woning"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/grondgebonden-woning",
+        "slug": "grondgebonden-woning",
+        "prefLabel": "grondgebonden woning"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/hoekwoning",
+        "slug": "hoekwoning",
+        "prefLabel": "hoekwoning"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/inhoud-bouwwerk",
+        "slug": "inhoud-bouwwerk",
+        "prefLabel": "inhoud"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/installatie",
+        "slug": "installatie",
+        "prefLabel": "installatie"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/lift",
+        "slug": "lift",
+        "prefLabel": "lift"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/ligplaats",
+        "slug": "ligplaats",
+        "prefLabel": "ligplaats"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/maisonnette",
+        "slug": "maisonnette",
+        "prefLabel": "maisonnette"
       },
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/marktwaarde",
@@ -200,22 +394,19 @@
         "prefLabel": "marktwaarde"
       },
       {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/prestatieafspraak",
-        "slug": "prestatieafspraak",
-        "prefLabel": "prestatieafspraak"
-      }
-    ]
-  },
-  {
-    "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/collectie/vastgoed",
-    "slug": "vastgoed",
-    "prefLabel": "Vastgoed",
-    "memberCount": 16,
-    "members": [
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/mechanische-ventilatie",
+        "slug": "mechanische-ventilatie",
+        "prefLabel": "mechanische ventilatie"
+      },
       {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/complex",
-        "slug": "complex",
-        "prefLabel": "complex"
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/meergezinswoning",
+        "slug": "meergezinswoning",
+        "prefLabel": "meergezinswoning"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/netto-vloeroppervlakte",
+        "slug": "netto-vloeroppervlakte",
+        "prefLabel": "netto vloeroppervlakte"
       },
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/nieuwbouw",
@@ -238,9 +429,24 @@
         "prefLabel": "pand"
       },
       {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/perceel",
+        "slug": "perceel",
+        "prefLabel": "perceel"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/portiekwoning",
+        "slug": "portiekwoning",
+        "prefLabel": "portiekwoning"
+      },
+      {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/renovatie",
         "slug": "renovatie",
         "prefLabel": "renovatie"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/sanitaire-installatie",
+        "slug": "sanitaire-installatie",
+        "prefLabel": "sanitaire installatie"
       },
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/sloop",
@@ -248,9 +454,54 @@
         "prefLabel": "sloop"
       },
       {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/sociale-huurwoning",
+        "slug": "sociale-huurwoning",
+        "prefLabel": "sociale huurwoning"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/standplaats",
+        "slug": "standplaats",
+        "prefLabel": "standplaats"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/taxatie",
+        "slug": "taxatie",
+        "prefLabel": "taxatie"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/taxatierapport",
+        "slug": "taxatierapport",
+        "prefLabel": "taxatierapport"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/terrein",
+        "slug": "terrein",
+        "prefLabel": "terrein"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/tussenwoning",
+        "slug": "tussenwoning",
+        "prefLabel": "tussenwoning"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/twee-onder-een-kapwoning",
+        "slug": "twee-onder-een-kapwoning",
+        "prefLabel": "twee-onder-een-kapwoning"
+      },
+      {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoed",
         "slug": "vastgoed",
         "prefLabel": "vastgoed"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedobject",
+        "slug": "vastgoedobject",
+        "prefLabel": "vastgoedobject"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/ventilatiesysteem",
+        "slug": "ventilatiesysteem",
+        "prefLabel": "ventilatiesysteem"
       },
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/verblijfsobject",
@@ -258,14 +509,19 @@
         "prefLabel": "verblijfsobject"
       },
       {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/verdieping",
+        "slug": "verdieping",
+        "prefLabel": "verdieping"
+      },
+      {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/verduurzaming",
         "slug": "verduurzaming",
         "prefLabel": "verduurzaming"
       },
       {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuureenheid",
-        "slug": "verhuureenheid",
-        "prefLabel": "verhuureenheid"
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuurbare-vloeroppervlakte",
+        "slug": "verhuurbare-vloeroppervlakte",
+        "prefLabel": "verhuurbare vloeroppervlakte"
       },
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/vervangende-nieuwbouw",
@@ -273,9 +529,39 @@
         "prefLabel": "vervangende nieuwbouw"
       },
       {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/verwarmingsinstallatie",
+        "slug": "verwarmingsinstallatie",
+        "prefLabel": "verwarmingsinstallatie"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/vrijstaande-woning",
+        "slug": "vrijstaande-woning",
+        "prefLabel": "vrijstaande woning"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/warmtepomp",
+        "slug": "warmtepomp",
+        "prefLabel": "warmtepomp"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/warmteterugwinsysteem",
+        "slug": "warmteterugwinsysteem",
+        "prefLabel": "warmteterugwinsysteem"
+      },
+      {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woning",
         "slug": "woning",
         "prefLabel": "woning"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woning-boven-bedrijfsruimte",
+        "slug": "woning-boven-bedrijfsruimte",
+        "prefLabel": "woning boven bedrijfsruimte"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningverbetering",
+        "slug": "woningverbetering",
+        "prefLabel": "woningverbetering"
       },
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woongelegenheid",
@@ -288,65 +574,19 @@
         "prefLabel": "woonruimte"
       },
       {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woonwagen",
+        "slug": "woonwagen",
+        "prefLabel": "woonwagen"
+      },
+      {
+        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woz-waarde",
+        "slug": "woz-waarde",
+        "prefLabel": "WOZ-waarde"
+      },
+      {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/zelfstandige-woning",
         "slug": "zelfstandige-woning",
         "prefLabel": "zelfstandige woning"
-      }
-    ]
-  },
-  {
-    "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/collectie/verhuurproces-en-beheer",
-    "slug": "verhuurproces-en-beheer",
-    "prefLabel": "Verhuurproces en beheer",
-    "memberCount": 2,
-    "members": [
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/leegstand",
-        "slug": "leegstand",
-        "prefLabel": "leegstand"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/mutatie",
-        "slug": "mutatie",
-        "prefLabel": "mutatie"
-      }
-    ]
-  },
-  {
-    "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/collectie/wet-en-regelgeving",
-    "slug": "wet-en-regelgeving",
-    "prefLabel": "Wet- en regelgeving",
-    "memberCount": 6,
-    "members": [
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/besluit-toegelaten-instellingen-volkshuisvesting",
-        "slug": "besluit-toegelaten-instellingen-volkshuisvesting",
-        "prefLabel": "Besluit toegelaten instellingen volkshuisvesting"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/huisvestingswet-2014",
-        "slug": "huisvestingswet-2014",
-        "prefLabel": "Huisvestingswet 2014"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/regeling-toegelaten-instellingen-volkshuisvesting",
-        "slug": "regeling-toegelaten-instellingen-volkshuisvesting",
-        "prefLabel": "Regeling toegelaten instellingen volkshuisvesting"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/wet-betaalbare-huur",
-        "slug": "wet-betaalbare-huur",
-        "prefLabel": "Wet betaalbare huur"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwaarderingsstelsel",
-        "slug": "woningwaarderingsstelsel",
-        "prefLabel": "woningwaarderingsstelsel"
-      },
-      {
-        "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/woningwet",
-        "slug": "woningwet",
-        "prefLabel": "Woningwet"
       }
     ]
   }

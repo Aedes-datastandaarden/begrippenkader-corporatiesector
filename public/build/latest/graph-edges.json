@@ -1,16 +1,86 @@
 [
   {
+    "source": "aanvangshuurprijs",
+    "target": "huurprijs",
+    "type": "broader"
+  },
+  {
+    "source": "aanvangshuurprijs",
+    "target": "liberalisatiegrens",
+    "type": "related"
+  },
+  {
+    "source": "aanvangshuurprijs",
+    "target": "woningwaarderingsstelsel",
+    "type": "related"
+  },
+  {
+    "source": "aanvangshuurprijs",
+    "target": "sociale-huurwoning",
+    "type": "related"
+  },
+  {
     "source": "aftoppingsgrens",
     "target": "huurtoeslag",
     "type": "related"
   },
   {
     "source": "aftoppingsgrens",
-    "target": "passend-toewijzen",
+    "target": "kwaliteitskortingsgrens",
     "type": "related"
   },
   {
     "source": "aftoppingsgrens",
+    "target": "maximale-huurgrens",
+    "type": "related"
+  },
+  {
+    "source": "aftoppingsgrens",
+    "target": "sociale-huurgrens",
+    "type": "related"
+  },
+  {
+    "source": "aftoppingsgrens",
+    "target": "basishuur",
+    "type": "related"
+  },
+  {
+    "source": "aftoppingsgrens",
+    "target": "huurprijs",
+    "type": "related"
+  },
+  {
+    "source": "assetmanagement",
+    "target": "vastgoedportefeuille",
+    "type": "related"
+  },
+  {
+    "source": "assetmanagement",
+    "target": "portefeuillestrategie",
+    "type": "related"
+  },
+  {
+    "source": "bag-status",
+    "target": "pand",
+    "type": "related"
+  },
+  {
+    "source": "bag-status",
+    "target": "verblijfsobject",
+    "type": "related"
+  },
+  {
+    "source": "basishuur",
+    "target": "huurtoeslag",
+    "type": "related"
+  },
+  {
+    "source": "basishuur",
+    "target": "kwaliteitskortingsgrens",
+    "type": "related"
+  },
+  {
+    "source": "basishuur",
     "target": "rekenhuur",
     "type": "related"
   },
@@ -21,7 +91,7 @@
   },
   {
     "source": "basishuur",
-    "target": "huurtoeslag",
+    "target": "maximale-huurgrens",
     "type": "related"
   },
   {
@@ -31,12 +101,37 @@
   },
   {
     "source": "beleidswaarde",
-    "target": "vastgoed",
+    "target": "exploitatieperiode",
+    "type": "related"
+  },
+  {
+    "source": "benedenwoning",
+    "target": "meergezinswoning",
+    "type": "broader"
+  },
+  {
+    "source": "benedenwoning",
+    "target": "grondgebonden-woning",
     "type": "related"
   },
   {
     "source": "besluit-toegelaten-instellingen-volkshuisvesting",
     "target": "regeling-toegelaten-instellingen-volkshuisvesting",
+    "type": "narrower"
+  },
+  {
+    "source": "besluit-toegelaten-instellingen-volkshuisvesting",
+    "target": "daeb",
+    "type": "related"
+  },
+  {
+    "source": "besluit-toegelaten-instellingen-volkshuisvesting",
+    "target": "niet-daeb",
+    "type": "related"
+  },
+  {
+    "source": "besluit-toegelaten-instellingen-volkshuisvesting",
+    "target": "passend-toewijzen",
     "type": "related"
   },
   {
@@ -47,7 +142,7 @@
   {
     "source": "bewoner",
     "target": "huurder",
-    "type": "broader"
+    "type": "narrower"
   },
   {
     "source": "bewoner",
@@ -60,13 +155,43 @@
     "type": "related"
   },
   {
-    "source": "bewoner",
-    "target": "huurder",
+    "source": "bovenwoning",
+    "target": "meergezinswoning",
+    "type": "broader"
+  },
+  {
+    "source": "bovenwoning",
+    "target": "galerijwoning",
+    "type": "related"
+  },
+  {
+    "source": "bovenwoning",
+    "target": "portiekwoning",
+    "type": "related"
+  },
+  {
+    "source": "bovenwoning",
+    "target": "corridorwoning",
+    "type": "related"
+  },
+  {
+    "source": "bovenwoning",
+    "target": "maisonnette",
+    "type": "related"
+  },
+  {
+    "source": "bovenwoning",
+    "target": "woning-boven-bedrijfsruimte",
     "type": "related"
   },
   {
     "source": "bruto-huur",
     "target": "huurprijs",
+    "type": "related"
+  },
+  {
+    "source": "bruto-huur",
+    "target": "kale-huur",
     "type": "related"
   },
   {
@@ -80,9 +205,29 @@
     "type": "related"
   },
   {
+    "source": "bruto-vloeroppervlakte",
+    "target": "gebruiksoppervlakte",
+    "type": "related"
+  },
+  {
+    "source": "bruto-vloeroppervlakte",
+    "target": "inhoud-bouwwerk",
+    "type": "related"
+  },
+  {
+    "source": "bruto-vloeroppervlakte",
+    "target": "netto-vloeroppervlakte",
+    "type": "related"
+  },
+  {
+    "source": "bruto-vloeroppervlakte",
+    "target": "verhuurbare-vloeroppervlakte",
+    "type": "related"
+  },
+  {
     "source": "cluster",
-    "target": "vastgoed",
-    "type": "broader"
+    "target": "verhuureenheid",
+    "type": "narrower"
   },
   {
     "source": "cluster",
@@ -90,23 +235,53 @@
     "type": "related"
   },
   {
-    "source": "cluster",
-    "target": "woongelegenheid",
-    "type": "related"
+    "source": "complex",
+    "target": "verhuureenheid",
+    "type": "narrower"
   },
   {
     "source": "complex",
-    "target": "vastgoed",
+    "target": "woongelegenheid",
+    "type": "narrower"
+  },
+  {
+    "source": "complex",
+    "target": "cluster",
+    "type": "related"
+  },
+  {
+    "source": "corridorwoning",
+    "target": "meergezinswoning",
     "type": "broader"
   },
   {
-    "source": "complex",
-    "target": "verhuureenheid",
+    "source": "corridorwoning",
+    "target": "galerijwoning",
     "type": "related"
   },
   {
-    "source": "complex",
-    "target": "woongelegenheid",
+    "source": "corridorwoning",
+    "target": "portiekwoning",
+    "type": "related"
+  },
+  {
+    "source": "corridorwoning",
+    "target": "bovenwoning",
+    "type": "related"
+  },
+  {
+    "source": "corridorwoning",
+    "target": "maisonnette",
+    "type": "related"
+  },
+  {
+    "source": "corridorwoning",
+    "target": "woning-boven-bedrijfsruimte",
+    "type": "related"
+  },
+  {
+    "source": "daeb",
+    "target": "leefbaarheid",
     "type": "related"
   },
   {
@@ -116,33 +291,18 @@
   },
   {
     "source": "daeb",
-    "target": "passend-toewijzen",
+    "target": "sociale-huurwoning",
     "type": "related"
   },
   {
     "source": "daeb",
-    "target": "sociale-huurwoning",
+    "target": "woningcorporatie",
     "type": "related"
   },
   {
     "source": "doelgroep",
-    "target": "huurtoeslag",
-    "type": "related"
-  },
-  {
-    "source": "doelgroep",
-    "target": "inkomensgrens",
-    "type": "related"
-  },
-  {
-    "source": "doelgroep",
-    "target": "passend-toewijzen",
-    "type": "related"
-  },
-  {
-    "source": "doelgroep",
-    "target": "sociale-huurwoning",
-    "type": "related"
+    "target": "huishouden",
+    "type": "narrower"
   },
   {
     "source": "dpi",
@@ -165,13 +325,143 @@
     "type": "related"
   },
   {
-    "source": "dvi",
-    "target": "verhuureenheid",
+    "source": "eengezinswoning",
+    "target": "zelfstandige-woning",
+    "type": "broader"
+  },
+  {
+    "source": "eengezinswoning",
+    "target": "eindwoning",
+    "type": "narrower"
+  },
+  {
+    "source": "eengezinswoning",
+    "target": "geschakelde-woning",
+    "type": "narrower"
+  },
+  {
+    "source": "eengezinswoning",
+    "target": "hoekwoning",
+    "type": "narrower"
+  },
+  {
+    "source": "eengezinswoning",
+    "target": "tussenwoning",
+    "type": "narrower"
+  },
+  {
+    "source": "eengezinswoning",
+    "target": "twee-onder-een-kapwoning",
+    "type": "narrower"
+  },
+  {
+    "source": "eengezinswoning",
+    "target": "vrijstaande-woning",
+    "type": "narrower"
+  },
+  {
+    "source": "eengezinswoning",
+    "target": "grondgebonden-woning",
+    "type": "related"
+  },
+  {
+    "source": "eengezinswoning",
+    "target": "meergezinswoning",
+    "type": "related"
+  },
+  {
+    "source": "eengezinswoning",
+    "target": "woning-boven-bedrijfsruimte",
+    "type": "related"
+  },
+  {
+    "source": "eindwoning",
+    "target": "eengezinswoning",
+    "type": "broader"
+  },
+  {
+    "source": "eindwoning",
+    "target": "hoekwoning",
+    "type": "related"
+  },
+  {
+    "source": "eindwoning",
+    "target": "tussenwoning",
+    "type": "related"
+  },
+  {
+    "source": "elektrische-installatie",
+    "target": "installatie",
+    "type": "broader"
+  },
+  {
+    "source": "exploitatieperiode",
+    "target": "portefeuillestrategie",
+    "type": "related"
+  },
+  {
+    "source": "galerijwoning",
+    "target": "meergezinswoning",
+    "type": "broader"
+  },
+  {
+    "source": "galerijwoning",
+    "target": "bovenwoning",
+    "type": "related"
+  },
+  {
+    "source": "galerijwoning",
+    "target": "corridorwoning",
+    "type": "related"
+  },
+  {
+    "source": "galerijwoning",
+    "target": "maisonnette",
+    "type": "related"
+  },
+  {
+    "source": "galerijwoning",
+    "target": "portiekwoning",
+    "type": "related"
+  },
+  {
+    "source": "galerijwoning",
+    "target": "woning-boven-bedrijfsruimte",
+    "type": "related"
+  },
+  {
+    "source": "gebruiksfunctie",
+    "target": "verblijfsobject",
+    "type": "related"
+  },
+  {
+    "source": "gebruiksoppervlakte",
+    "target": "bruto-vloeroppervlakte",
+    "type": "related"
+  },
+  {
+    "source": "gebruiksoppervlakte",
+    "target": "inhoud-bouwwerk",
+    "type": "related"
+  },
+  {
+    "source": "gebruiksoppervlakte",
+    "target": "netto-vloeroppervlakte",
+    "type": "related"
+  },
+  {
+    "source": "gebruiksoppervlakte",
+    "target": "verhuurbare-vloeroppervlakte",
     "type": "related"
   },
   {
     "source": "geliberaliseerde-huurwoning",
     "target": "gereguleerde-woonruimte",
+    "type": "related"
+  },
+  {
+    "source": "geliberaliseerde-huurwoning",
+    "target": "huurprijs",
     "type": "related"
   },
   {
@@ -191,17 +481,22 @@
   },
   {
     "source": "gereguleerde-woonruimte",
-    "target": "geliberaliseerde-huurwoning",
-    "type": "related"
-  },
-  {
-    "source": "gereguleerde-woonruimte",
     "target": "liberalisatiegrens",
     "type": "related"
   },
   {
     "source": "gereguleerde-woonruimte",
-    "target": "sociale-huurwoning",
+    "target": "huurprijs",
+    "type": "related"
+  },
+  {
+    "source": "gereguleerde-woonruimte",
+    "target": "ligplaats",
+    "type": "related"
+  },
+  {
+    "source": "gereguleerde-woonruimte",
+    "target": "maximale-huurprijs",
     "type": "related"
   },
   {
@@ -210,33 +505,98 @@
     "type": "related"
   },
   {
+    "source": "gereguleerde-woonruimte",
+    "target": "zelfstandige-woning",
+    "type": "related"
+  },
+  {
+    "source": "gereguleerde-woonruimte",
+    "target": "onzelfstandige-woonruimte",
+    "type": "related"
+  },
+  {
+    "source": "geschakelde-woning",
+    "target": "eengezinswoning",
+    "type": "broader"
+  },
+  {
+    "source": "geschakelde-woning",
+    "target": "twee-onder-een-kapwoning",
+    "type": "related"
+  },
+  {
+    "source": "geschakelde-woning",
+    "target": "vrijstaande-woning",
+    "type": "related"
+  },
+  {
+    "source": "geschakelde-woning",
+    "target": "tussenwoning",
+    "type": "related"
+  },
+  {
+    "source": "geschakelde-woning",
+    "target": "hoekwoning",
+    "type": "related"
+  },
+  {
+    "source": "grondgebonden-woning",
+    "target": "zelfstandige-woning",
+    "type": "broader"
+  },
+  {
+    "source": "grondgebonden-woning",
+    "target": "benedenwoning",
+    "type": "related"
+  },
+  {
+    "source": "grondgebonden-woning",
+    "target": "eengezinswoning",
+    "type": "related"
+  },
+  {
+    "source": "hoekwoning",
+    "target": "eengezinswoning",
+    "type": "broader"
+  },
+  {
+    "source": "hoekwoning",
+    "target": "eindwoning",
+    "type": "related"
+  },
+  {
+    "source": "hoekwoning",
+    "target": "tussenwoning",
+    "type": "related"
+  },
+  {
+    "source": "hoekwoning",
+    "target": "twee-onder-een-kapwoning",
+    "type": "related"
+  },
+  {
     "source": "huishouden",
     "target": "doelgroep",
-    "type": "related"
+    "type": "broader"
   },
   {
     "source": "huishouden",
-    "target": "huishoudinkomen",
-    "type": "related"
+    "target": "huurder",
+    "type": "narrower"
   },
   {
     "source": "huishouden",
-    "target": "passend-toewijzen",
-    "type": "related"
-  },
-  {
-    "source": "huishouden",
-    "target": "woningzoekende",
-    "type": "related"
-  },
-  {
-    "source": "huishoudinkomen",
     "target": "bewoner",
     "type": "related"
   },
   {
     "source": "huishoudinkomen",
     "target": "huishouden",
+    "type": "related"
+  },
+  {
+    "source": "huishoudinkomen",
+    "target": "huurtoeslag",
     "type": "related"
   },
   {
@@ -250,39 +610,14 @@
     "type": "related"
   },
   {
-    "source": "huisvestingswet-2014",
-    "target": "toewijzing",
-    "type": "related"
-  },
-  {
-    "source": "huisvestingswet-2014",
-    "target": "woningzoekende",
-    "type": "related"
-  },
-  {
-    "source": "huisvestingswet-2014",
-    "target": "woonruimte",
-    "type": "related"
-  },
-  {
     "source": "huurder",
     "target": "bewoner",
-    "type": "related"
+    "type": "broader"
   },
   {
     "source": "huurder",
     "target": "huishouden",
-    "type": "related"
-  },
-  {
-    "source": "huurder",
-    "target": "huurovereenkomst",
-    "type": "related"
-  },
-  {
-    "source": "huurder",
-    "target": "verhuurder",
-    "type": "related"
+    "type": "broader"
   },
   {
     "source": "huurovereenkomst",
@@ -296,18 +631,23 @@
   },
   {
     "source": "huurovereenkomst",
-    "target": "toewijzing",
-    "type": "related"
-  },
-  {
-    "source": "huurovereenkomst",
     "target": "verhuurder",
     "type": "related"
   },
   {
     "source": "huurovereenkomst",
-    "target": "woonruimte",
+    "target": "verhuureenheid",
     "type": "related"
+  },
+  {
+    "source": "huurprijs",
+    "target": "aanvangshuurprijs",
+    "type": "narrower"
+  },
+  {
+    "source": "huurprijs",
+    "target": "streefhuur",
+    "type": "narrower"
   },
   {
     "source": "huurprijs",
@@ -326,12 +666,12 @@
   },
   {
     "source": "huurprijs",
-    "target": "servicekosten",
+    "target": "rekenhuur",
     "type": "related"
   },
   {
     "source": "huurprijs",
-    "target": "streefhuur",
+    "target": "servicekosten",
     "type": "related"
   },
   {
@@ -341,17 +681,22 @@
   },
   {
     "source": "huurtoeslag",
-    "target": "doelgroep",
+    "target": "basishuur",
     "type": "related"
   },
   {
     "source": "huurtoeslag",
-    "target": "liberalisatiegrens",
+    "target": "huishoudinkomen",
     "type": "related"
   },
   {
     "source": "huurtoeslag",
-    "target": "passend-toewijzen",
+    "target": "kwaliteitskortingsgrens",
+    "type": "related"
+  },
+  {
+    "source": "huurtoeslag",
+    "target": "maximale-huurgrens",
     "type": "related"
   },
   {
@@ -370,6 +715,36 @@
     "type": "related"
   },
   {
+    "source": "huurverhoging",
+    "target": "kale-huur",
+    "type": "related"
+  },
+  {
+    "source": "huurverhoging",
+    "target": "maximale-huurprijs",
+    "type": "related"
+  },
+  {
+    "source": "inhoud-bouwwerk",
+    "target": "bruto-vloeroppervlakte",
+    "type": "related"
+  },
+  {
+    "source": "inhoud-bouwwerk",
+    "target": "gebruiksoppervlakte",
+    "type": "related"
+  },
+  {
+    "source": "inhoud-bouwwerk",
+    "target": "netto-vloeroppervlakte",
+    "type": "related"
+  },
+  {
+    "source": "inhoud-bouwwerk",
+    "target": "verhuurbare-vloeroppervlakte",
+    "type": "related"
+  },
+  {
     "source": "inkomensafhankelijke-huurverhoging",
     "target": "huurverhoging",
     "type": "broader"
@@ -377,6 +752,21 @@
   {
     "source": "inkomensafhankelijke-huurverhoging",
     "target": "huishoudinkomen",
+    "type": "related"
+  },
+  {
+    "source": "inkomensafhankelijke-huurverhoging",
+    "target": "inkomensgrens",
+    "type": "related"
+  },
+  {
+    "source": "inkomensafhankelijke-huurverhoging",
+    "target": "kale-huur",
+    "type": "related"
+  },
+  {
+    "source": "inkomensafhankelijke-huurverhoging",
+    "target": "maximale-huurprijs",
     "type": "related"
   },
   {
@@ -391,13 +781,33 @@
   },
   {
     "source": "inkomensgrens",
-    "target": "sociale-huurwoning",
+    "target": "inkomensafhankelijke-huurverhoging",
     "type": "related"
   },
   {
     "source": "inkomensgrens",
-    "target": "toewijzing",
+    "target": "passend-toewijzen",
     "type": "related"
+  },
+  {
+    "source": "installatie",
+    "target": "elektrische-installatie",
+    "type": "narrower"
+  },
+  {
+    "source": "installatie",
+    "target": "lift",
+    "type": "narrower"
+  },
+  {
+    "source": "installatie",
+    "target": "sanitaire-installatie",
+    "type": "narrower"
+  },
+  {
+    "source": "installatie",
+    "target": "verwarmingsinstallatie",
+    "type": "narrower"
   },
   {
     "source": "kale-huur",
@@ -406,7 +816,7 @@
   },
   {
     "source": "kale-huur",
-    "target": "liberalisatiegrens",
+    "target": "huurverhoging",
     "type": "related"
   },
   {
@@ -426,7 +836,22 @@
   },
   {
     "source": "kwaliteitskortingsgrens",
+    "target": "basishuur",
+    "type": "related"
+  },
+  {
+    "source": "kwaliteitskortingsgrens",
     "target": "huurtoeslag",
+    "type": "related"
+  },
+  {
+    "source": "kwaliteitskortingsgrens",
+    "target": "maximale-huurgrens",
+    "type": "related"
+  },
+  {
+    "source": "kwaliteitskortingsgrens",
+    "target": "rekenhuur",
     "type": "related"
   },
   {
@@ -435,18 +860,13 @@
     "type": "related"
   },
   {
-    "source": "leefbaarheid",
-    "target": "prestatieafspraak",
-    "type": "related"
-  },
-  {
     "source": "leegstand",
     "target": "mutatie",
     "type": "related"
   },
   {
-    "source": "leegstand",
-    "target": "verhuureenheid",
+    "source": "liberalisatiegrens",
+    "target": "aanvangshuurprijs",
     "type": "related"
   },
   {
@@ -461,13 +881,73 @@
   },
   {
     "source": "liberalisatiegrens",
-    "target": "maximale-huurprijs",
+    "target": "huurtoeslag",
     "type": "related"
   },
   {
     "source": "liberalisatiegrens",
-    "target": "wet-betaalbare-huur",
+    "target": "maximale-huurgrens",
     "type": "related"
+  },
+  {
+    "source": "liberalisatiegrens",
+    "target": "sociale-huurgrens",
+    "type": "related"
+  },
+  {
+    "source": "lift",
+    "target": "installatie",
+    "type": "broader"
+  },
+  {
+    "source": "lift",
+    "target": "verdieping",
+    "type": "related"
+  },
+  {
+    "source": "ligplaats",
+    "target": "woonruimte",
+    "type": "broader"
+  },
+  {
+    "source": "ligplaats",
+    "target": "standplaats",
+    "type": "related"
+  },
+  {
+    "source": "ligplaats",
+    "target": "woonwagen",
+    "type": "related"
+  },
+  {
+    "source": "maisonnette",
+    "target": "meergezinswoning",
+    "type": "broader"
+  },
+  {
+    "source": "maisonnette",
+    "target": "bovenwoning",
+    "type": "narrower"
+  },
+  {
+    "source": "maisonnette",
+    "target": "corridorwoning",
+    "type": "narrower"
+  },
+  {
+    "source": "maisonnette",
+    "target": "galerijwoning",
+    "type": "narrower"
+  },
+  {
+    "source": "maisonnette",
+    "target": "portiekwoning",
+    "type": "narrower"
+  },
+  {
+    "source": "maisonnette",
+    "target": "woning-boven-bedrijfsruimte",
+    "type": "narrower"
   },
   {
     "source": "marktwaarde",
@@ -476,7 +956,7 @@
   },
   {
     "source": "marktwaarde",
-    "target": "vastgoed",
+    "target": "woz-waarde",
     "type": "related"
   },
   {
@@ -486,7 +966,22 @@
   },
   {
     "source": "maximale-huurgrens",
+    "target": "basishuur",
+    "type": "related"
+  },
+  {
+    "source": "maximale-huurgrens",
     "target": "huurtoeslag",
+    "type": "related"
+  },
+  {
+    "source": "maximale-huurgrens",
+    "target": "kwaliteitskortingsgrens",
+    "type": "related"
+  },
+  {
+    "source": "maximale-huurgrens",
+    "target": "rekenhuur",
     "type": "related"
   },
   {
@@ -496,17 +991,67 @@
   },
   {
     "source": "maximale-huurprijs",
-    "target": "streefhuur",
-    "type": "related"
-  },
-  {
-    "source": "maximale-huurprijs",
-    "target": "wet-betaalbare-huur",
+    "target": "waarderingspunten",
     "type": "related"
   },
   {
     "source": "maximale-huurprijs",
     "target": "woningwaarderingsstelsel",
+    "type": "related"
+  },
+  {
+    "source": "mechanische-ventilatie",
+    "target": "ventilatiesysteem",
+    "type": "broader"
+  },
+  {
+    "source": "mechanische-ventilatie",
+    "target": "warmteterugwinsysteem",
+    "type": "related"
+  },
+  {
+    "source": "meergezinswoning",
+    "target": "zelfstandige-woning",
+    "type": "broader"
+  },
+  {
+    "source": "meergezinswoning",
+    "target": "benedenwoning",
+    "type": "narrower"
+  },
+  {
+    "source": "meergezinswoning",
+    "target": "bovenwoning",
+    "type": "narrower"
+  },
+  {
+    "source": "meergezinswoning",
+    "target": "corridorwoning",
+    "type": "narrower"
+  },
+  {
+    "source": "meergezinswoning",
+    "target": "galerijwoning",
+    "type": "narrower"
+  },
+  {
+    "source": "meergezinswoning",
+    "target": "maisonnette",
+    "type": "narrower"
+  },
+  {
+    "source": "meergezinswoning",
+    "target": "portiekwoning",
+    "type": "narrower"
+  },
+  {
+    "source": "meergezinswoning",
+    "target": "woning-boven-bedrijfsruimte",
+    "type": "narrower"
+  },
+  {
+    "source": "meergezinswoning",
+    "target": "eengezinswoning",
     "type": "related"
   },
   {
@@ -525,13 +1070,18 @@
     "type": "related"
   },
   {
-    "source": "mutatie",
-    "target": "toewijzing",
+    "source": "netto-vloeroppervlakte",
+    "target": "bruto-vloeroppervlakte",
     "type": "related"
   },
   {
-    "source": "mutatie",
-    "target": "verhuureenheid",
+    "source": "netto-vloeroppervlakte",
+    "target": "gebruiksoppervlakte",
+    "type": "related"
+  },
+  {
+    "source": "netto-vloeroppervlakte",
+    "target": "verhuurbare-vloeroppervlakte",
     "type": "related"
   },
   {
@@ -555,8 +1105,8 @@
     "type": "related"
   },
   {
-    "source": "onderhoud",
-    "target": "complex",
+    "source": "nieuwbouw",
+    "target": "woningvoorraad",
     "type": "related"
   },
   {
@@ -570,6 +1120,11 @@
     "type": "related"
   },
   {
+    "source": "onderhoud",
+    "target": "woningverbetering",
+    "type": "related"
+  },
+  {
     "source": "onzelfstandige-woonruimte",
     "target": "woonruimte",
     "type": "broader"
@@ -580,8 +1135,8 @@
     "type": "related"
   },
   {
-    "source": "pand",
-    "target": "vastgoed",
+    "source": "onzelfstandige-woonruimte",
+    "target": "standplaats",
     "type": "related"
   },
   {
@@ -601,12 +1156,17 @@
   },
   {
     "source": "passend-toewijzen",
-    "target": "doelgroep",
+    "target": "huishoudinkomen",
     "type": "related"
   },
   {
     "source": "passend-toewijzen",
-    "target": "huurtoeslag",
+    "target": "huurprijs",
+    "type": "related"
+  },
+  {
+    "source": "passend-toewijzen",
+    "target": "inkomensgrens",
     "type": "related"
   },
   {
@@ -631,12 +1191,92 @@
   },
   {
     "source": "passendheidstoets",
+    "target": "huurprijs",
+    "type": "related"
+  },
+  {
+    "source": "passendheidstoets",
+    "target": "inkomensgrens",
+    "type": "related"
+  },
+  {
+    "source": "passendheidstoets",
     "target": "passend-toewijzen",
+    "type": "related"
+  },
+  {
+    "source": "passendheidstoets",
+    "target": "toewijzing",
+    "type": "related"
+  },
+  {
+    "source": "perceel",
+    "target": "pand",
+    "type": "broader"
+  },
+  {
+    "source": "perceel",
+    "target": "terrein",
+    "type": "related"
+  },
+  {
+    "source": "portefeuillestrategie",
+    "target": "assetmanagement",
+    "type": "related"
+  },
+  {
+    "source": "portefeuillestrategie",
+    "target": "exploitatieperiode",
+    "type": "related"
+  },
+  {
+    "source": "portefeuillestrategie",
+    "target": "prestatieafspraak",
+    "type": "related"
+  },
+  {
+    "source": "portefeuillestrategie",
+    "target": "vastgoedportefeuille",
+    "type": "related"
+  },
+  {
+    "source": "portiekwoning",
+    "target": "meergezinswoning",
+    "type": "broader"
+  },
+  {
+    "source": "portiekwoning",
+    "target": "bovenwoning",
+    "type": "related"
+  },
+  {
+    "source": "portiekwoning",
+    "target": "corridorwoning",
+    "type": "related"
+  },
+  {
+    "source": "portiekwoning",
+    "target": "galerijwoning",
+    "type": "related"
+  },
+  {
+    "source": "portiekwoning",
+    "target": "maisonnette",
+    "type": "related"
+  },
+  {
+    "source": "portiekwoning",
+    "target": "woning-boven-bedrijfsruimte",
     "type": "related"
   },
   {
     "source": "prestatieafspraak",
     "target": "leefbaarheid",
+    "type": "related"
+  },
+  {
+    "source": "prestatieafspraak",
+    "target": "portefeuillestrategie",
     "type": "related"
   },
   {
@@ -647,7 +1287,12 @@
   {
     "source": "regeling-toegelaten-instellingen-volkshuisvesting",
     "target": "besluit-toegelaten-instellingen-volkshuisvesting",
-    "type": "related"
+    "type": "narrower"
+  },
+  {
+    "source": "regeling-toegelaten-instellingen-volkshuisvesting",
+    "target": "woningwet",
+    "type": "narrower"
   },
   {
     "source": "regeling-toegelaten-instellingen-volkshuisvesting",
@@ -660,13 +1305,8 @@
     "type": "related"
   },
   {
-    "source": "regeling-toegelaten-instellingen-volkshuisvesting",
-    "target": "marktwaarde",
-    "type": "related"
-  },
-  {
     "source": "rekenhuur",
-    "target": "aftoppingsgrens",
+    "target": "bruto-huur",
     "type": "related"
   },
   {
@@ -681,8 +1321,13 @@
   },
   {
     "source": "rekenhuur",
-    "target": "servicekosten",
+    "target": "kale-huur",
     "type": "related"
+  },
+  {
+    "source": "renovatie",
+    "target": "woningverbetering",
+    "type": "broader"
   },
   {
     "source": "renovatie",
@@ -700,6 +1345,11 @@
     "type": "related"
   },
   {
+    "source": "sanitaire-installatie",
+    "target": "installatie",
+    "type": "broader"
+  },
+  {
     "source": "servicekosten",
     "target": "bruto-huur",
     "type": "related"
@@ -711,7 +1361,7 @@
   },
   {
     "source": "servicekosten",
-    "target": "rekenhuur",
+    "target": "kale-huur",
     "type": "related"
   },
   {
@@ -722,6 +1372,41 @@
   {
     "source": "sloop",
     "target": "vervangende-nieuwbouw",
+    "type": "related"
+  },
+  {
+    "source": "sloop",
+    "target": "woningvoorraad",
+    "type": "related"
+  },
+  {
+    "source": "sociale-huurgrens",
+    "target": "aftoppingsgrens",
+    "type": "related"
+  },
+  {
+    "source": "sociale-huurgrens",
+    "target": "kwaliteitskortingsgrens",
+    "type": "related"
+  },
+  {
+    "source": "sociale-huurgrens",
+    "target": "liberalisatiegrens",
+    "type": "related"
+  },
+  {
+    "source": "sociale-huurgrens",
+    "target": "maximale-huurgrens",
+    "type": "related"
+  },
+  {
+    "source": "sociale-huurgrens",
+    "target": "huurprijs",
+    "type": "related"
+  },
+  {
+    "source": "sociale-huurgrens",
+    "target": "sociale-huurwoning",
     "type": "related"
   },
   {
@@ -736,17 +1421,37 @@
   },
   {
     "source": "sociale-huurwoning",
-    "target": "doelgroep",
-    "type": "related"
-  },
-  {
-    "source": "sociale-huurwoning",
     "target": "gereguleerde-woonruimte",
     "type": "related"
   },
   {
     "source": "sociale-huurwoning",
-    "target": "huurtoeslag",
+    "target": "sociale-huurgrens",
+    "type": "related"
+  },
+  {
+    "source": "sociale-huurwoning",
+    "target": "huurprijs",
+    "type": "related"
+  },
+  {
+    "source": "standplaats",
+    "target": "gereguleerde-woonruimte",
+    "type": "broader"
+  },
+  {
+    "source": "standplaats",
+    "target": "woonwagen",
+    "type": "related"
+  },
+  {
+    "source": "standplaats",
+    "target": "onzelfstandige-woonruimte",
+    "type": "related"
+  },
+  {
+    "source": "standplaats",
+    "target": "ligplaats",
     "type": "related"
   },
   {
@@ -765,8 +1470,33 @@
     "type": "related"
   },
   {
-    "source": "streefhuur",
-    "target": "verhuureenheid",
+    "source": "taxatie",
+    "target": "marktwaarde",
+    "type": "related"
+  },
+  {
+    "source": "taxatie",
+    "target": "taxatierapport",
+    "type": "related"
+  },
+  {
+    "source": "taxatie",
+    "target": "vastgoedobject",
+    "type": "related"
+  },
+  {
+    "source": "taxatierapport",
+    "target": "taxatie",
+    "type": "related"
+  },
+  {
+    "source": "terrein",
+    "target": "vastgoedobject",
+    "type": "broader"
+  },
+  {
+    "source": "terrein",
+    "target": "perceel",
     "type": "related"
   },
   {
@@ -781,7 +1511,17 @@
   },
   {
     "source": "toewijzing",
+    "target": "mutatie",
+    "type": "related"
+  },
+  {
+    "source": "toewijzing",
     "target": "passend-toewijzen",
+    "type": "related"
+  },
+  {
+    "source": "toewijzing",
+    "target": "passendheidstoets",
     "type": "related"
   },
   {
@@ -790,28 +1530,148 @@
     "type": "related"
   },
   {
-    "source": "vastgoed",
-    "target": "complex",
-    "type": "narrower"
+    "source": "tussenwoning",
+    "target": "eengezinswoning",
+    "type": "broader"
   },
   {
-    "source": "vastgoed",
-    "target": "woongelegenheid",
-    "type": "narrower"
+    "source": "tussenwoning",
+    "target": "eindwoning",
+    "type": "related"
   },
   {
-    "source": "vastgoed",
-    "target": "beleidswaarde",
+    "source": "tussenwoning",
+    "target": "geschakelde-woning",
+    "type": "related"
+  },
+  {
+    "source": "tussenwoning",
+    "target": "hoekwoning",
+    "type": "related"
+  },
+  {
+    "source": "twee-onder-een-kapwoning",
+    "target": "eengezinswoning",
+    "type": "broader"
+  },
+  {
+    "source": "twee-onder-een-kapwoning",
+    "target": "eindwoning",
+    "type": "related"
+  },
+  {
+    "source": "twee-onder-een-kapwoning",
+    "target": "geschakelde-woning",
+    "type": "related"
+  },
+  {
+    "source": "twee-onder-een-kapwoning",
+    "target": "hoekwoning",
+    "type": "related"
+  },
+  {
+    "source": "twee-onder-een-kapwoning",
+    "target": "tussenwoning",
     "type": "related"
   },
   {
     "source": "vastgoed",
-    "target": "marktwaarde",
+    "target": "vastgoedobject",
+    "type": "narrower"
+  },
+  {
+    "source": "vastgoed",
+    "target": "vastgoedportefeuille",
     "type": "related"
   },
   {
     "source": "vastgoed",
     "target": "verhuureenheid",
+    "type": "related"
+  },
+  {
+    "source": "vastgoed",
+    "target": "woning",
+    "type": "related"
+  },
+  {
+    "source": "vastgoedobject",
+    "target": "vastgoed",
+    "type": "broader"
+  },
+  {
+    "source": "vastgoedobject",
+    "target": "perceel",
+    "type": "narrower"
+  },
+  {
+    "source": "vastgoedobject",
+    "target": "ligplaats",
+    "type": "narrower"
+  },
+  {
+    "source": "vastgoedobject",
+    "target": "pand",
+    "type": "narrower"
+  },
+  {
+    "source": "vastgoedobject",
+    "target": "terrein",
+    "type": "narrower"
+  },
+  {
+    "source": "vastgoedobject",
+    "target": "verblijfsobject",
+    "type": "narrower"
+  },
+  {
+    "source": "vastgoedobject",
+    "target": "woongelegenheid",
+    "type": "narrower"
+  },
+  {
+    "source": "vastgoedportefeuille",
+    "target": "assetmanagement",
+    "type": "related"
+  },
+  {
+    "source": "vastgoedportefeuille",
+    "target": "vastgoed",
+    "type": "related"
+  },
+  {
+    "source": "vastgoedportefeuille",
+    "target": "portefeuillestrategie",
+    "type": "related"
+  },
+  {
+    "source": "ventilatiesysteem",
+    "target": "installatie",
+    "type": "broader"
+  },
+  {
+    "source": "ventilatiesysteem",
+    "target": "mechanische-ventilatie",
+    "type": "narrower"
+  },
+  {
+    "source": "ventilatiesysteem",
+    "target": "warmteterugwinsysteem",
+    "type": "narrower"
+  },
+  {
+    "source": "verblijfsobject",
+    "target": "bag-status",
+    "type": "related"
+  },
+  {
+    "source": "verblijfsobject",
+    "target": "gebruiksfunctie",
+    "type": "related"
+  },
+  {
+    "source": "verblijfsobject",
+    "target": "ligplaats",
     "type": "related"
   },
   {
@@ -821,18 +1681,23 @@
   },
   {
     "source": "verblijfsobject",
-    "target": "woning",
+    "target": "vastgoedobject",
     "type": "related"
   },
   {
     "source": "verblijfsobject",
-    "target": "zelfstandige-woning",
+    "target": "woning",
+    "type": "related"
+  },
+  {
+    "source": "verdieping",
+    "target": "lift",
     "type": "related"
   },
   {
     "source": "verduurzaming",
-    "target": "nieuwbouw",
-    "type": "related"
+    "target": "woningverbetering",
+    "type": "broader"
   },
   {
     "source": "verduurzaming",
@@ -845,9 +1710,24 @@
     "type": "related"
   },
   {
-    "source": "verhuurder",
-    "target": "woningcorporatie",
-    "type": "narrower"
+    "source": "verhuurbare-vloeroppervlakte",
+    "target": "bruto-vloeroppervlakte",
+    "type": "related"
+  },
+  {
+    "source": "verhuurbare-vloeroppervlakte",
+    "target": "gebruiksoppervlakte",
+    "type": "related"
+  },
+  {
+    "source": "verhuurbare-vloeroppervlakte",
+    "target": "netto-vloeroppervlakte",
+    "type": "related"
+  },
+  {
+    "source": "verhuurbare-vloeroppervlakte",
+    "target": "verhuureenheid",
+    "type": "related"
   },
   {
     "source": "verhuurder",
@@ -860,23 +1740,13 @@
     "type": "related"
   },
   {
-    "source": "verhuureenheid",
-    "target": "complex",
+    "source": "verhuurder",
+    "target": "woningcorporatie",
     "type": "related"
   },
   {
     "source": "verhuureenheid",
-    "target": "huurovereenkomst",
-    "type": "related"
-  },
-  {
-    "source": "verhuureenheid",
-    "target": "leegstand",
-    "type": "related"
-  },
-  {
-    "source": "verhuureenheid",
-    "target": "mutatie",
+    "target": "vastgoed",
     "type": "related"
   },
   {
@@ -900,23 +1770,113 @@
     "type": "related"
   },
   {
-    "source": "wet-betaalbare-huur",
-    "target": "gereguleerde-woonruimte",
+    "source": "vervangende-nieuwbouw",
+    "target": "woningvoorraad",
     "type": "related"
   },
   {
-    "source": "wet-betaalbare-huur",
-    "target": "liberalisatiegrens",
+    "source": "vervangende-nieuwbouw",
+    "target": "woningverbetering",
     "type": "related"
   },
   {
-    "source": "wet-betaalbare-huur",
+    "source": "verwarmingsinstallatie",
+    "target": "installatie",
+    "type": "broader"
+  },
+  {
+    "source": "verwarmingsinstallatie",
+    "target": "warmtepomp",
+    "type": "narrower"
+  },
+  {
+    "source": "vrijstaande-woning",
+    "target": "eengezinswoning",
+    "type": "broader"
+  },
+  {
+    "source": "vrijstaande-woning",
+    "target": "eindwoning",
+    "type": "related"
+  },
+  {
+    "source": "vrijstaande-woning",
+    "target": "geschakelde-woning",
+    "type": "related"
+  },
+  {
+    "source": "vrijstaande-woning",
+    "target": "hoekwoning",
+    "type": "related"
+  },
+  {
+    "source": "vrijstaande-woning",
+    "target": "tussenwoning",
+    "type": "related"
+  },
+  {
+    "source": "vrijstaande-woning",
+    "target": "twee-onder-een-kapwoning",
+    "type": "related"
+  },
+  {
+    "source": "waarderingspunten",
+    "target": "woningwaarderingsstelsel",
+    "type": "broader"
+  },
+  {
+    "source": "waarderingspunten",
     "target": "maximale-huurprijs",
+    "type": "related"
+  },
+  {
+    "source": "waarderingspunten",
+    "target": "woningwaarderingscriterium",
+    "type": "related"
+  },
+  {
+    "source": "warmtepomp",
+    "target": "verwarmingsinstallatie",
+    "type": "broader"
+  },
+  {
+    "source": "warmtepomp",
+    "target": "warmteterugwinsysteem",
+    "type": "related"
+  },
+  {
+    "source": "warmteterugwinsysteem",
+    "target": "ventilatiesysteem",
+    "type": "broader"
+  },
+  {
+    "source": "warmteterugwinsysteem",
+    "target": "mechanische-ventilatie",
+    "type": "related"
+  },
+  {
+    "source": "warmteterugwinsysteem",
+    "target": "verwarmingsinstallatie",
+    "type": "related"
+  },
+  {
+    "source": "wet-betaalbare-huur",
+    "target": "besluit-toegelaten-instellingen-volkshuisvesting",
     "type": "related"
   },
   {
     "source": "wet-betaalbare-huur",
     "target": "woningwaarderingsstelsel",
+    "type": "related"
+  },
+  {
+    "source": "wet-betaalbare-huur",
+    "target": "regeling-toegelaten-instellingen-volkshuisvesting",
+    "type": "related"
+  },
+  {
+    "source": "wet-betaalbare-huur",
+    "target": "woningwet",
     "type": "related"
   },
   {
@@ -926,16 +1886,41 @@
   },
   {
     "source": "woning",
-    "target": "sociale-huurwoning",
+    "target": "eengezinswoning",
     "type": "narrower"
   },
   {
     "source": "woning",
-    "target": "zelfstandige-woning",
+    "target": "meergezinswoning",
     "type": "narrower"
   },
   {
     "source": "woning",
+    "target": "pand",
+    "type": "related"
+  },
+  {
+    "source": "woning",
+    "target": "verblijfsobject",
+    "type": "related"
+  },
+  {
+    "source": "woning",
+    "target": "woonruimte",
+    "type": "related"
+  },
+  {
+    "source": "woning-boven-bedrijfsruimte",
+    "target": "meergezinswoning",
+    "type": "broader"
+  },
+  {
+    "source": "woning-boven-bedrijfsruimte",
+    "target": "bovenwoning",
+    "type": "related"
+  },
+  {
+    "source": "woning-boven-bedrijfsruimte",
     "target": "verblijfsobject",
     "type": "related"
   },
@@ -951,13 +1936,68 @@
   },
   {
     "source": "woningcorporatie",
-    "target": "sociale-huurwoning",
+    "target": "woningwet",
     "type": "related"
   },
   {
-    "source": "woningcorporatie",
-    "target": "woningwet",
+    "source": "woningverbetering",
+    "target": "renovatie",
+    "type": "narrower"
+  },
+  {
+    "source": "woningverbetering",
+    "target": "verduurzaming",
+    "type": "narrower"
+  },
+  {
+    "source": "woningverbetering",
+    "target": "onderhoud",
     "type": "related"
+  },
+  {
+    "source": "woningverbetering",
+    "target": "vervangende-nieuwbouw",
+    "type": "related"
+  },
+  {
+    "source": "woningvoorraad",
+    "target": "nieuwbouw",
+    "type": "related"
+  },
+  {
+    "source": "woningvoorraad",
+    "target": "sloop",
+    "type": "related"
+  },
+  {
+    "source": "woningvoorraad",
+    "target": "verblijfsobject",
+    "type": "related"
+  },
+  {
+    "source": "woningvoorraad",
+    "target": "vervangende-nieuwbouw",
+    "type": "related"
+  },
+  {
+    "source": "woningwaarderingscriterium",
+    "target": "woningwaarderingsstelsel",
+    "type": "broader"
+  },
+  {
+    "source": "woningwaarderingscriterium",
+    "target": "waarderingspunten",
+    "type": "related"
+  },
+  {
+    "source": "woningwaarderingsstelsel",
+    "target": "waarderingspunten",
+    "type": "narrower"
+  },
+  {
+    "source": "woningwaarderingsstelsel",
+    "target": "woningwaarderingscriterium",
+    "type": "narrower"
   },
   {
     "source": "woningwaarderingsstelsel",
@@ -966,17 +2006,7 @@
   },
   {
     "source": "woningwaarderingsstelsel",
-    "target": "liberalisatiegrens",
-    "type": "related"
-  },
-  {
-    "source": "woningwaarderingsstelsel",
     "target": "maximale-huurprijs",
-    "type": "related"
-  },
-  {
-    "source": "woningwaarderingsstelsel",
-    "target": "wet-betaalbare-huur",
     "type": "related"
   },
   {
@@ -986,17 +2016,17 @@
   },
   {
     "source": "woningwet",
-    "target": "prestatieafspraak",
+    "target": "daeb",
     "type": "related"
   },
   {
     "source": "woningwet",
-    "target": "woningcorporatie",
+    "target": "regeling-toegelaten-instellingen-volkshuisvesting",
     "type": "related"
   },
   {
-    "source": "woningzoekende",
-    "target": "huishouden",
+    "source": "woningwet",
+    "target": "wet-betaalbare-huur",
     "type": "related"
   },
   {
@@ -1005,13 +2035,8 @@
     "type": "related"
   },
   {
-    "source": "woningzoekende",
-    "target": "woonruimte",
-    "type": "related"
-  },
-  {
     "source": "woongelegenheid",
-    "target": "vastgoed",
+    "target": "vastgoedobject",
     "type": "broader"
   },
   {
@@ -1021,8 +2046,8 @@
   },
   {
     "source": "woongelegenheid",
-    "target": "verhuureenheid",
-    "type": "related"
+    "target": "woonruimte",
+    "type": "narrower"
   },
   {
     "source": "woonruimte",
@@ -1036,12 +2061,52 @@
   },
   {
     "source": "woonruimte",
-    "target": "huurovereenkomst",
+    "target": "ligplaats",
     "type": "related"
   },
   {
     "source": "woonruimte",
     "target": "woning",
+    "type": "related"
+  },
+  {
+    "source": "woonruimte",
+    "target": "woongelegenheid",
+    "type": "related"
+  },
+  {
+    "source": "woonwagen",
+    "target": "gereguleerde-woonruimte",
+    "type": "broader"
+  },
+  {
+    "source": "woonwagen",
+    "target": "ligplaats",
+    "type": "related"
+  },
+  {
+    "source": "woonwagen",
+    "target": "standplaats",
+    "type": "related"
+  },
+  {
+    "source": "woonwagen",
+    "target": "onzelfstandige-woonruimte",
+    "type": "related"
+  },
+  {
+    "source": "woz-waarde",
+    "target": "marktwaarde",
+    "type": "related"
+  },
+  {
+    "source": "woz-waarde",
+    "target": "taxatie",
+    "type": "related"
+  },
+  {
+    "source": "woz-waarde",
+    "target": "woningwaarderingsstelsel",
     "type": "related"
   },
   {
@@ -1056,17 +2121,17 @@
   },
   {
     "source": "zelfstandige-woning",
-    "target": "huurtoeslag",
-    "type": "related"
+    "target": "eengezinswoning",
+    "type": "narrower"
   },
   {
     "source": "zelfstandige-woning",
-    "target": "onzelfstandige-woonruimte",
-    "type": "related"
+    "target": "grondgebonden-woning",
+    "type": "narrower"
   },
   {
     "source": "zelfstandige-woning",
-    "target": "woningwaarderingsstelsel",
-    "type": "related"
+    "target": "meergezinswoning",
+    "type": "narrower"
   }
 ]

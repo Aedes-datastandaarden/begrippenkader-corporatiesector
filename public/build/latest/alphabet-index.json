@@ -1,11 +1,23 @@
 {
   "A": [
     {
+      "slug": "aanvangshuurprijs",
+      "prefLabel": "aanvangshuurprijs"
+    },
+    {
       "slug": "aftoppingsgrens",
       "prefLabel": "aftoppingsgrens"
+    },
+    {
+      "slug": "assetmanagement",
+      "prefLabel": "assetmanagement"
     }
   ],
   "B": [
+    {
+      "slug": "bag-status",
+      "prefLabel": "BAG-status"
+    },
     {
       "slug": "basishuur",
       "prefLabel": "basishuur"
@@ -13,6 +25,10 @@
     {
       "slug": "beleidswaarde",
       "prefLabel": "beleidswaarde"
+    },
+    {
+      "slug": "benedenwoning",
+      "prefLabel": "benedenwoning"
     },
     {
       "slug": "besluit-toegelaten-instellingen-volkshuisvesting",
@@ -23,8 +39,16 @@
       "prefLabel": "bewoner"
     },
     {
+      "slug": "bovenwoning",
+      "prefLabel": "bovenwoning"
+    },
+    {
       "slug": "bruto-huur",
       "prefLabel": "bruto huur"
+    },
+    {
+      "slug": "bruto-vloeroppervlakte",
+      "prefLabel": "bruto vloeroppervlakte"
     }
   ],
   "C": [
@@ -35,6 +59,10 @@
     {
       "slug": "complex",
       "prefLabel": "complex"
+    },
+    {
+      "slug": "corridorwoning",
+      "prefLabel": "corridorwoning"
     }
   ],
   "D": [
@@ -55,7 +83,37 @@
       "prefLabel": "dVi"
     }
   ],
+  "E": [
+    {
+      "slug": "eengezinswoning",
+      "prefLabel": "eengezinswoning"
+    },
+    {
+      "slug": "eindwoning",
+      "prefLabel": "eindwoning"
+    },
+    {
+      "slug": "elektrische-installatie",
+      "prefLabel": "elektrische installatie"
+    },
+    {
+      "slug": "exploitatieperiode",
+      "prefLabel": "exploitatieperiode"
+    }
+  ],
   "G": [
+    {
+      "slug": "galerijwoning",
+      "prefLabel": "galerijwoning"
+    },
+    {
+      "slug": "gebruiksfunctie",
+      "prefLabel": "gebruiksfunctie"
+    },
+    {
+      "slug": "gebruiksoppervlakte",
+      "prefLabel": "gebruiksoppervlakte"
+    },
     {
       "slug": "geliberaliseerde-huurwoning",
       "prefLabel": "geliberaliseerde huurwoning"
@@ -63,9 +121,21 @@
     {
       "slug": "gereguleerde-woonruimte",
       "prefLabel": "gereguleerde woonruimte"
+    },
+    {
+      "slug": "geschakelde-woning",
+      "prefLabel": "geschakelde woning"
+    },
+    {
+      "slug": "grondgebonden-woning",
+      "prefLabel": "grondgebonden woning"
     }
   ],
   "H": [
+    {
+      "slug": "hoekwoning",
+      "prefLabel": "hoekwoning"
+    },
     {
       "slug": "huishouden",
       "prefLabel": "huishouden"
@@ -73,10 +143,6 @@
     {
       "slug": "huishoudinkomen",
       "prefLabel": "huishoudinkomen"
-    },
-    {
-      "slug": "huisvestingswet-2014",
-      "prefLabel": "Huisvestingswet 2014"
     },
     {
       "slug": "huurder",
@@ -101,12 +167,20 @@
   ],
   "I": [
     {
+      "slug": "inhoud-bouwwerk",
+      "prefLabel": "inhoud"
+    },
+    {
       "slug": "inkomensafhankelijke-huurverhoging",
       "prefLabel": "inkomensafhankelijke huurverhoging"
     },
     {
       "slug": "inkomensgrens",
       "prefLabel": "inkomensgrens"
+    },
+    {
+      "slug": "installatie",
+      "prefLabel": "installatie"
     }
   ],
   "K": [
@@ -131,9 +205,21 @@
     {
       "slug": "liberalisatiegrens",
       "prefLabel": "liberalisatiegrens"
+    },
+    {
+      "slug": "lift",
+      "prefLabel": "lift"
+    },
+    {
+      "slug": "ligplaats",
+      "prefLabel": "ligplaats"
     }
   ],
   "M": [
+    {
+      "slug": "maisonnette",
+      "prefLabel": "maisonnette"
+    },
     {
       "slug": "marktwaarde",
       "prefLabel": "marktwaarde"
@@ -147,11 +233,23 @@
       "prefLabel": "maximale huurprijs"
     },
     {
+      "slug": "mechanische-ventilatie",
+      "prefLabel": "mechanische ventilatie"
+    },
+    {
+      "slug": "meergezinswoning",
+      "prefLabel": "meergezinswoning"
+    },
+    {
       "slug": "mutatie",
       "prefLabel": "mutatie"
     }
   ],
   "N": [
+    {
+      "slug": "netto-vloeroppervlakte",
+      "prefLabel": "netto vloeroppervlakte"
+    },
     {
       "slug": "niet-daeb",
       "prefLabel": "niet-DAEB"
@@ -185,6 +283,18 @@
       "prefLabel": "passendheidstoets"
     },
     {
+      "slug": "perceel",
+      "prefLabel": "perceel"
+    },
+    {
+      "slug": "portefeuillestrategie",
+      "prefLabel": "portefeuillestrategie"
+    },
+    {
+      "slug": "portiekwoning",
+      "prefLabel": "portiekwoning"
+    },
+    {
       "slug": "prestatieafspraak",
       "prefLabel": "prestatieafspraak"
     }
@@ -205,6 +315,10 @@
   ],
   "S": [
     {
+      "slug": "sanitaire-installatie",
+      "prefLabel": "sanitaire installatie"
+    },
+    {
       "slug": "servicekosten",
       "prefLabel": "servicekosten"
     },
@@ -213,8 +327,16 @@
       "prefLabel": "sloop"
     },
     {
+      "slug": "sociale-huurgrens",
+      "prefLabel": "sociale huurgrens"
+    },
+    {
       "slug": "sociale-huurwoning",
       "prefLabel": "sociale huurwoning"
+    },
+    {
+      "slug": "standplaats",
+      "prefLabel": "standplaats"
     },
     {
       "slug": "streefhuur",
@@ -223,8 +345,28 @@
   ],
   "T": [
     {
+      "slug": "taxatie",
+      "prefLabel": "taxatie"
+    },
+    {
+      "slug": "taxatierapport",
+      "prefLabel": "taxatierapport"
+    },
+    {
+      "slug": "terrein",
+      "prefLabel": "terrein"
+    },
+    {
       "slug": "toewijzing",
       "prefLabel": "toewijzing"
+    },
+    {
+      "slug": "tussenwoning",
+      "prefLabel": "tussenwoning"
+    },
+    {
+      "slug": "twee-onder-een-kapwoning",
+      "prefLabel": "twee-onder-een-kapwoning"
     }
   ],
   "V": [
@@ -233,12 +375,32 @@
       "prefLabel": "vastgoed"
     },
     {
+      "slug": "vastgoedobject",
+      "prefLabel": "vastgoedobject"
+    },
+    {
+      "slug": "vastgoedportefeuille",
+      "prefLabel": "vastgoedportefeuille"
+    },
+    {
+      "slug": "ventilatiesysteem",
+      "prefLabel": "ventilatiesysteem"
+    },
+    {
       "slug": "verblijfsobject",
       "prefLabel": "verblijfsobject"
     },
     {
+      "slug": "verdieping",
+      "prefLabel": "verdieping"
+    },
+    {
       "slug": "verduurzaming",
       "prefLabel": "verduurzaming"
+    },
+    {
+      "slug": "verhuurbare-vloeroppervlakte",
+      "prefLabel": "verhuurbare vloeroppervlakte"
     },
     {
       "slug": "verhuurder",
@@ -251,9 +413,29 @@
     {
       "slug": "vervangende-nieuwbouw",
       "prefLabel": "vervangende nieuwbouw"
+    },
+    {
+      "slug": "verwarmingsinstallatie",
+      "prefLabel": "verwarmingsinstallatie"
+    },
+    {
+      "slug": "vrijstaande-woning",
+      "prefLabel": "vrijstaande woning"
     }
   ],
   "W": [
+    {
+      "slug": "waarderingspunten",
+      "prefLabel": "waarderingspunten"
+    },
+    {
+      "slug": "warmtepomp",
+      "prefLabel": "warmtepomp"
+    },
+    {
+      "slug": "warmteterugwinsysteem",
+      "prefLabel": "warmteterugwinsysteem"
+    },
     {
       "slug": "wet-betaalbare-huur",
       "prefLabel": "Wet betaalbare huur"
@@ -263,8 +445,24 @@
       "prefLabel": "woning"
     },
     {
+      "slug": "woning-boven-bedrijfsruimte",
+      "prefLabel": "woning boven bedrijfsruimte"
+    },
+    {
       "slug": "woningcorporatie",
       "prefLabel": "woningcorporatie"
+    },
+    {
+      "slug": "woningverbetering",
+      "prefLabel": "woningverbetering"
+    },
+    {
+      "slug": "woningvoorraad",
+      "prefLabel": "woningvoorraad"
+    },
+    {
+      "slug": "woningwaarderingscriterium",
+      "prefLabel": "woningwaarderingscriterium"
     },
     {
       "slug": "woningwaarderingsstelsel",
@@ -285,6 +483,14 @@
     {
       "slug": "woonruimte",
       "prefLabel": "woonruimte"
+    },
+    {
+      "slug": "woonwagen",
+      "prefLabel": "woonwagen"
+    },
+    {
+      "slug": "woz-waarde",
+      "prefLabel": "WOZ-waarde"
     }
   ],
   "Z": [

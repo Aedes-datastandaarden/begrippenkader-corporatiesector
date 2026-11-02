@@ -124,7 +124,7 @@ h2 {
   margin: 0 0 0.5rem;
 }
 
-.concept-explorer__list-header .concept-browser__filter button {
+.concept-explorer__list-header .concept-browser__filter :is(button, span) {
   padding: 0.375rem 0.5rem;
   font-size: 0.75rem;
 }
@@ -508,7 +508,8 @@ h2 {
   overflow: hidden;
 }
 
-.concept-browser__filter button {
+.concept-browser__filter :is(button, span) {
+  display: inline-block;
   font-family: inherit;
   font-size: 0.875rem;
   padding: 0.5rem 0.875rem;
@@ -523,7 +524,7 @@ h2 {
   border-left: 1px solid var(--color-border);
 }
 
-.concept-browser__filter button.is-active {
+.concept-browser__filter :is(button, span).is-active {
   background: var(--color-accent);
   color: #fff;
 }
