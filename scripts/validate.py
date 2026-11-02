@@ -21,8 +21,8 @@ def validate_version(version_id: str, ttl_path: Path) -> list[str]:
 
   Controleert o.a. aanwezigheid van ConceptScheme, verplichte conceptvelden
   (prefLabel, definition, inScheme), geldige relaties en collectielidmaatschap.
-  Waarschuwingen (bijv. asymmetrische topConcept-relaties) worden naar stdout
-  geschreven; alleen harde fouten worden teruggegeven.
+  Waarschuwingen (bijv. dubbele of circulaire broader/narrower-relaties) worden
+  naar stdout geschreven; alleen harde fouten worden teruggegeven.
 
   Args:
     version_id: Versie-identificatie voor foutmeldingen (bijv. ``"0.2"``).
@@ -77,22 +77,6 @@ def validate_version(version_id: str, ttl_path: Path) -> list[str]:
         errors.append(
           f"[{version_id}] Collectielid verwijst naar onbekend concept: {coll_uri} -> {member}"
         )
-
-  for scheme in schemes:
-    scheme_uri = str(scheme)
-    has_top = {str(c) for c in graph.objects(scheme, SKOS.hasTopConcept)}
-    top_of = {c for c in concepts if any(
-      str(s) == scheme_uri for s in graph.objects(URIRef(c), SKOS.topConceptOf)
-    )}
-
-    for uri in has_top - top_of:
-      warnings.append(
-        f"[{version_id}] hasTopConcept zonder topConceptOf: {uri} in scheme {scheme_uri}"
-      )
-    for uri in top_of - has_top:
-      warnings.append(
-        f"[{version_id}] topConceptOf zonder hasTopConcept: {uri} in scheme {scheme_uri}"
-      )
 
   for collection in graph.subjects(RDF.type, SKOS.Collection):
     for member in graph.objects(collection, SKOS.member):

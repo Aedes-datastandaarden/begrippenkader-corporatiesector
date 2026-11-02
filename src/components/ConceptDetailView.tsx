@@ -60,7 +60,6 @@ export default function ConceptDetailView({ concept, embedded, version, onSelect
       <header className="concept-detail__header">
         <h1>{concept.prefLabel}</h1>
         <div className="concept-detail__meta">
-          {concept.isTopConcept && <span className="badge">Topbegrip</span>}
           {concept.altLabels.length > 0 && (
             <p className="concept-detail__synonyms">
               <span className="field-block__label">Synoniem</span>{' '}
