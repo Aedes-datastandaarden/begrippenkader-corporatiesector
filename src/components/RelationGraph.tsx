@@ -99,10 +99,12 @@ export default function RelationGraph({
       const allConcepts: Concept[] = await conceptsResponse.json();
       const labelBySlug = new Map(allConcepts.map((c) => [c.slug, c.prefLabel]));
 
+      // Toon alleen de uitgaande relaties van het hoofdbegrip, zodat er per
+      // relatie één lijn/pijl is (de data bevat wederkerige relaties, bijv.
+      // breder A->B en smaller B->A, wat anders twee lijnen zou geven).
       const connected = new Set<string>([concept.slug]);
       const localEdges = allEdges.filter((edge) => {
-        if (edge.source === concept.slug || edge.target === concept.slug) {
-          connected.add(edge.source);
+        if (edge.source === concept.slug) {
           connected.add(edge.target);
           return true;
         }

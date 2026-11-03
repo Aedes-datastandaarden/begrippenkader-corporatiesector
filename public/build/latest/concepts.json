@@ -1212,7 +1212,7 @@
       {
         "text": null,
         "category": null,
-        "url": "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#dfn-eengezinswoning"
+        "url": "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html#dfn-eengezinswoning"
       },
       {
         "text": "Afgeleid van IMWO",
@@ -1240,7 +1240,7 @@
     ],
     "exactMatch": [],
     "closeMatch": [
-      "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#dfn-eengezinswoning"
+      "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html#dfn-eengezinswoning"
     ],
     "broaderResolved": [
       {
@@ -1311,7 +1311,7 @@
     "exactMatchResolved": [],
     "closeMatchResolved": [
       {
-        "uri": "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#dfn-eengezinswoning",
+        "uri": "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html#dfn-eengezinswoning",
         "slug": "imwo-rapport.html",
         "prefLabel": "imwo-rapport.html",
         "internal": false
@@ -2001,9 +2001,7 @@
       "https://begrippenkader-corporatiesector.aedes.nl/id/concept/twee-onder-een-kapwoning"
     ],
     "exactMatch": [],
-    "closeMatch": [
-      "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#hoekwoning"
-    ],
+    "closeMatch": [],
     "broaderResolved": [
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning",
@@ -2034,14 +2032,7 @@
       }
     ],
     "exactMatchResolved": [],
-    "closeMatchResolved": [
-      {
-        "uri": "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#hoekwoning",
-        "slug": "imwo-rapport.html",
-        "prefLabel": "imwo-rapport.html",
-        "internal": false
-      }
-    ]
+    "closeMatchResolved": []
   },
   {
     "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/huishouden",
@@ -3581,7 +3572,7 @@
       {
         "text": null,
         "category": null,
-        "url": "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#meergezinswoning"
+        "url": "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html#dfn-meergezinswoning"
       },
       {
         "text": "Afgeleid van IMWO",
@@ -4373,11 +4364,11 @@
       {
         "text": null,
         "category": null,
-        "url": "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html"
+        "url": "https://www.waarderingskamer.nl/documenten/03.-Voor-gemeenten/04.-Gegevensbeheer/imwoz-models/Waardenlijst_type_WOZ-object_-versie_2021_04_20.pdf"
       },
       {
-        "text": "Afgeleid van IMWO",
-        "category": "afgeleid",
+        "text": "Overgenomen van waarderingskamer",
+        "category": null,
         "url": null
       }
     ],
@@ -4716,7 +4707,13 @@
     "changeNote": "",
     "historyNote": "",
     "example": "",
-    "sources": [],
+    "sources": [
+      {
+        "text": "Eigen definitie van het Begrippenkader Corporatiesector",
+        "category": "eigen",
+        "url": null
+      }
+    ],
     "inScheme": "https://begrippenkader-corporatiesector.aedes.nl/id/scheme",
     "isTopConcept": false,
     "broader": [
@@ -5408,9 +5405,7 @@
       "https://begrippenkader-corporatiesector.aedes.nl/id/concept/hoekwoning"
     ],
     "exactMatch": [],
-    "closeMatch": [
-      "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#tussenwoning"
-    ],
+    "closeMatch": [],
     "broaderResolved": [
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning",
@@ -5441,14 +5436,7 @@
       }
     ],
     "exactMatchResolved": [],
-    "closeMatchResolved": [
-      {
-        "uri": "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v082/imwo-rapport.html#tussenwoning",
-        "slug": "imwo-rapport.html",
-        "prefLabel": "imwo-rapport.html",
-        "internal": false
-      }
-    ]
+    "closeMatchResolved": []
   },
   {
     "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/twee-onder-een-kapwoning",
@@ -5487,9 +5475,7 @@
       "https://begrippenkader-corporatiesector.aedes.nl/id/concept/tussenwoning"
     ],
     "exactMatch": [],
-    "closeMatch": [
-      "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html#dfn-tweeondereenkapwoning"
-    ],
+    "closeMatch": [],
     "broaderResolved": [
       {
         "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/eengezinswoning",
@@ -5526,14 +5512,7 @@
       }
     ],
     "exactMatchResolved": [],
-    "closeMatchResolved": [
-      {
-        "uri": "https://nl-digigo.github.io/imwo/functional-doc-1-0/1.0/h/v1/imwo-rapport.html#dfn-tweeondereenkapwoning",
-        "slug": "imwo-rapport.html",
-        "prefLabel": "imwo-rapport.html",
-        "internal": false
-      }
-    ]
+    "closeMatchResolved": []
   },
   {
     "uri": "https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoed",
@@ -5550,7 +5529,13 @@
     "changeNote": "",
     "historyNote": "",
     "example": "",
-    "sources": [],
+    "sources": [
+      {
+        "text": "Eigen definitie van het Begrippenkader Corporatiesector",
+        "category": "eigen",
+        "url": null
+      }
+    ],
     "inScheme": "https://begrippenkader-corporatiesector.aedes.nl/id/scheme",
     "isTopConcept": false,
     "broader": [],

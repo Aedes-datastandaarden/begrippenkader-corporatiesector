@@ -1127,7 +1127,7 @@ Op landelijk niveau bestaan daarnaast de Nationale prestatieafspraken tussen het
     skos:prefLabel "sanitaire installatie"@nl ;
     skos:definition "Samenstel van leidingen en toestellen voor de aan- en afvoer van water in een woning of gebouw, zoals bij een keuken, badkamer of toilet."@nl ;
     rdfs:comment "Denk aan de waterleidingen, de riolering, en de kranen, wastafels en toiletten die daarop zijn aangesloten."@nl ;
-    dct:example "Eigen definitie van het Begrippenkader Corporatiesector" ;
+    dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/installatie> ;
     skos:inScheme <https://begrippenkader-corporatiesector.aedes.nl/id/scheme>.
 
@@ -1277,6 +1277,7 @@ Bij corporaties verloopt toewijzing meestal via een woonruimteverdeelsysteem en 
                   "onroerende zaak"@nl ;
     skos:definition "Verzamelnaam voor de grond, gebouwen en werken die duurzaam met de grond zijn verenigd."@nl ;
     rdfs:comment "Het vastgoed van een corporatie bestaat vooral uit woongelegenheden, met daarnaast bijvoorbeeld maatschappelijk vastgoed, bedrijfsruimten en parkeervoorzieningen."@nl ;
+    dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
     skos:narrower <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedobject> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedportefeuille> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/verhuureenheid> ,

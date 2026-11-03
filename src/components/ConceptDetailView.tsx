@@ -22,6 +22,17 @@ export default function ConceptDetailView({ concept, embedded, version, onSelect
   const textSources = concept.sources.filter((s) => s.text && !s.url);
   const urlSources = concept.sources.filter((s) => s.url);
 
+  // Combineer bron/grondslag met de bijbehorende link: een bron-tekst wordt
+  // klikbaar gemaakt naar de link op dezelfde positie. Is er alleen tekst, dan
+  // blijft het platte tekst; is er alleen een link, dan tonen we de link zelf.
+  const sourceItems: { label: string; href: string | null }[] = [];
+  for (let i = 0; i < Math.max(textSources.length, urlSources.length); i++) {
+    const text = textSources[i]?.text ?? null;
+    const url = urlSources[i]?.url ?? null;
+    if (text) sourceItems.push({ label: text, href: url });
+    else if (url) sourceItems.push({ label: url, href: url });
+  }
+
   const internalRelations = [
     { title: 'Breder begrip', refs: concept.broaderResolved.filter((r) => r.internal) },
     { title: 'Smaller begrip', refs: concept.narrowerResolved.filter((r) => r.internal) },
@@ -82,26 +93,19 @@ export default function ConceptDetailView({ concept, embedded, version, onSelect
           <Field label="Gebruik" value={concept.scopeNote} />
           <Field label="Voorbeeld" value={concept.example} />
 
-          {textSources.length > 0 && (
+          {sourceItems.length > 0 && (
             <section className="field-block">
               <h2 className="field-block__label">Bron / grondslag</h2>
               <ul className="source-list">
-                {textSources.map((item, i) => (
-                  <li key={i}>{item.text}</li>
-                ))}
-              </ul>
-            </section>
-          )}
-
-          {urlSources.length > 0 && (
-            <section className="field-block">
-              <h2 className="field-block__label">Links</h2>
-              <ul className="source-list">
-                {urlSources.map((item, i) => (
+                {sourceItems.map((item, i) => (
                   <li key={i}>
-                    <a href={item.url!} rel="noopener noreferrer" target="_blank">
-                      {item.url}
-                    </a>
+                    {item.href ? (
+                      <a href={item.href} rel="noopener noreferrer" target="_blank">
+                        {item.label}
+                      </a>
+                    ) : (
+                      item.label
+                    )}
                   </li>
                 ))}
               </ul>
