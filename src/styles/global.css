@@ -619,6 +619,24 @@ h2 {
   margin: 0;
 }
 
+.field-block__value > * {
+  margin: 0;
+}
+
+.field-block__value > * + * {
+  margin-top: 0.5rem;
+}
+
+.field-block__value ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.field-block__value li + li {
+  margin-top: 0.25rem;
+}
+
 .badge {
   display: inline-block;
   font-size: 0.75rem;
@@ -686,6 +704,25 @@ h2 {
 .concept-detail__definition p {
   margin: 0;
   font-size: 1.0625rem;
+}
+
+.concept-detail__definition-text > * {
+  margin: 0;
+}
+
+.concept-detail__definition-text > * + * {
+  margin-top: 0.5rem;
+}
+
+.concept-detail__definition-text ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+  font-size: 1.0625rem;
+}
+
+.concept-detail__definition-text li + li {
+  margin-top: 0.25rem;
 }
 
 .concept-detail__grid {

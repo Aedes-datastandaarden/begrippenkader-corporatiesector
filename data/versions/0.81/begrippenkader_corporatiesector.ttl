@@ -170,8 +170,8 @@
     skos:prefLabel "aanvangshuurprijs"@nl ;
     skos:definition "De huurprijs die is afgesproken op de eerste dag van het huurcontract, voordat er een huurverhoging of andere verandering heeft plaatsgevonden."@nl ;
     rdfs:comment """Dit startbedrag is belangrijk, want een huurder kan dit bedrag binnen een bepaalde termijn laten controleren door de Huurcommissie. Die kijkt dan of de huurprijs eerlijk is, gebaseerd op de kwaliteit van de woning (met behulp van het woningwaarderingsstelsel). Ook bepaalt de aanvangshuurprijs of een woning in de sociale huur valt of in de vrije sector.
-
-Het gaat hier om de kale huurprijs, dus zonder de stook- en servicekosten."""@nl ;
+    
+    Het gaat hier om de kale huurprijs, dus zonder de stook- en servicekosten."""@nl ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
     skos:broader <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurprijs> ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/liberalisatiegrens> ,
@@ -184,8 +184,9 @@ Het gaat hier om de kale huurprijs, dus zonder de stook- en servicekosten."""@nl
     skos:definition "De huurgrens waarboven de huurtoeslag lager wordt. Deze grens hangt af van de grootte van het huishouden."@nl ;
     rdfs:comment """Tussen de kwaliteitskortingsgrens en de aftoppingsgrens betaalt de huurtoeslag maximaal 65% van de huurprijs. Boven de aftoppingsgrens en onder de maximale huurgrens betaalt de huurtoeslag nog maar maximaal 40% van de huur. Dit geldt voor alle huishoudens. 
 
-Er zijn twee aftoppingsgrenzen. Een lage grens voor huishoudens van 1 of 2 personen. En een hoge grens voor huishoudens van 3 personen of meer."""@nl ;
-    skos:example "In 2026 is de lage aftoppingsgrens (1 of 2 personen) € 713,02 en de hoge aftoppingsgrens (3 of meer personen) € 764,14. Een eenpersoonshuishouden met een rekenhuur van € 750 krijgt over het deel tussen de kwaliteitskortingsgrens en € 713,02 nog 65% vergoed, en over het deel tussen € 713,02 en € 750 nog 40%."@nl ;
+    Er zijn twee aftoppingsgrenzen. Een lage grens voor huishoudens van 1 of 2 personen. En een hoge grens voor huishoudens van 3 personen of meer."""@nl ;
+    skos:example "In 2026 is de lage aftoppingsgrens (1 of 2 personen) € 713,02 en de hoge aftoppingsgrens (3 of meer personen) € 764,14. 
+    Een eenpersoonshuishouden met een rekenhuur van € 750 krijgt over het deel tussen de kwaliteitskortingsgrens en € 713,02 nog 65% vergoed, en over het deel tussen € 713,02 en € 750 nog 40%."@nl ;
     dct:source <https://wetten.overheid.nl/BWBR0008659/2026-01-01> ,
                "Afgeleid van artikel 20 en 21 Wet op de huurtoeslag" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurtoeslag> ,
@@ -202,11 +203,11 @@ Er zijn twee aftoppingsgrenzen. Een lage grens voor huishoudens van 1 of 2 perso
     rdfs:comment "De assetmanager zorgt ervoor dat het vastgoed duurzaam wordt beheerd gedurende de hele levenscyclus. Daarbij wordt steeds een afweging gemaakt tussen prestaties, kosten en risico's. Informatie stroomt twee kanten op: van boven naar beneden (de doelen van de corporatie) én van beneden naar boven (wat er speelt in de complexen). Dat is een doorlopend, cyclisch proces."@nl ;
     skos:example """Een corporatie heeft als doel om in 2030 alle woningen minimaal energielabel B te laten hebben (top-down doel). De assetmanager bekijkt per complex wat de huidige staat is en welke ingreep het slimst is (bottom-up informatie):
 
-Complex A (bouwjaar 1975, label D): hier is isolatie en een warmtepomp haalbaar binnen budget → besluit: verduurzamen.
-Complex B (bouwjaar 1960, label F, veel klachten): verduurzaming is te duur ten opzichte van de resterende levensduur → besluit: sloop en nieuwbouw plannen.
-Complex C (bouwjaar 2005, label B): voldoet al → besluit: regulier onderhoud voortzetten.
+    - Complex A (bouwjaar 1975, label D): hier is isolatie en een warmtepomp haalbaar binnen budget → besluit: verduurzamen.
+    - Complex B (bouwjaar 1960, label F, veel klachten): verduurzaming is te duur ten opzichte van de resterende levensduur → besluit: sloop en nieuwbouw plannen.
+    - Complex C (bouwjaar 2005, label B): voldoet al → besluit: regulier onderhoud voortzetten.
 
-Zo vertaalt de assetmanager het strategische doel naar een concreet plan per complex, waarbij kosten, risico's en maatschappelijke waarde steeds tegen elkaar worden afgewogen."""@nl ;
+    Zo vertaalt de assetmanager het strategische doel naar een concreet plan per complex, waarbij kosten, risico's en maatschappelijke waarde steeds tegen elkaar worden afgewogen."""@nl ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/vastgoedportefeuille> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/portefeuillestrategie> ;
@@ -243,7 +244,7 @@ Zo vertaalt de assetmanager het strategische doel naar een concreet plan per com
     rdfs:comment "De beleidswaarde laat zien wat het vastgoed van een corporatie waard is, als er rekening wordt gehouden met haar maatschappelijke taak. Dit is dus lager dan wanneer je zou uitgaan van maximale huuropbrengsten tegen marktprijzen."@nl ;
     skos:scopeNote """Vanaf 2026 wordt in de jaarrekening voor het waarderen van het vastgoed gebruik gemaakt van de beleidswaarde. In de jaren hiervoor werd de marktwaarde gebruikt. 
 
-De beleidswaarde en de marktwaarde worden altijd samen bepaald: de beleidswaarde is de marktwaarde, verminderd met afslagen die de extra inspanningen van de corporatie weerspiegelen."""@nl ;
+    De beleidswaarde en de marktwaarde worden altijd samen bepaald: de beleidswaarde is de marktwaarde, verminderd met afslagen die de extra inspanningen van de corporatie weerspiegelen."""@nl ;
     skos:example "Een corporatie bepaalt voor een huurwoning eerst de marktwaarde in verhuurde staat op € 180.000. Omdat de woning tegen een lagere huur wordt verhuurd dan maximaal mogelijk is, het onderhoudsniveau hoger ligt dan bij een commerciële verhuurder gebruikelijk is, en de beheerkosten hoger zijn, worden hierop afslagen toegepast voor beschikbaarheid, betaalbaarheid, onderhoud en beheer. Na verwerking van deze afslagen resteert een beleidswaarde van bijvoorbeeld € 95.000."@nl ;
     dct:source <https://www.ilent.nl/documenten/autoriteit-woningcorporaties/publicaties-cijfers-en-wetgeving/publicaties/handboek-beleidswaarde> ,
                "Afgeleid van het Handboek Beleidswaarde" ;
@@ -558,11 +559,9 @@ Een zelfstandige woning geldt dit alleen als de huurprijs aan het begin van het 
     skos:prefLabel "grondgebonden woning"@nl ;
     skos:definition "Woning met een eigen toegang op het maaiveld."@nl ;
     rdfs:comment "Een grondgebonden woning wordt vanaf het straatniveau binnengegaan, via een eigen voordeur. Er is geen gemeenschappelijke entree, trappenhuis, galerij of lift nodig om de woning te bereiken. Meestal hoort er een eigen tuin of buitenruimte op de grond bij."@nl ;
-    skos:scopeNote """Grondgebondenheid is een andere indeling dan de bouwvorm. Een grondgebonden woning kan zowel een eengezinswoning als een meergezinswoning zijn. 
-
-Het criterium is de toegang: een benedenwoning met een bovenwoning erboven is grondgebonden.
-
-Een woning die niet grondgebonden is, heeft in dit begrippenkader geen eigen term."""@nl ;
+    skos:scopeNote """Grondgebondenheid is een andere indeling dan de bouwvorm. Een grondgebonden woning kan zowel een eengezinswoning als een meergezinswoning zijn.  Het criterium is de toegang: een benedenwoning met een bovenwoning erboven is grondgebonden.
+    
+    Een woning die niet grondgebonden is, heeft in dit begrippenkader geen eigen term."""@nl ;
     skos:example "Een tussenwoning met een voordeur aan de straat en een tuin achter is grondgebonden. Een benedenwoning met een eigen voordeur aan de straat is dat ook, ook al ligt er een bovenwoning boven. De bovenwoning daarboven is niet grondgebonden: die wordt via een trappenhuis bereikt."@nl ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
     skos:closeMatch <https://begrippenomgevingswet.nl/gemeente/758/begrip/grondgebonden%20woning> ;
@@ -653,20 +652,18 @@ Een woning die niet grondgebonden is, heeft in dit begrippenkader geen eigen ter
     skos:altLabel "huursubsidie"@nl ;
     skos:definition "Een bijdrage van het Rijk in de kosten van het huren van een woning."@nl ;
     rdfs:comment """Huishoudens met een laag inkomen kunnen huurtoeslag krijgen. De hoogte hangt af van inkomen, leeftijd, vermogen, samenstelling van het huishouden en de rekenhuur. 
-
-Je kan geen huurtoeslag ontvangen als je in een onzelfstandige woning woont."""@nl ;
+    Je kan geen huurtoeslag ontvangen als je in een onzelfstandige woning woont."""@nl ;
     skos:example """In dit voorbeeld wordt rekening gehouden met getallen uit 2026. 
 
-Een alleenstaande huurder van 21+ jaar oud met een laag inkomen heeft een rekenhuur van € 650,-. 
-- In 2026 ligt de basishuur voor eenpersoonshuishouden op €202,52. Dit moet de huurder helemaal zelf betalen, en de huurtoeslag over dit deel is dus €0,-. 
-- Tussen de basishuur (€202,52) en kwaliteitskortingsgrens (€498,20) wordt 100% vergoed. Dit is €295,50.
-- Tussen de kwaliteitskortingsgrens (€498,20) en aftoppingsgrens (€713,02) wordt met 65% vergoed. De €650,- ligt nog onder de aftoppingsgrens, waardoor er gerekend moet worden met (€650 - 498,02 =) €151,98 euro. 65% van dit overige bedrag is €98,79.
+    Een alleenstaande huurder van 21+ jaar oud met een laag inkomen heeft een rekenhuur van € 650,-. 
+    - In 2026 ligt de basishuur voor eenpersoonshuishouden op €202,52. Dit moet de huurder helemaal zelf betalen, en de huurtoeslag over dit deel is dus €0,-. 
+    - Tussen de basishuur (€202,52) en kwaliteitskortingsgrens (€498,20) wordt 100% vergoed. Dit is €295,50.
+    - Tussen de kwaliteitskortingsgrens (€498,20) en aftoppingsgrens (€713,02) wordt met 65% vergoed. De €650,- ligt nog onder de aftoppingsgrens, waardoor er gerekend moet worden met (€650 - 498,02 =) €151,98 euro. 65% van dit overige bedrag is €98,79.
+    De totale huurtoeslag voor deze alleenstaande huurder met laag inkomen is gelijk aan €295,50 + €98,79 = €394,29 per maand.
+    
+    Stel dat het inkomen van deze alleenstaande huurder jaarlijks €1000,- hoger is dan het jaarlijks vastgestelde minimumniveau, gaat er jaarlijks €270,- van de huurtoeslag af. De huurtoeslag daalt hierbij tot €394,29 - (€270,00/12) = €371,79 per maand.
 
-De totale huurtoeslag voor deze alleenstaande huurder met laag inkomen is gelijk aan €295,50 + €98,79 = €394,29 per maand.
-
-Stel dat het inkomen van deze alleenstaande huurder jaarlijks €1000,- hoger is dan het jaarlijks vastgestelde minimumniveau, gaat er jaarlijks €270,- van de huurtoeslag af. De huurtoeslag daalt hierbij tot €394,29 - (€270,00/12) = €371,79 per maand.
-
-Zie voor meer informatie: https://www.volkshuisvestingnederland.nl/onderwerpen/huren-en-wonen/huurtoeslag/werking-en-berekening-huurtoeslag"""@nl ;
+    Zie voor meer informatie: https://www.volkshuisvestingnederland.nl/onderwerpen/huren-en-wonen/huurtoeslag/werking-en-berekening-huurtoeslag"""@nl ;
     dct:source <https://wetten.overheid.nl/BWBR0008659/2026-01-01/0> ,
                "Afgeleid van artikel 1 Wet op de huurtoeslag" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/aftoppingsgrens> ,
@@ -706,7 +703,7 @@ Daarnaast kan de huurprijs stijgen na woningverbetering."""@nl ;
     skos:prefLabel "inkomensafhankelijke huurverhoging"@nl ;
     skos:definition """Een extra huurverhoging die een verhuurder mag voorstellen aan huurders. Dit geldt voor huishoudens met een hoger inkomen dan de geldende inkomensgrenzen, die wonen in een sociale huurwoning.
 
-Echter mag de huurprijs nooit hoger worden dan de maximale huurprijs."""@nl ;
+    Echter mag de huurprijs nooit hoger worden dan de maximale huurprijs."""@nl ;
     rdfs:comment """De extra huurverhoging mag maximaal €50,- of €100,- zijn. Dit bedrag komt bovenop de kale maandhuur. Hoeveel het precies is, hangt af van het huishoudinkomen en de grootte van het huishouden."""@nl ;
     dct:source <https://begrippenlijst.datawonen.nl/mosaic/dashboard/begrippenlijst> ,
                "Afgeleid van datawonen begrippenlijst" ;
@@ -722,10 +719,9 @@ Echter mag de huurprijs nooit hoger worden dan de maximale huurprijs."""@nl ;
     skos:altLabel "DAEB-inkomensgrens"@nl ;
     skos:definition "Het bedrag waar het inkomen van een huishouden onder moet blijven, indien in aanmerking te komen voor een bepaalde regeling of woning."@nl ;
     skos:scopeNote """Er bestaat niet 1 vaste inkomensgrens. Het woord "inkomensgrens" wordt gebruikt voor verschillende grenzen, die elk een ander doel hebben:
-
-DAEB-inkomensgrens: bepaalt wie tot de doelgroep van sociale huurwoningen hoort.
-Inkomensgrens voor passend toewijzen: een lagere grens voor de allerlaagste inkomens. Corporaties moeten deze huishoudens een woning geven met een huur onder de aftoppingsgrens.
-Inkomensgrens voor de inkomensafhankelijke huurverhoging: bepaalt vanaf welk inkomen een corporatie een hogere huurverhoging mag geven."""@nl ;
+    - DAEB-inkomensgrens: bepaalt wie tot de doelgroep van sociale huurwoningen hoort.
+    - Inkomensgrens voor passend toewijzen: een lagere grens voor de allerlaagste inkomens. Corporaties moeten deze huishoudens een woning geven met een huur onder de aftoppingsgrens.
+    - Inkomensgrens voor de inkomensafhankelijke huurverhoging: bepaalt vanaf welk inkomen een corporatie een hogere huurverhoging mag geven."""@nl ;
     dct:source <https://wetten.overheid.nl/BWBR0008659/2026-01-01> ,
                "Afgeleid van artikel 1 en artikel 48 Woningwet en artikel 16 Besluit toegelaten instellingen volkshuisvesting" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/doelgroep> ,
@@ -762,9 +758,9 @@ Inkomensgrens voor de inkomensafhankelijke huurverhoging: bepaalt vanaf welk ink
     skos:definition "Prijs die de huurder aan verhuurder is verschuldigd voor gebruik van het verhuureenheid."@nl ;
     rdfs:comment """Dit is het bedrag dat een huurder betaalt voor de verhuureenheid zelf, zonder de kosten voor bijvoorbeeld stookkosten, schoonmaak en overige servicekosten.
 
-In geval van huur van woonruimte is de huurprijs gelijk aan de kale huur.
+    In geval van huur van woonruimte is de huurprijs gelijk aan de kale huur.
 
-De kale huur is de grondslag voor huurprijsregelgeving, zoals de toets aan de liberalisatiegrens en de maximale huurverhoging."""@nl ;
+    De kale huur is de grondslag voor huurprijsregelgeving, zoals de toets aan de liberalisatiegrens en de maximale huurverhoging."""@nl ;
     skos:scopeNote """De term "netto huur" wordt soms als synoniem van kale huur gedefinieerd. In een andere context kan "netto huur" een andere betekenis hebben, namelijk de huur na aftrek van huurtoeslag."""@nl ;
     skos:example "Een huurder betaalt €750,- kale huur en €60,- servicekosten per maand. Voor de toets aan de liberalisatiegrens en de jaarlijkse huurverhoging telt alleen de €750,- als kale huur."@nl ;
     skos:editorialNote "De definitie is woordelijk gelijk aan die van huurprijs, terwijl de toelichting wel onderscheid maakt (kale huur is de huurprijs zonder servicekosten). Definitie aanscherpen of beide begrippen samenvoegen is een openstaande redactionele keuze."@nl ;
@@ -795,9 +791,9 @@ De kale huur is de grondslag voor huurprijsregelgeving, zoals de toets aan de li
     rdfs:comment "Corporaties dragen bij aan leefbaarheid in buurten waar zij bezit hebben."@nl ;
     skos:scopeNote "De bijdrage van corporaties aan leefbaarheid is een afgebakende taak binnen de diensten van algemeen economisch belang (DAEB)."@nl ;
     skos:example """Bijdragen aan leefbaarheid kan bijvoorbeeld inhouden:
-- woonmaatschappelijk werk, zoals een woonconsulent die huurders thuis bezoekt om te helpen bij huurschulden
-- verlichting of groenonderhoud naast een wooncomplex
-- organiseren van ontmoetingsactiviteiten tussen bewoners."""@nl ;
+    - woonmaatschappelijk werk, zoals een woonconsulent die huurders thuis bezoekt om te helpen bij huurschulden
+    - verlichting of groenonderhoud naast een wooncomplex
+    - organiseren van ontmoetingsactiviteiten tussen bewoners."""@nl ;
     dct:source <https://wetten.overheid.nl/BWBR0036702/2026-01-01> ,
                "Eigen definitie, kijk voor de scope van leefbaarheidsactiviteiten in BTIV, Art. 51" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/daeb> ;
@@ -819,7 +815,7 @@ De kale huur is de grondslag voor huurprijsregelgeving, zoals de toets aan de li
     skos:definition "Huurprijsgrens die bepaalt of een huurovereenkomst voor een zelfstandige woning bij aanvang tot het gereguleerde (laag/midden) segment hoort, of bij het geliberaliseerde (vrije sector) segment behoort."@nl ;
     rdfs:comment """Als de huurprijs lager dan de liberalisatiegrens is, huurt de huurder een woning in het lage of midden segment. Is de huurprijs hoger, dan gaat het om een woning in de vrije sector. 
 
-Elk jaar wordt de grens opnieuw vastgesteld. Bepalend is de huurprijs op de eerste dag van het huurcontract."""@nl ;
+    Elk jaar wordt de grens opnieuw vastgesteld. Bepalend is de huurprijs op de eerste dag van het huurcontract."""@nl ;
     dct:source <https://begrippenlijst.datawonen.nl/mosaic/dashboard/begrippenlijst> ,
                "Afgeleid van datawonen begrippenlijst" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/aanvangshuurprijs> ,
@@ -968,7 +964,7 @@ Elk jaar wordt de grens opnieuw vastgesteld. Bepalend is de huurprijs op de eers
     skos:definition "Activiteiten en vastgoed van een woningcorporatie die buiten de diensten van algemeen economisch belang vallen."@nl ;
     rdfs:comment """Woningcorporaties mogen deze activiteiten beperkt uitvoeren, maar wel onder dezelfde voorwaarden als marktpartijen. Ook moet de uitvoering administratief of juridisch gescheiden zijn van de DAEB-tak. 
 
-Voor niet-DAEB-activiteiten ontvangen corporaties geen compensatie van de overheid, in tegenstelling tot DAEB-activiteiten."""@nl ;
+    Voor niet-DAEB-activiteiten ontvangen corporaties geen compensatie van de overheid, in tegenstelling tot DAEB-activiteiten."""@nl ;
     skos:example "Geliberaliseerde huurwoningen en commercieel vastgoed."@nl ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector"  ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/daeb> ,
@@ -990,7 +986,7 @@ Voor niet-DAEB-activiteiten ontvangen corporaties geen compensatie van de overhe
     skos:definition "Alle werkzaamheden die de technische staat van vastgoed in stand houden of herstellen, met behoud van de bestaande kwaliteit."@nl ;
     rdfs:comment """Onderhoud varieert van het verhelpen van een klacht tot groot planmatig onderhoud. 
 
-Er zijn verschillende soorten onderhoud: mutatieonderhoud, reparatie- en klachtenonderhoud,  planmatig en/of grootonderhoud."""@nl ;
+    Er zijn verschillende soorten onderhoud: mutatieonderhoud, reparatie- en klachtenonderhoud,  planmatig en/of grootonderhoud."""@nl ;
     skos:scopeNote "Verbeteringen, zoals bijvoorbeeld het isoleren van woningen, vallen onder renovatie of woningverbetering in plaats van onderhoud. Bij verbeteringen is er vrijwel altijd impact op de bedrijfswaarde, terwijl onderhoud puur de toestand van het vastgoed in stand houdt."@nl ;
     dct:source <https://www.ilent.nl/documenten/autoriteit-woningcorporaties/publicaties-cijfers-en-wetgeving/publicaties/memo-onderhoud-verbetering-en-beheer> ,
                "Eigen definitie van het Begrippenkader Corporatiesector, afgeleid van Inspectie Leefomgeving en Transport" ;
@@ -1075,7 +1071,7 @@ Er zijn verschillende soorten onderhoud: mutatieonderhoud, reparatie- en klachte
     skos:definition "Afspraak tussen een gemeente, een woningcorporatie en de huurdersorganisatie(s)/bewonerscommissie(s) over de bijdrage van de corporatie aan de uitvoering van het gemeentelijke volkshuisvestingsprogramma."@nl ;
     rdfs:comment """Ze worden periodiek gemaakt en jaarlijks geactualiseerd.
 
-Op landelijk niveau bestaan daarnaast de Nationale prestatieafspraken tussen het Rijk, Aedes, de Woonbond en de VNG, die het kader vormen voor de lokale afspraken."""@nl ;
+    Op landelijk niveau bestaan daarnaast de Nationale prestatieafspraken tussen het Rijk, Aedes, de Woonbond en de VNG, die het kader vormen voor de lokale afspraken."""@nl ;
     skos:example "Prestatieafspraken gaan bijvoorbeeld over nieuwbouwaantallen, betaalbaarheid, verduurzaming en leefbaarheid."@nl ;
     dct:source <https://wetten.overheid.nl/BWBR0005181/2026-07-01> ,
                "Afgeleid van artikel 44 Woningwet; landelijke context: Nationale prestatieafspraken 2025-2035" ;
@@ -1162,7 +1158,7 @@ Op landelijk niveau bestaan daarnaast de Nationale prestatieafspraken tussen het
     skos:definition "Huurprijsgrens die bepaalt of een huurwoning een sociale huurwoning is, of in het midden/hoge segment valt."@nl ;
     rdfs:comment """Is de huurprijs bij aanvang van het huurcontract lager dan dit bedrag? Dan is het een sociale huurwoning. Is de huurprijs hoger, dan valt hij in het midden/hoge segment. 
 
-Deze grens wordt elk jaar opnieuw vastgesteld, gebaseerd op prijsstijgingen. Het gaat hier om de kale huurprijs, dus exclusief stook- en servicekosten."""@nl ;
+    Deze grens wordt elk jaar opnieuw vastgesteld, gebaseerd op prijsstijgingen. Het gaat hier om de kale huurprijs, dus exclusief stook- en servicekosten."""@nl ;
     skos:example "In 2026 is de sociale huurgrens €932,93 per maand. Als een woning een huurprijs heeft van bijvoorbeeld €850,- is het een sociale huurwoning."@nl ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector";
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/aftoppingsgrens> ,
@@ -1191,7 +1187,7 @@ Deze grens wordt elk jaar opnieuw vastgesteld, gebaseerd op prijsstijgingen. Het
     skos:definition "De huurprijs waar een woningcorporatie naar streeft voor een verhuureenheid. Dit bedrag volgt uit het huurbeleid van de corporatie."@nl ;
     rdfs:comment """De streefhuur is vaak lager dan de maximale huurprijs, en wordt dan uitgedrukt als percentage van de maximale huurprijs. Bij mutatie wordt de huurprijs van de nieuwe verhuring op de streefhuur gezet.
 
-De streefhuur volgt het eigen huurbeleid, doelportefeuille, doelgroepenbeleid en de geldende wet-en regelgeving zoals het passend toewijzen en de maximale huur volgens het woningwaarderingsstelsel."""@nl ;
+    De streefhuur volgt het eigen huurbeleid, doelportefeuille, doelgroepenbeleid en de geldende wet-en regelgeving zoals het passend toewijzen en de maximale huur volgens het woningwaarderingsstelsel."""@nl ;
     dct:source <https://www.ilent.nl/site/binaries/site-content/collections/documents/autoriteit-woningcorporaties/publicaties-cijfers-en-wetgeving/publicaties/handboek-beleidswaarde/handboek-beleidswaarde.pdf> ,
                "Afgeleid van Handboek Beleidswaarde" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurprijs> ,
@@ -1203,8 +1199,7 @@ De streefhuur volgt het eigen huurbeleid, doelportefeuille, doelgroepenbeleid en
     skos:prefLabel "taxatie"@nl ;
     skos:definition "Het door een deskundige (taxateur) vaststellen van de waarde van een vastgoedobject."@nl ;
     rdfs:comment """Corporaties laten hun bezit periodiek taxeren, onder andere voor de bepaling van de marktwaarde in verhuurde staat.  
-
-De resultaten van een taxatie zijn te vinden in het taxatierapport."""@nl ;
+    De resultaten van een taxatie zijn te vinden in het taxatierapport."""@nl ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/marktwaarde> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/taxatierapport> ,
@@ -1236,7 +1231,7 @@ De resultaten van een taxatie zijn te vinden in het taxatierapport."""@nl ;
     skos:definition "Besluit van een verhuurder om een verhuureenheid aan een specifieke kandidaat-huurder te verhuren."@nl ;
     rdfs:comment """Dit vindt plaats indien een kandidaat de aanbieding heeft geaccepteerd en bij controle van diens gegevens blijkt dat deze juist zijn. Vervolgens kan tot tekening van de overeenkomst worden overgegaan. 
 
-Bij corporaties verloopt toewijzing meestal via een woonruimteverdeelsysteem en gelden wettelijke regels, zoals inkomensgrenzen en passend toewijzen."""@nl ;
+    Bij corporaties verloopt toewijzing meestal via een woonruimteverdeelsysteem en gelden wettelijke regels, zoals inkomensgrenzen en passend toewijzen."""@nl ;
     dct:source "Eigen definitie van het Begrippenkader Corporatiesector" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurovereenkomst> ,
                  <https://begrippenkader-corporatiesector.aedes.nl/id/concept/inkomensgrens> ,
@@ -1528,7 +1523,7 @@ Over de hele portefeuille samen worden vaak strategische keuzes gemaakt, bijvoor
     skos:definition "Werk waarbij een woning verandert in indeling, uitrusting of grootte."@nl ;
     skos:scopeNote """Verschil met onderhoud: onderhoud houdt de woning in dezelfde staat, verbetering brengt de woning naar een hoger niveau.
 
-Bij renovatie worden veel onderdelen tegelijkertijd aangepakt; woningverbetering kan ook om één aanpassing gaan."""@nl ;
+    Verschil met renovatie: bij renovatie worden veel onderdelen tegelijkertijd aangepakt, terwijl woningverbetering ook om één aanpassing kan gaan."""@nl ;
     skos:example "Verduurzamen naar energieneutraal, een dakkapel plaatsen of de keuken groter maken."@nl ;
     dct:source <https://www.ilent.nl/documenten/autoriteit-woningcorporaties/publicaties-cijfers-en-wetgeving/publicaties/memo-onderhoud-verbetering-en-beheer> ,
                "Afgeleid van Inspectie Leefomgeving en Transport" ;
@@ -1542,10 +1537,9 @@ Bij renovatie worden veel onderdelen tegelijkertijd aangepakt; woningverbetering
     skos:prefLabel "woningvoorraad"@nl ;
     skos:altLabel "voorraad"@nl ;
     skos:definition "Alle woningen die een corporatie in bezit heeft."@nl ;
-    rdfs:comment """Het gaat om alle verblijfsobjecten die een woonfunctie hebben. 
-
-Het maakt niet uit of een woning leeg staat of niet, pas als een woning wordt verkocht, gesloopt of anderszins onttrokken (bijvoorbeeld samengevoegd met een andere woning), verdwijnt hij uit de voorraad. 
-Dat houdt in dat de BAG-status van woningen in de woningvoorraad gelijk is aan “in gebruik (niet ingemeten)", “in gebruik”, “buiten gebruik” of “verbouwing” op de peildatum."""@nl ;
+    rdfs:comment """Het gaat om alle verblijfsobjecten die een woonfunctie hebben. Het maakt niet uit of een woning leeg staat of niet, pas als een woning wordt verkocht, gesloopt of anderszins onttrokken (bijvoorbeeld samengevoegd met een andere woning), verdwijnt hij uit de voorraad. 
+    
+    Dat houdt in dat de BAG-status van woningen in de woningvoorraad gelijk is aan “in gebruik (niet ingemeten)", “in gebruik”, “buiten gebruik” of “verbouwing” op de peildatum."""@nl ;
     dct:source <https://www.cbs.nl/nl-nl/onze-diensten/methoden/begrippen/woningvoorraad> ,
                "Afgeleid van CBS" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/nieuwbouw> ,

@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type { Concept } from '../lib/types';
 import { conceptUrl, withVersionParam } from '../lib/version';
 
@@ -8,12 +9,77 @@ interface Props {
   onSelectConcept?: (slug: string) => void;
 }
 
+const BULLET_RE = /^\s*[-*•]\s+/;
+
+/**
+ * Rendert platte tekst met een kleine opmaak-subset:
+ * - witregel = nieuwe alinea (verticale tussenruimte);
+ * - enkele regelafbreking = <br/> binnen dezelfde alinea (geen tussenruimte);
+ * - regel die begint met "- ", "* " of "• " = bullet (opeenvolgende bullets
+ *   vormen samen één lijst). Alles wordt als React-children gerenderd, dus
+ *   geëscaped; er wordt geen HTML uit de tekst geïnterpreteerd.
+ */
+function RichText({ text }: { text: string }) {
+  const blocks = text.split(/\n\s*\n/).map((b) => b.replace(/\s+$/, '')).filter((b) => b.trim().length > 0);
+  return (
+    <>
+      {blocks.map((block, bi) => {
+        const lines = block.split('\n');
+        const parts: ReactNode[] = [];
+        let bullets: string[] = [];
+        let prose: string[] = [];
+        const flushBullets = () => {
+          if (bullets.length === 0) return;
+          const items = bullets;
+          parts.push(
+            <ul key={`ul-${bi}-${parts.length}`}>
+              {items.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>,
+          );
+          bullets = [];
+        };
+        const flushProse = () => {
+          if (prose.length === 0) return;
+          const rows = prose;
+          parts.push(
+            <p key={`p-${bi}-${parts.length}`}>
+              {rows.map((row, i) => (
+                <span key={i}>
+                  {i > 0 && <br />}
+                  {row}
+                </span>
+              ))}
+            </p>,
+          );
+          prose = [];
+        };
+        for (const line of lines) {
+          if (BULLET_RE.test(line)) {
+            flushProse();
+            bullets.push(line.replace(BULLET_RE, ''));
+          } else if (line.trim().length > 0) {
+            flushBullets();
+            prose.push(line);
+          }
+        }
+        flushProse();
+        flushBullets();
+        return parts;
+      })}
+    </>
+  );
+}
+
 function Field({ label, value }: { label: string; value?: string }) {
   if (!value) return null;
   return (
     <section className="field-block">
       <h2 className="field-block__label">{label}</h2>
-      <p className="field-block__value">{value}</p>
+      <div className="field-block__value">
+        <RichText text={value} />
+      </div>
     </section>
   );
 }
@@ -83,7 +149,9 @@ export default function ConceptDetailView({ concept, embedded, version, onSelect
       {concept.definition && (
         <section className="concept-detail__definition" aria-labelledby="definition-heading">
           <h2 id="definition-heading">Definitie</h2>
-          <p>{concept.definition}</p>
+          <div className="concept-detail__definition-text">
+            <RichText text={concept.definition} />
+          </div>
         </section>
       )}
 
