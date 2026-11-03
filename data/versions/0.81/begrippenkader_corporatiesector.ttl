@@ -185,8 +185,8 @@
     rdfs:comment """Tussen de kwaliteitskortingsgrens en de aftoppingsgrens betaalt de huurtoeslag maximaal 65% van de huurprijs. Boven de aftoppingsgrens en onder de maximale huurgrens betaalt de huurtoeslag nog maar maximaal 40% van de huur. Dit geldt voor alle huishoudens. 
 
     Er zijn twee aftoppingsgrenzen. Een lage grens voor huishoudens van 1 of 2 personen. En een hoge grens voor huishoudens van 3 personen of meer."""@nl ;
-    skos:example "In 2026 is de lage aftoppingsgrens (1 of 2 personen) € 713,02 en de hoge aftoppingsgrens (3 of meer personen) € 764,14. 
-    Een eenpersoonshuishouden met een rekenhuur van € 750 krijgt over het deel tussen de kwaliteitskortingsgrens en € 713,02 nog 65% vergoed, en over het deel tussen € 713,02 en € 750 nog 40%."@nl ;
+    skos:example """In 2026 is de lage aftoppingsgrens (1 of 2 personen) € 713,02 en de hoge aftoppingsgrens (3 of meer personen) € 764,14. 
+    Een eenpersoonshuishouden met een rekenhuur van € 750 krijgt over het deel tussen de kwaliteitskortingsgrens en € 713,02 nog 65% vergoed, en over het deel tussen € 713,02 en € 750 nog 40%."""@nl ;
     dct:source <https://wetten.overheid.nl/BWBR0008659/2026-01-01> ,
                "Afgeleid van artikel 20 en 21 Wet op de huurtoeslag" ;
     skos:related <https://begrippenkader-corporatiesector.aedes.nl/id/concept/huurtoeslag> ,
